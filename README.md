@@ -1,62 +1,103 @@
-# Laboratorio VGC
+# VGC Tools
 
-Seguimiento de repeticiones de Pokémon Showdown para VGC, con aspecto de hoja de cálculo. Inspirado en la hoja **PASRS** (PALKIA Academy Showdown Reporting Spreadsheet) de Bauerdad y v0Lt.
+Organiza tus equipos de Pokémon VGC y analiza tus repeticiones de Pokémon Showdown. Inspirado en la hoja **PASRS** (PALKIA Academy Showdown Reporting Spreadsheet) de Bauerdad y v0Lt, pero como web con cuentas de usuario, sprites y un equipo por página.
 
-Pegas tus enlaces de repeticiones y la app lee cada partida directamente de Showdown: resultado, equipos de la vista previa, leads, Pokémon que salieron, Megas, OTS, ELO y movimientos usados.
+```
+pokemonvgc/
+  web/                 frontend (React + Vite + TypeScript)
+  backend/             API (FastAPI + SQLAlchemy)
+  docker-compose.yml   web + API + PostgreSQL, en el puerto 8180
+```
 
-## Pestañas
+## Qué hace
 
-| Pestaña | Qué muestra |
-| --- | --- |
-| **Inicio** | Tu nombre de Showdown, tu pokepaste y un resumen. |
-| **Replays** | Lista de enlaces con notas. Lee las repeticiones de Showdown. |
-| **Partida a partida** | Una fila por partida, con filtros (resultado, Pokémon rival, leads y atrás de cada lado, Megas, OTS, ELO mínimo). |
-| **Sets** | Partidas al mejor de 3 agrupadas en sets, con marcador y notas. |
-| **Uso** | Win% total, OTS/CTS, Win% de cada Pokémon llevado, de lead y con Mega, y parejas de leads. |
-| **Matchups** | Mejores y peores Pokémon rivales, cuáles llevan más o menos, y detalle de hasta 8. |
-| **Movimientos** | Cuántas veces usaste cada movimiento con cada Pokémon. |
+- **Cuentas:** te registras con usuario y contraseña; tus equipos y tus nombres de Showdown se guardan en el servidor.
+- **Equipos:** crea uno por cada pokepaste (enlace de pokepast.es o texto en formato Showdown). Cada equipo guarda sus partidas por separado.
+- **Repeticiones:** pega enlaces de `replay.pokemonshowdown.com` y la web lee de cada partida el resultado, la vista previa de ambos, leads, quién salió, Megas, OTS, ELO, serie Bo3 y movimientos usados.
+- **Resumen, Partidas, Tus Pokémon, Rivales y Sets:** win% total y por Pokémon, por lead y con Mega, gráfico de ELO, leads más usados, tu win% contra cada Pokémon rival y uso de movimientos, con filtros como en PASRS.
 
-Uso, Matchups y Movimientos respetan los filtros de «Partida a partida».
+## Arrancar con Docker (recomendado)
 
-## Uso
+```bash
+cp .env.example .env      # y cambia POSTGRES_PASSWORD y SECRET_KEY
+docker compose up -d --build
+```
+
+Abre http://localhost:8180. Nginx sirve la web y pasa `/api` al backend; los datos viven en el volumen `db-data` de PostgreSQL.
+
+## Desarrollo sin Docker
+
+Backend (Python 3.12+), en `backend/`:
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate          # en Linux/macOS: source .venv/bin/activate
+pip install -e ".[dev]"
+uvicorn app.main:app --reload    # http://localhost:8000, documentación en /docs
+```
+
+Sin configuración usa SQLite (`backend/vgc_tools.db`). Para otra base de datos pon `DATABASE_URL` en `backend/.env`.
+
+Frontend (Node 20.19+), en `web/`:
 
 ```bash
 npm install
-npm run dev
+npm run dev                      # http://localhost:5173 (redirige /api al puerto 8000)
 ```
 
-Abre http://localhost:5173 y:
+## Comprobaciones
 
-1. En **Inicio**, escribe tu nombre de Showdown y carga tu pokepaste.
-2. En **Replays**, pega los enlaces (uno por línea) y pulsa **Añadir**.
+| Dónde      | Comando                                        | Qué hace                        |
+| ---------- | ---------------------------------------------- | ------------------------------- |
+| `web/`     | `npm run check`                                | Tipos + ESLint + pruebas Vitest |
+| `web/`     | `npm run format`                               | Prettier                        |
+| `backend/` | `pytest`                                       | Pruebas de la API               |
+| `backend/` | `ruff check . && ruff format --check .`        | Lint y formato                  |
 
-Los datos se guardan en el `localStorage` del navegador.
+## API
 
-## Scripts
+| Método   | Ruta                  | Qué hace                                         |
+| -------- | --------------------- | ------------------------------------------------ |
+| `POST`   | `/api/auth/register`  | Crea una cuenta y devuelve el token              |
+| `POST`   | `/api/auth/login`     | Devuelve el token                                |
+| `GET`    | `/api/me`             | Tu usuario y tus nombres de Showdown             |
+| `PATCH`  | `/api/me`             | Cambia tus nombres de Showdown                   |
+| `GET`    | `/api/teams`          | Tus equipos                                      |
+| `PUT`    | `/api/teams/{id}`     | Crea o sustituye un equipo                       |
+| `DELETE` | `/api/teams/{id}`     | Borra un equipo                                  |
 
-| Comando | Qué hace |
-| --- | --- |
-| `npm run dev` | Servidor de desarrollo |
-| `npm run build` | Comprueba tipos y genera `dist/` |
-| `npm test` | Pruebas del lector de repeticiones (Vitest) |
-| `npm run typecheck` | Solo comprobación de tipos |
+Las rutas de `/me` y `/teams` necesitan la cabecera `Authorization: Bearer <token>`. Con el backend arrancado, la documentación interactiva está en `/docs`.
 
 ## Estructura
 
 ```
-src/
-  lib/replay.ts    lectura y análisis del log de Showdown
-  lib/stats.ts     filtros y estadísticas (uso, leads, matchups, sets, movimientos)
-  lib/paste.ts     lectura de pokepast.es
-  lib/storage.ts   estado y guardado en localStorage
-  components/ui.tsx  sprites, bloques con marco, celdas
-  sheets/          una vista por pestaña
+web/src/
+  app/          App, cabecera y rutas
+  features/     auth/ (entrar), teams/ (lista), team/ (página de equipo: components/ y sections/)
+  components/   ui/ (piezas genéricas) y pokemon/ (sprites)
+  api/          cliente HTTP y llamadas a la API
+  lib/          lógica pura con pruebas: showdown/ (repeticiones, pokepastes, sprites) y stats/
+  state/        tipos, sesión y sincronización con el servidor (useAccount), carga de repeticiones
+  styles/       tokens (claro/oscuro), base, layout, componentes y vistas
+
+backend/app/
+  main.py       crea la app y registra las rutas
+  core/         configuración (variables de entorno) y seguridad (contraseñas Argon2, JWT)
+  db/           motor y sesión de SQLAlchemy
+  models/       tablas: users y teams
+  schemas/      modelos de entrada y salida (JSON en camelCase)
+  api/          dependencias (usuario actual) y rutas
+backend/tests/  pruebas con una base de datos en memoria
 ```
 
-Los sprites se cargan desde `play.pokemonshowdown.com`.
+Cómo encaja:
+
+- La web lee las repeticiones directamente de Showdown y guarda el resultado en el equipo; el backend solo guarda cuentas y equipos.
+- Cada cambio en la web se envía al servidor poco después (`state/useAccount.ts`); la cabecera muestra «Guardado», «Guardando…» o el error.
+- Si tenías equipos guardados en el navegador de la versión anterior, al entrar se ofrece subirlos a tu cuenta.
 
 ## Limitaciones
 
 - Solo dobles de Showdown (VGC).
 - Las Megas cuentan como su forma base en las estadísticas.
-- Si cambias tu nombre de Showdown después de leer partidas, usa «Volver a leer todas».
+- Las tablas se crean al arrancar el backend; si cambias los modelos, toca añadir migraciones (por ejemplo con Alembic).

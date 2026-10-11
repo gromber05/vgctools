@@ -1,0 +1,74 @@
+/* Diseño: barra superior fina, páginas centradas de ancho limitado, tarjetas sobre fondo gris azulado.
+   Los Pokémon son los protagonistas: sprites grandes sobre "pedestales" redondos. */
+:root {
+  --bg: #f2f3f7;
+  --surface: #ffffff;
+  --surface-2: #eaedf4;
+  --line: #dde1ea;
+  --ink: #151826;
+  --muted: #5d6477;
+  --accent: #df3b26;
+  --accent-ink: #ffffff;
+  --lead: #2f6be0;
+  --mega: #b97c0a;
+  --win: #178a59;
+  --win-soft: #dcf2e7;
+  --loss: #c8344a;
+  --loss-soft: #fae2e6;
+  --tie: #8a6d12;
+  --tie-soft: #f6edd0;
+  --shadow: 0 1px 2px rgb(21 24 38 / 6%), 0 4px 16px rgb(21 24 38 / 5%);
+
+  --font-display: 'Bricolage Grotesque', 'Segoe UI', system-ui, sans-serif;
+  --font-body: 'DM Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, Consolas, monospace;
+
+  --radius: 14px;
+  --radius-sm: 8px;
+  --page-width: 1200px;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg: #0f1119;
+    --surface: #171a25;
+    --surface-2: #20243a;
+    --line: #2b3046;
+    --ink: #e8ebf4;
+    --muted: #9aa1b6;
+    --accent: #ff5b45;
+    --accent-ink: #1b0602;
+    --lead: #74a0ff;
+    --mega: #f0b546;
+    --win: #45c98d;
+    --win-soft: #14352a;
+    --loss: #ff6f83;
+    --loss-soft: #3b1820;
+    --tie: #e3c564;
+    --tie-soft: #3a3016;
+    --shadow: 0 1px 2px rgb(0 0 0 / 30%), 0 6px 20px rgb(0 0 0 / 25%);
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme='dark'] {
+  --bg: #0f1119;
+  --surface: #171a25;
+  --surface-2: #20243a;
+  --line: #2b3046;
+  --ink: #e8ebf4;
+  --muted: #9aa1b6;
+  --accent: #ff5b45;
+  --accent-ink: #1b0602;
+  --lead: #74a0ff;
+  --mega: #f0b546;
+  --win: #45c98d;
+  --win-soft: #14352a;
+  --loss: #ff6f83;
+  --loss-soft: #3b1820;
+  --tie: #e3c564;
+  --tie-soft: #3a3016;
+  --shadow: 0 1px 2px rgb(0 0 0 / 30%), 0 6px 20px rgb(0 0 0 / 25%);
+  color-scheme: dark;
+}

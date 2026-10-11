@@ -1,4 +1,34 @@
-node_modules
-dist
+# Created by https://www.toptal.com/developers/gitignore/api/react
+# Edit at https://www.toptal.com/developers/gitignore?templates=react
+
+### react ###
+.DS_*
 *.log
-.DS_Store
+logs
+**/*.backup.*
+**/*.back.*
+
+node_modules
+bower_components
+
+*.sublime*
+
+psd
+thumb
+sketch
+
+# End of https://www.toptal.com/developers/gitignore/api/react
+# Build
+dist
+
+# Entorno y secretos
+.env
+
+# Python (backend)
+.venv
+__pycache__
+*.pyc
+.pytest_cache
+.ruff_cache
+*.egg-info
+*.db

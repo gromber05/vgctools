@@ -1,0 +1,164 @@
+/* ---------- Barra superior ---------- */
+.appbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 16px;
+  padding: 10px max(16px, calc((100vw - var(--page-width)) / 2));
+  background: color-mix(in srgb, var(--surface) 88%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font: 800 20px var(--font-display);
+  color: var(--ink);
+  text-decoration: none;
+  margin-right: auto;
+}
+/* Marca: media Poké Ball en roja + línea */
+.brand-mark {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2.5px solid var(--ink);
+  background: linear-gradient(var(--accent) 0 44%, var(--ink) 44% 56%, var(--surface) 56%);
+}
+.appbar-status {
+  font-size: 13px;
+  color: var(--lead);
+}
+.name-field {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--muted);
+}
+.name-field input {
+  width: 170px;
+  padding: 5px 10px;
+  border-radius: 999px;
+}
+.name-field.is-missing input {
+  border-color: var(--mega);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--mega) 20%, transparent);
+}
+
+/* ---------- Página ---------- */
+.main {
+  padding: 24px 16px 64px;
+}
+.page {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.page-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 12px;
+}
+.lede {
+  color: var(--muted);
+  margin: 6px 0 0;
+  max-width: 60ch;
+}
+.back {
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--muted);
+}
+.actions,
+.toolbar-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.two {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr));
+  gap: 16px;
+  align-items: start;
+}
+.stack {
+  display: grid;
+  gap: 16px;
+}
+.row-between {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+/* Pestañas de sección */
+.tabs {
+  display: flex;
+  gap: 4px;
+  border-bottom: 1px solid var(--line);
+  overflow-x: auto;
+}
+.tabs a {
+  padding: 10px 14px;
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+  white-space: nowrap;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -1px;
+}
+.tabs a[aria-selected='true'] {
+  color: var(--ink);
+  border-bottom-color: var(--accent);
+}
+.tabs .count {
+  margin-left: 6px;
+  font-size: 12px;
+  background: var(--surface-2);
+  border-radius: 999px;
+  padding: 1px 7px;
+}
+
+@media (max-width: 640px) {
+  .main {
+    padding-top: 16px;
+  }
+  .name-field span {
+    display: none;
+  }
+}
+
+.save-state {
+  font-size: 13px;
+  color: var(--muted);
+}
+.save-state.is-saving {
+  color: var(--lead);
+}
+.save-state.is-error {
+  color: var(--loss);
+  font-weight: 700;
+}
+.user {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 500;
+}

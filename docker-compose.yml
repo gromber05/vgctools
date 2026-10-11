@@ -1,0 +1,40 @@
+# VGC Tools: web (nginx) en http://localhost:8180, API FastAPI y PostgreSQL.
+# Uso: copia .env.example a .env, cambia las claves y ejecuta `docker compose up -d --build`.
+
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: vgc_tools
+      POSTGRES_USER: vgc_tools
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Pon POSTGRES_PASSWORD en .env}
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U vgc_tools -d vgc_tools']
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  api:
+    build: ./backend
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgresql+psycopg://vgc_tools:${POSTGRES_PASSWORD}@db:5432/vgc_tools
+      SECRET_KEY: ${SECRET_KEY:?Pon SECRET_KEY en .env}
+      CORS_ORIGINS: '["http://localhost:8180"]'
+    depends_on:
+      db:
+        condition: service_healthy
+
+  web:
+    build: ./web
+    restart: unless-stopped
+    ports:
+      - '8180:80'
+    depends_on:
+      - api
+
+volumes:
+  db-data:
