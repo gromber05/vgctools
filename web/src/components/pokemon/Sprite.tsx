@@ -1,5 +1,15 @@
-import { useState } from 'react';
-import { SPRITE_FOLDERS, spriteUrl } from '@/lib/showdown/sprites';
+import { useState, useSyncExternalStore } from 'react';
+import { ANIMATED, PIXEL, spriteFolders, spriteUrl } from '@/lib/showdown/sprites';
+
+const REDUCED_MOTION = '(prefers-reduced-motion: reduce)';
+
+function subscribe(onChange: () => void) {
+  const query = window.matchMedia(REDUCED_MOTION);
+  query.addEventListener('change', onChange);
+  return () => query.removeEventListener('change', onChange);
+}
+
+const prefersReducedMotion = () => window.matchMedia(REDUCED_MOTION).matches;
 
 interface SpriteProps {
   name: string;
@@ -9,10 +19,19 @@ interface SpriteProps {
 }
 
 export function Sprite({ name, size = 40, big = false, faded = false }: SpriteProps) {
-  const [attempt, setAttempt] = useState(0);
-  const folders = SPRITE_FOLDERS[big ? 'big' : 'small'];
-  const folder = folders[attempt];
-  const cls = ['sprite', faded && 'is-faded', folder === 'gen5' && 'is-pixel'].filter(Boolean).join(' ');
+  const reduced = useSyncExternalStore(subscribe, prefersReducedMotion, () => false);
+  const [failed, setFailed] = useState({ name, count: 0 });
+  const attempt = failed.name === name ? failed.count : 0;
+  const folder = spriteFolders(big, !reduced && !faded)[attempt];
+  const cls = [
+    'sprite',
+    faded && 'is-faded',
+    folder && PIXEL.has(folder) && 'is-pixel',
+    folder && ANIMATED.has(folder) && 'is-animated',
+    big && 'is-big',
+  ]
+    .filter(Boolean)
+    .join(' ');
 
   if (!folder) {
     return (
@@ -30,7 +49,7 @@ export function Sprite({ name, size = 40, big = false, faded = false }: SpritePr
       width={size}
       height={size}
       loading="lazy"
-      onError={() => setAttempt((n) => n + 1)}
+      onError={() => setFailed({ name, count: attempt + 1 })}
     />
   );
 }

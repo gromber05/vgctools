@@ -48,7 +48,14 @@
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--mega) 20%, transparent);
 }
 
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
 .main {
+  flex: 1;
   padding: 24px 16px 64px;
 }
 .page {

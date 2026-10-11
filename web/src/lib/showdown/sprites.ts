@@ -12,11 +12,18 @@ export function spriteId(name: string) {
 
 const BASE = 'https://play.pokemonshowdown.com/sprites';
 
-export type SpriteFolder = 'home-centered' | 'gen5' | 'dex';
+export type SpriteFolder = 'ani' | 'gen5ani' | 'home-centered' | 'gen5' | 'dex';
+
+export const ANIMATED: ReadonlySet<SpriteFolder> = new Set(['ani', 'gen5ani']);
+export const PIXEL: ReadonlySet<SpriteFolder> = new Set(['gen5', 'gen5ani']);
 
 export const SPRITE_FOLDERS: Record<'big' | 'small', SpriteFolder[]> = {
-  big: ['home-centered', 'gen5', 'dex'],
-  small: ['gen5', 'home-centered', 'dex'],
+  big: ['ani', 'home-centered', 'gen5', 'dex'],
+  small: ['gen5ani', 'gen5', 'home-centered', 'dex'],
 };
 
-export const spriteUrl = (folder: SpriteFolder, name: string) => `${BASE}/${folder}/${spriteId(name)}.png`;
+export const spriteFolders = (big: boolean, animated: boolean) =>
+  SPRITE_FOLDERS[big ? 'big' : 'small'].filter((f) => animated || !ANIMATED.has(f));
+
+export const spriteUrl = (folder: SpriteFolder, name: string) =>
+  `${BASE}/${folder}/${spriteId(name)}.${ANIMATED.has(folder) ? 'gif' : 'png'}`;
