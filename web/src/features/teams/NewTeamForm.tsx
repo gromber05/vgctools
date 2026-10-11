@@ -74,6 +74,9 @@ export function NewTeamForm({ onCreate, onCancel }: NewTeamFormProps) {
         <button className="primary" type="submit" disabled={busy || !ready}>
           {busy ? 'Cargando…' : 'Crear equipo'}
         </button>
+        <button type="button" onClick={() => onCreate(createTeam(name.trim() || 'Equipo nuevo'))}>
+          Empezar desde cero
+        </button>
         {onCancel && (
           <button type="button" className="ghost" onClick={onCancel}>
             Cancelar

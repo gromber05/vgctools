@@ -2,3 +2,6 @@ dist
 node_modules
 package-lock.json
 src/lib/showdown/__fixtures__
+nginx.conf
+nginx-api-proxy.inc
+src/data

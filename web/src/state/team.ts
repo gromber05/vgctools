@@ -15,5 +15,4 @@ export const createTeam = (name: string, mons: PasteMon[] = [], pasteUrl = '', p
   created: Date.now(),
 });
 
-/** Partidas ya leídas del equipo, en el orden en que se añadieron. */
 export const gamesOf = (team: Team): Game[] => team.entries.flatMap((e) => (e.game ? [e.game] : []));

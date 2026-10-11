@@ -9,7 +9,6 @@ interface AddReplaysProps {
   onAdd: (entries: Entry[]) => void;
 }
 
-/** Extrae enlaces de repeticiones nuevos (sin repetir los que ya tiene el equipo). */
 function newEntries(text: string, existing: Entry[]): { links: number; entries: Entry[] } {
   const known = new Set(existing.map((e) => replayIdFromUrl(e.url)));
   const links = text.split(/[\s,]+/).filter((l) => l.includes('replay.pokemonshowdown.com') && replayIdFromUrl(l));
@@ -45,7 +44,11 @@ export function AddReplays({ team, canRead, onAdd }: AddReplaysProps) {
         placeholder="https://replay.pokemonshowdown.com/gen9championsvgc2026regmcbo3-…"
         autoFocus
       />
-      {!canRead && <p className="warn small">Antes pon tu nombre de Showdown arriba a la derecha; si no, no sé qué jugador eres.</p>}
+      {!canRead && (
+        <p className="warn small">
+          Antes pon tu nombre de Showdown en <a href="#/usuario">Usuario</a>; si no, no sé qué jugador eres.
+        </p>
+      )}
       {msg && <p className="error small">{msg}</p>}
       <div className="actions">
         <button className="primary" onClick={add} disabled={!text.trim()}>

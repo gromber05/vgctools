@@ -3,9 +3,7 @@ import { Sprite } from './Sprite';
 interface SpriteRowProps {
   names: string[];
   size?: number;
-  /** si se pasa, los que no estén aquí salen atenuados (p. ej. los que no salieron al campo) */
   active?: string[];
-  /** los que se marcan como lead */
   lead?: string[];
 }
 

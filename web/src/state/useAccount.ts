@@ -16,23 +16,20 @@ export interface Account {
   state: AppState;
   update: Updater;
   saveStatus: SaveStatus;
-  /** mensaje si no se pudieron cargar los datos */
   loadError: string;
-  /** equipos que quedaron en este navegador de antes de tener cuenta */
   localTeams: Team[];
   importLocalTeams: () => void;
   dismissLocalTeams: () => void;
-  signIn: (mode: 'login' | 'register', username: string, password: string) => Promise<void>;
+  signIn: (mode: 'login' | 'register', username: string, password: string, acceptTerms?: boolean) => Promise<void>;
   signOut: () => void;
+  changePassword: (currentPassword: string, newPassword: string) => Promise<void>;
+  deleteAccount: (password: string) => Promise<void>;
+  exportData: () => Promise<void>;
   retry: () => void;
 }
 
 const emptyState = (): AppState => ({ v: 3, names: [], teams: [] });
 
-/**
- * Sesión del usuario y sus datos. Los cambios hechos con `update` se guardan solos en el
- * servidor poco después (se agrupan los cambios seguidos en un solo envío).
- */
 export function useAccount(): Account {
   const [token, setToken] = useState<string | null>(readToken);
   const [user, setUser] = useState<User | null>(null);
@@ -43,7 +40,6 @@ export function useAccount(): Account {
   const [localTeams, setLocalTeams] = useState<Team[]>([]);
   const [reloadKey, setReloadKey] = useState(0);
 
-  // Lo último que el servidor tiene guardado; se compara con el estado para saber qué enviar.
   const synced = useRef<AppState>(emptyState());
   const latest = useRef(state);
   const syncing = useRef(false);
@@ -59,7 +55,6 @@ export function useAccount(): Account {
     setStatus('anon');
   }, []);
 
-  // Carga la cuenta y sus equipos cuando hay token.
   useEffect(() => {
     if (!token) return;
     let cancelled = false;
@@ -103,7 +98,6 @@ export function useAccount(): Account {
     }
     syncing.current = true;
     try {
-      // Si llegan cambios mientras se guarda, se repite hasta alcanzar el último estado.
       do {
         pending.current = false;
         const target = latest.current;
@@ -119,7 +113,6 @@ export function useAccount(): Account {
     }
   }, [run, signOut]);
 
-  // Cada cambio programa un guardado.
   useEffect(() => {
     latest.current = state;
     if (status !== 'ready' || state === synced.current) return;
@@ -139,8 +132,8 @@ export function useAccount(): Account {
     });
   }, []);
 
-  const signIn = useCallback(async (mode: 'login' | 'register', username: string, password: string) => {
-    const session: Session = await (mode === 'login' ? api.login(username, password) : api.register(username, password));
+  const signIn = useCallback(async (mode: 'login' | 'register', username: string, password: string, acceptTerms = false) => {
+    const session: Session = await (mode === 'login' ? api.login(username, password) : api.register(username, password, acceptTerms));
     writeToken(session.accessToken);
     setLoadError('');
     setStatus('loading');
@@ -166,6 +159,27 @@ export function useAccount(): Account {
     dismissLocalTeams: () => setLocalTeams([]),
     signIn,
     signOut,
+    changePassword: async (currentPassword, newPassword) => {
+      if (!token) return;
+      const session = await api.changePassword(token, currentPassword, newPassword);
+      writeToken(session.accessToken);
+      setToken(session.accessToken);
+    },
+    exportData: async () => {
+      if (!token) return;
+      const data = await api.exportData(token);
+      const url = URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' }));
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `vgc-tools-${user?.username ?? 'datos'}.json`;
+      a.click();
+      URL.revokeObjectURL(url);
+    },
+    deleteAccount: async (password) => {
+      if (!token) return;
+      await api.deleteAccount(token, password);
+      signOut();
+    },
     retry: () => {
       setStatus('loading');
       setReloadKey((k) => k + 1);

@@ -15,15 +15,8 @@ def _now() -> datetime:
 
 
 class Team(Base):
-    """Un equipo con su pokepaste y sus repeticiones.
-
-    Los Pokémon, las repeticiones y las notas de sets se guardan como JSON: la web los
-    lee y escribe siempre juntos, y su forma la define el frontend (`web/src/state/types.ts`).
-    """
-
     __tablename__ = "teams"
 
-    # El id lo genera la web, así un equipo creado sin conexión mantiene su id.
     id: Mapped[str] = mapped_column(String(36), primary_key=True)
     owner_id: Mapped[int] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"), index=True)
     name: Mapped[str] = mapped_column(String(120))

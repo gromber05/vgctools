@@ -42,3 +42,14 @@ def test_equipos_de_otro_usuario(client):
 def test_requiere_sesion(client):
     assert client.get("/api/teams").status_code == 401
     assert client.put("/api/teams/t1", json=TEAM).status_code == 401
+
+
+def test_limite_de_equipos(client, monkeypatch):
+    from app.core.config import get_settings
+
+    monkeypatch.setattr(get_settings(), "max_teams_per_user", 2)
+    headers = register(client)
+    assert client.put("/api/teams/t1", json=TEAM, headers=headers).status_code == 201
+    assert client.put("/api/teams/t2", json=TEAM, headers=headers).status_code == 201
+    assert client.put("/api/teams/t3", json=TEAM, headers=headers).status_code == 409
+    assert client.put("/api/teams/t1", json=TEAM, headers=headers).status_code == 200

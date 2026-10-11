@@ -1,9 +1,10 @@
 from typing import Annotated
 
 from fastapi import APIRouter, HTTPException, Path, Response, status
-from sqlalchemy import select
+from sqlalchemy import func, select
 
 from app.api.deps import CurrentUser, DbSession
+from app.core.config import get_settings
 from app.models import Team
 from app.schemas.team import TeamIn, TeamOut
 
@@ -13,7 +14,6 @@ TeamId = Annotated[str, Path(min_length=1, max_length=36, pattern=r"^[A-Za-z0-9_
 
 
 def _own_team(db: DbSession, user: CurrentUser, team_id: str) -> Team | None:
-    """El equipo si es del usuario. Los de otros usuarios se tratan como inexistentes."""
     team = db.get(Team, team_id)
     return team if team is not None and team.owner_id == user.id else None
 
@@ -33,12 +33,15 @@ def get_team(team_id: TeamId, user: CurrentUser, db: DbSession) -> Team:
 
 @router.put("/{team_id}", response_model=TeamOut)
 def save_team(team_id: TeamId, body: TeamIn, user: CurrentUser, db: DbSession, response: Response) -> Team:
-    """Crea el equipo con ese id o lo sustituye entero (la web guarda así sus cambios)."""
     team = _own_team(db, user, team_id)
     if team is None:
         if db.get(Team, team_id) is not None:
-            # El id existe pero es de otra cuenta.
             raise HTTPException(status.HTTP_409_CONFLICT, "Ese id de equipo ya está en uso.")
+        limit = get_settings().max_teams_per_user
+        if db.scalar(select(func.count()).select_from(Team).where(Team.owner_id == user.id)) >= limit:
+            raise HTTPException(
+                status.HTTP_409_CONFLICT, f"Has llegado al máximo de {limit} equipos. Borra alguno para crear otro."
+            )
         team = Team(id=team_id, owner_id=user.id)
         db.add(team)
         response.status_code = status.HTTP_201_CREATED

@@ -11,7 +11,6 @@ class Base(DeclarativeBase):
 
 
 def make_engine(url: str):
-    # SQLite necesita esto para usarse desde los hilos de FastAPI.
     connect_args = {"check_same_thread": False} if url.startswith("sqlite") else {}
     return create_engine(url, connect_args=connect_args)
 
@@ -29,7 +28,6 @@ def get_db() -> Iterator[Session]:
 
 
 def init_db() -> None:
-    # Importa los modelos para que queden registrados en Base.metadata.
-    from app import models  # noqa: F401
+    from app.db.migrate import run_migrations
 
-    Base.metadata.create_all(bind=engine)
+    run_migrations(engine)

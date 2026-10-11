@@ -1,21 +1,45 @@
 import { useEffect, useState } from 'react';
 
-export const SECTIONS = ['resumen', 'partidas', 'pokemon', 'rivales', 'sets'] as const;
+export const SECTIONS = ['resumen', 'constructor', 'partidas', 'pokemon', 'rivales', 'sets'] as const;
 export type Section = (typeof SECTIONS)[number];
 
-export type Route = { page: 'teams' } | { page: 'team'; teamId: string; section: Section };
+export type Route =
+  | { page: 'teams' }
+  | { page: 'team'; teamId: string; section: Section }
+  | { page: 'calc' }
+  | { page: 'user' }
+  | { page: 'privacy' }
+  | { page: 'terms' };
 
 function parse(hash: string): Route {
   const [, kind, id, section] = hash.replace(/^#/, '').split('/');
   if (kind === 'equipo' && id) {
     return { page: 'team', teamId: id, section: (SECTIONS as readonly string[]).includes(section) ? (section as Section) : 'resumen' };
   }
+  if (kind === 'calculadora') return { page: 'calc' };
+  if (kind === 'usuario') return { page: 'user' };
+  if (kind === 'privacidad') return { page: 'privacy' };
+  if (kind === 'terminos') return { page: 'terms' };
   return { page: 'teams' };
 }
 
-export const href = (r: Route) => (r.page === 'teams' ? '#/' : `#/equipo/${r.teamId}/${r.section}`);
+export function href(r: Route): string {
+  switch (r.page) {
+    case 'team':
+      return `#/equipo/${r.teamId}/${r.section}`;
+    case 'calc':
+      return '#/calculadora';
+    case 'user':
+      return '#/usuario';
+    case 'privacy':
+      return '#/privacidad';
+    case 'terms':
+      return '#/terminos';
+    default:
+      return '#/';
+  }
+}
 
-/** Navegación con el hash de la URL, para que recargar la página no te saque de donde estabas. */
 export function useRoute(): [Route, (r: Route) => void] {
   const [route, setRoute] = useState(() => parse(location.hash));
   useEffect(() => {

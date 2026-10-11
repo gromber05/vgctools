@@ -4,9 +4,7 @@ import { SPRITE_FOLDERS, spriteUrl } from '@/lib/showdown/sprites';
 interface SpriteProps {
   name: string;
   size?: number;
-  /** render 3D grande en vez de sprite pixel */
   big?: boolean;
-  /** atenuado: estaba en el equipo pero no salió */
   faded?: boolean;
 }
 

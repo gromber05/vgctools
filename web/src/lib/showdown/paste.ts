@@ -6,12 +6,10 @@ export interface PasteMon {
   item: string;
   ability: string;
   nature: string;
-  /** línea de EVs / Stat Points tal cual, p. ej. "32 HP / 32 Atk / 2 Spe" */
   evs: string;
   moves: string[];
 }
 
-/** Lee un equipo en formato Showdown. */
 export function parsePaste(text: string): PasteMon[] {
   return text
     .replace(/\r/g, '')
@@ -41,7 +39,22 @@ export function parsePaste(text: string): PasteMon[] {
     .filter((m) => m.species);
 }
 
-/** Descarga un equipo de pokepast.es (acepta el enlace normal). */
+export function exportPaste(team: PasteMon[]): string {
+  return team
+    .filter((m) => m.species)
+    .map((m) => {
+      const head = (m.nickname ? `${m.nickname} (${m.species})` : m.species) + (m.item ? ` @ ${m.item}` : '');
+      const lines = [head];
+      if (m.ability) lines.push(`Ability: ${m.ability}`);
+      lines.push('Level: 50');
+      if (m.evs) lines.push(`EVs: ${m.evs}`);
+      if (m.nature) lines.push(`${m.nature} Nature`);
+      lines.push(...m.moves.filter(Boolean).map((mv) => `- ${mv}`));
+      return lines.join('\n');
+    })
+    .join('\n\n');
+}
+
 export async function fetchPaste(url: string): Promise<{ text: string; title: string; team: PasteMon[] }> {
   const m = url.trim().match(/pokepast\.es\/([a-z0-9]+)/i);
   if (!m) throw new Error('El enlace no es de pokepast.es.');

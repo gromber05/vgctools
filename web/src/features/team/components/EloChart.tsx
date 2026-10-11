@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import type { Game } from '@/lib/showdown/replay';
 
-/** Evolución de tu ELO partida a partida (solo partidas con rating). */
 export function EloChart({ games }: { games: Game[] }) {
   const [hover, setHover] = useState<number | null>(null);
   const pts = games

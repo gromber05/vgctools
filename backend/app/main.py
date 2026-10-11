@@ -16,10 +16,12 @@ async def lifespan(_: FastAPI) -> AsyncIterator[None]:
 
 
 def create_app() -> FastAPI:
-    app = FastAPI(title="VGC Tools API", version="0.1.0", lifespan=lifespan)
+    settings = get_settings()
+    docs = {} if not settings.is_production else {"docs_url": None, "redoc_url": None, "openapi_url": None}
+    app = FastAPI(title="VGC Tools API", version="0.1.0", lifespan=lifespan, **docs)
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=get_settings().cors_origins,
+        allow_origins=settings.cors_origins,
         allow_credentials=False,
         allow_methods=["*"],
         allow_headers=["*"],

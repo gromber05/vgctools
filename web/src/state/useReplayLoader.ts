@@ -6,7 +6,6 @@ const CONCURRENCY = 4;
 
 export type LoadReplays = (teamId: string, entries: Pick<Entry, 'id' | 'url'>[]) => Promise<void>;
 
-/** Descarga y analiza repeticiones de Showdown, varias a la vez, y guarda el resultado en su equipo. */
 export function useReplayLoader(names: string[], update: Updater): [Set<string>, LoadReplays] {
   const [loading, setLoading] = useState<Set<string>>(new Set());
 

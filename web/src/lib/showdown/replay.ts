@@ -5,30 +5,25 @@ export type Side = 'p1' | 'p2';
 export interface Game {
   id: string;
   format: string;
-  /** segundos desde epoch (uploadtime de Showdown) */
   time: number;
   me: string;
   opp: string;
   result: 'W' | 'L' | 'T';
   myTeam: string[];
   oppTeam: string[];
-  /** Pokémon que salieron al campo, en orden de aparición */
   myPicks: string[];
   oppPicks: string[];
   myLeads: string[];
   oppLeads: string[];
   myMega: string | null;
   oppMega: string | null;
-  /** Open Team Sheets: la repetición incluye |showteam| */
   ots: boolean;
   myElo: number | null;
   myEloAfter: number | null;
   oppElo: number | null;
-  /** id de la serie al mejor de 3 y número de partida dentro de ella */
   series: string | null;
   gameNo: number | null;
   turns: number;
-  /** usos de cada movimiento por cada uno de tus Pokémon */
   myMoves: Record<string, Record<string, number>>;
 }
 
@@ -40,7 +35,6 @@ export interface ReplayJSON {
   uploadtime: number;
 }
 
-/** "https://replay.pokemonshowdown.com/gen9...-123?p2" → "gen9...-123" */
 export function replayIdFromUrl(url: string): string | null {
   const m = url.trim().match(/(?:replay\.pokemonshowdown\.com\/)?([a-z0-9]+-\d+(?:-[a-z0-9]+pw)?)/i);
   return m ? m[1].toLowerCase() : null;
@@ -144,7 +138,6 @@ export function parseReplay(replay: ReplayJSON, myNames: string[]): Game {
   }
   const op: Side = me === 'p1' ? 'p2' : 'p1';
 
-  // En la vista previa algunas formas salen como "Urshifu-*": se resuelven con la forma que salió al campo.
   const resolve = (side: Side) =>
     preview[side].map((s) => {
       if (!s.endsWith('-*')) return s;

@@ -14,7 +14,6 @@ interface TeamHeroProps {
   onOpenMons: () => void;
 }
 
-/** Cabecera del equipo: nombre editable, récord, acciones y los 6 Pokémon en grande. */
 export function TeamHero({ team, games, adding, onToggleAdd, onRename, onDelete, onOpenMons }: TeamHeroProps) {
   const [confirmDelete, setConfirmDelete] = useState(false);
   const wins = games.filter((g) => g.result === 'W').length;

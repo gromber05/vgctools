@@ -8,8 +8,10 @@ export default defineConfig({
   resolve: {
     alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) },
   },
+  build: {
+    chunkSizeWarningLimit: 600,
+  },
   server: {
-    // En desarrollo, /api va al backend de FastAPI (backend/, puerto 8000).
     proxy: { '/api': 'http://127.0.0.1:8000' },
   },
   test: {

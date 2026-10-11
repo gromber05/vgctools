@@ -9,7 +9,6 @@ interface TeamsPageProps {
   state: AppState;
   update: Updater;
   go: (route: Route) => void;
-  /** equipos guardados en este navegador antes de tener cuenta */
   localTeams: Team[];
   onImportLocal: () => void;
   onDismissLocal: () => void;
@@ -17,7 +16,7 @@ interface TeamsPageProps {
 
 export function TeamsPage({ state, update, go, localTeams, onImportLocal, onDismissLocal }: TeamsPageProps) {
   const [creating, setCreating] = useState(state.teams.length === 0 && localTeams.length === 0);
-  const open = (teamId: string) => go({ page: 'team', teamId, section: 'resumen' });
+  const open = (teamId: string, section: 'resumen' | 'constructor' = 'resumen') => go({ page: 'team', teamId, section });
 
   return (
     <div className="page">
@@ -60,7 +59,7 @@ export function TeamsPage({ state, update, go, localTeams, onImportLocal, onDism
               d.teams.unshift(team);
             });
             setCreating(false);
-            open(team.id);
+            open(team.id, team.mons.length ? 'resumen' : 'constructor');
           }}
         />
       )}

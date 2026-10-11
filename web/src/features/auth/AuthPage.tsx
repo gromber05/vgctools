@@ -1,13 +1,16 @@
 import { useState } from 'react';
+import { href } from '@/app/router';
+import { LEGAL } from '@/features/legal/legalInfo';
 
 interface AuthPageProps {
-  onSubmit: (mode: 'login' | 'register', username: string, password: string) => Promise<void>;
+  onSubmit: (mode: 'login' | 'register', username: string, password: string, acceptTerms?: boolean) => Promise<void>;
 }
 
 export function AuthPage({ onSubmit }: AuthPageProps) {
   const [mode, setMode] = useState<'login' | 'register'>('login');
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [accepted, setAccepted] = useState(false);
   const [error, setError] = useState('');
   const [busy, setBusy] = useState(false);
 
@@ -15,7 +18,7 @@ export function AuthPage({ onSubmit }: AuthPageProps) {
     setError('');
     setBusy(true);
     try {
-      await onSubmit(mode, username, password);
+      await onSubmit(mode, username, password, accepted);
     } catch (e) {
       setError((e as Error).message);
       setBusy(false);
@@ -74,6 +77,22 @@ export function AuthPage({ onSubmit }: AuthPageProps) {
           />
           {mode === 'register' && <span className="muted small">Mínimo 8 caracteres.</span>}
         </label>
+        {mode === 'register' && (
+          <label className="check consent">
+            <input id="accept-terms" type="checkbox" checked={accepted} onChange={(e) => setAccepted(e.target.checked)} required />
+            <span>
+              Tengo {LEGAL.minAge} años o más y acepto los{' '}
+              <a href={href({ page: 'terms' })} target="_blank" rel="noreferrer">
+                términos de uso
+              </a>{' '}
+              y la{' '}
+              <a href={href({ page: 'privacy' })} target="_blank" rel="noreferrer">
+                política de privacidad
+              </a>
+              .
+            </span>
+          </label>
+        )}
         {error && <p className="error small">{error}</p>}
         <button className="primary" type="submit" disabled={busy}>
           {busy ? 'Un momento…' : mode === 'login' ? 'Entrar' : 'Crear cuenta'}

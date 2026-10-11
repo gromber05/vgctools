@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { lazy, Suspense, useMemo, useState } from 'react';
 import { href, type Route, type Section } from '@/app/router';
 import { activeFilterCount, applyFilters, emptyFilters, type Filters } from '@/lib/stats/filters';
 import { gamesOf } from '@/state/team';
@@ -13,8 +13,11 @@ import { Overview } from './sections/Overview';
 import { RivalsSection } from './sections/RivalsSection';
 import { SetsSection } from './sections/SetsSection';
 
+const BuilderSection = lazy(() => import('./sections/BuilderSection').then((m) => ({ default: m.BuilderSection })));
+
 const TABS: [Section, string][] = [
   ['resumen', 'Resumen'],
+  ['constructor', 'Constructor'],
   ['partidas', 'Partidas'],
   ['pokemon', 'Tus Pokémon'],
   ['rivales', 'Rivales'],
@@ -45,7 +48,6 @@ export function TeamPage({ state, team, section, update, go, loading, loadReplay
       if (t) fn(t);
     });
   const goSection = (s: Section) => go({ page: 'team', teamId: team.id, section: s });
-  /** Aplica un filtro nuevo (sustituyendo los anteriores) y lleva a la lista de partidas. */
   const filterBy = (patch: Partial<Filters>) => {
     setFilters({ ...emptyFilters, ...patch });
     goSection('partidas');
@@ -73,7 +75,7 @@ export function TeamPage({ state, team, section, update, go, loading, loadReplay
           });
           go({ page: 'teams' });
         }}
-        onOpenMons={() => goSection('pokemon')}
+        onOpenMons={() => goSection('constructor')}
       />
 
       {adding && (
@@ -100,7 +102,7 @@ export function TeamPage({ state, team, section, update, go, loading, loadReplay
         ))}
       </nav>
 
-      {games.length > 0 && section !== 'sets' && (
+      {games.length > 0 && section !== 'sets' && section !== 'constructor' && (
         <FilterBar games={games} filters={filters} setFilters={setFilters} shown={filtered.length} />
       )}
 
@@ -121,6 +123,11 @@ export function TeamPage({ state, team, section, update, go, loading, loadReplay
       {section === 'pokemon' && <MonsSection team={team} games={filtered} filterBy={filterBy} />}
       {section === 'rivales' && <RivalsSection games={filtered} filterBy={filterBy} />}
       {section === 'sets' && <SetsSection team={team} games={games} updateTeam={updateTeam} />}
+      {section === 'constructor' && (
+        <Suspense fallback={<p className="muted">Cargando el constructor…</p>}>
+          <BuilderSection team={team} updateTeam={updateTeam} />
+        </Suspense>
+      )}
     </div>
   );
 }

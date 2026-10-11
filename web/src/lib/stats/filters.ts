@@ -7,7 +7,6 @@ export interface Filters {
   myBack: string;
   oppLead: string;
   oppBack: string;
-  /** especie, o "-" para «sin Mega» */
   myMega: string;
   oppMega: string;
   ots: '' | 'yes' | 'no';
@@ -27,7 +26,6 @@ export const emptyFilters: Filters = {
   minElo: '',
 };
 
-/** Pokémon que salieron pero no de lead. */
 export const backOf = (picks: string[], leads: string[]) => picks.filter((p) => !leads.includes(p));
 
 const megaMatches = (filter: string, mega: string | null) => !filter || (filter === '-' ? !mega : mega === filter);

@@ -7,8 +7,6 @@ from app.schemas.base import CamelModel
 
 
 class TeamIn(CamelModel):
-    """Equipo tal y como lo maneja la web. `mons` y `entries` se guardan sin tocar."""
-
     name: str = Field(min_length=1, max_length=120)
     paste_url: str = Field(default="", max_length=300)
     paste_text: str = Field(default="", max_length=20_000)

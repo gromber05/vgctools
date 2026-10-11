@@ -32,3 +32,6 @@ __pycache__
 .ruff_cache
 *.egg-info
 *.db
+
+# Claude Code
+.claude/

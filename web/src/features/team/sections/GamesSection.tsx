@@ -19,7 +19,6 @@ interface Props {
 export function GamesSection({ team, games, allGames, loading, canRead, updateTeam, onLoad }: Props) {
   const filtered = games.length !== allGames.length;
   const shownIds = new Set(games.map((g) => g.id));
-  // Sin filtros se ven también las pendientes y las que fallaron; con filtros, solo las partidas que cumplen.
   const rows = team.entries
     .map((e, i) => ({ e, n: i + 1 }))
     .filter(({ e }) => (e.game ? shownIds.has(e.game.id) : !filtered))
@@ -46,7 +45,9 @@ export function GamesSection({ team, games, allGames, loading, canRead, updateTe
         </div>
       </div>
       {!canRead && team.entries.length > 0 && (
-        <p className="warn small">Pon tu nombre de Showdown arriba a la derecha para poder leer las repeticiones.</p>
+        <p className="warn small">
+          Pon tu nombre de Showdown en <a href="#/usuario">Usuario</a> para poder leer las repeticiones.
+        </p>
       )}
 
       {rows.length === 0 && <Empty title={filtered ? 'Ninguna partida cumple los filtros' : 'Todavía no hay repeticiones'} />}
@@ -158,5 +159,4 @@ function GameCard({ game: g, n }: { game: Game; n: number }) {
   );
 }
 
-/** Equipo rival: primero sus leads, luego los que sacó atrás, luego los que se quedaron fuera. */
 const orderOpp = (g: Game) => [...g.oppLeads, ...backOf(g.oppPicks, g.oppLeads), ...g.oppTeam.filter((s) => !g.oppPicks.includes(s))];

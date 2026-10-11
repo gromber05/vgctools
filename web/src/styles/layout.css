@@ -1,4 +1,3 @@
-/* ---------- Barra superior ---------- */
 .appbar {
   position: sticky;
   top: 0;
@@ -21,7 +20,6 @@
   text-decoration: none;
   margin-right: auto;
 }
-/* Marca: media Poké Ball en roja + línea */
 .brand-mark {
   width: 22px;
   height: 22px;
@@ -50,7 +48,6 @@
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--mega) 20%, transparent);
 }
 
-/* ---------- Página ---------- */
 .main {
   padding: 24px 16px 64px;
 }
@@ -108,7 +105,6 @@
   gap: 8px;
 }
 
-/* Pestañas de sección */
 .tabs {
   display: flex;
   gap: 4px;

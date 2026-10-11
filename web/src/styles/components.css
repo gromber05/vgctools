@@ -1,4 +1,3 @@
-/* ---------- Sprites ---------- */
 .sprite {
   display: block;
   object-fit: contain;
@@ -41,7 +40,6 @@
   background: var(--lead);
 }
 
-/* ---------- Tarjetas y bloques ---------- */
 .card {
   background: var(--surface);
   border: 1px solid var(--line);
@@ -127,7 +125,6 @@
   color: var(--muted);
 }
 
-/* Barra de win% */
 .meter {
   display: grid;
   grid-template-columns: auto 1fr 52px 44px;
@@ -165,7 +162,6 @@
   font-variant-numeric: tabular-nums;
 }
 
-/* Control segmentado */
 .seg {
   display: inline-flex;
   flex-wrap: wrap;

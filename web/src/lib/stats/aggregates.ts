@@ -24,7 +24,6 @@ export interface MonUsage {
   mega: Rate;
 }
 
-/** Rendimiento de cada uno de tus Pokémon (los del pokepaste primero, luego cualquiera visto en las partidas). */
 export function usageByMon(games: Game[], team: string[]): MonUsage[] {
   const species = [...new Set([...team, ...games.flatMap((g) => g.myTeam)])];
   return species.map((s) => ({
@@ -55,7 +54,6 @@ export function leadPairs(games: Game[]): LeadPair[] {
 
 export interface OppMon {
   species: string;
-  /** partidas en las que estaba en su vista previa (y tu resultado) */
   seen: Rate;
   brought: Rate;
   lead: Rate;
@@ -80,7 +78,6 @@ export interface SetResult {
   result: 'W' | 'L' | 'T';
 }
 
-/** Agrupa las partidas al mejor de 3 por serie; cada partida suelta es su propio set. */
 export function groupSets(games: Game[]): SetResult[] {
   const map = new Map<string, Game[]>();
   for (const g of games) {
@@ -97,7 +94,6 @@ export function groupSets(games: Game[]): SetResult[] {
     .sort((a, b) => a.games[0].time - b.games[0].time);
 }
 
-/** Usos de cada movimiento por cada uno de tus Pokémon. */
 export function moveUsage(games: Game[]): Record<string, Record<string, number>> {
   const out: Record<string, Record<string, number>> = {};
   for (const g of games) {

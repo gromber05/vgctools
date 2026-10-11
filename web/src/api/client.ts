@@ -1,4 +1,3 @@
-/** URL base de la API. En desarrollo Vite redirige /api al backend (ver vite.config.ts). */
 const API_URL = import.meta.env.VITE_API_URL ?? '/api';
 
 export class ApiError extends Error {
@@ -16,7 +15,6 @@ interface RequestOptions {
   token?: string | null;
 }
 
-/** Mensaje legible a partir del `detail` de FastAPI (texto o lista de errores de validación). */
 function errorMessage(detail: unknown, status: number): string {
   if (typeof detail === 'string') return detail;
   if (Array.isArray(detail) && detail.length) return 'Revisa los datos: ' + detail.map((d) => d?.msg ?? '').join('; ');
