@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-11",
+  "generated": "2026-10-12",
   "species": {
     "venusaur": {
       "name": "Venusaur",
@@ -18838,7 +18838,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "100% chance to lower the target's Sp. Def by 2."
     },
     "amnesia": {
       "name": "Amnesia",
@@ -18848,7 +18849,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 20,
+      "desc": "Raises the user's Sp. Def by 2."
     },
     "bodyslam": {
       "name": "Body Slam",
@@ -18858,7 +18860,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "30% chance to paralyze the target."
     },
     "bulldoze": {
       "name": "Bulldoze",
@@ -18868,7 +18871,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "allAdjacent",
-      "desc": ""
+      "pp": 20,
+      "desc": "100% chance lower adjacent Pkmn Speed by 1."
     },
     "bulletseed": {
       "name": "Bullet Seed",
@@ -18878,7 +18882,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Hits 2-5 times in one turn."
     },
     "charm": {
       "name": "Charm",
@@ -18888,7 +18893,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Lowers the target's Attack by 2."
     },
     "curse": {
       "name": "Curse",
@@ -18898,7 +18904,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Curses if Ghost, else -1 Spe, +1 Atk, +1 Def."
     },
     "doubleedge": {
       "name": "Double-Edge",
@@ -18908,7 +18915,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "Has 33% recoil."
     },
     "earthpower": {
       "name": "Earth Power",
@@ -18918,7 +18926,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "10% chance to lower the target's Sp. Def by 1."
     },
     "earthquake": {
       "name": "Earthquake",
@@ -18928,7 +18937,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "allAdjacent",
-      "desc": ""
+      "pp": 12,
+      "desc": "Hits adjacent Pokemon. Double damage on Dig."
     },
     "endure": {
       "name": "Endure",
@@ -18938,7 +18948,8 @@
       "accuracy": 0,
       "priority": 4,
       "target": "self",
-      "desc": ""
+      "pp": 12,
+      "desc": "User survives attacks this turn with at least 1 HP."
     },
     "energyball": {
       "name": "Energy Ball",
@@ -18948,7 +18959,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "10% chance to lower the target's Sp. Def by 1."
     },
     "facade": {
       "name": "Facade",
@@ -18958,7 +18970,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Power doubles if user is burn/poison/paralyzed."
     },
     "frenzyplant": {
       "name": "Frenzy Plant",
@@ -18968,7 +18981,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "User cannot move next turn."
     },
     "gigadrain": {
       "name": "Giga Drain",
@@ -18978,7 +18992,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "User recovers 50% of the damage dealt."
     },
     "gigaimpact": {
       "name": "Giga Impact",
@@ -18988,7 +19003,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "User cannot move next turn."
     },
     "grassknot": {
       "name": "Grass Knot",
@@ -18998,7 +19014,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "More power the heavier the target."
     },
     "grassyglide": {
       "name": "Grassy Glide",
@@ -19008,7 +19025,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "User on Grassy Terrain: +1 priority."
     },
     "grassyterrain": {
       "name": "Grassy Terrain",
@@ -19018,7 +19036,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "all",
-      "desc": ""
+      "pp": 12,
+      "desc": "5 turns. Grounded: +Grass power, +1/16 max HP."
     },
     "growth": {
       "name": "Growth",
@@ -19028,7 +19047,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 20,
+      "desc": "Raises user's Attack and Sp. Atk by 1; 2 in Sun."
     },
     "helpinghand": {
       "name": "Helping Hand",
@@ -19038,7 +19058,8 @@
       "accuracy": 0,
       "priority": 5,
       "target": "adjacentAlly",
-      "desc": ""
+      "pp": 20,
+      "desc": "One adjacent ally's move power is 1.5× this turn."
     },
     "hyperbeam": {
       "name": "Hyper Beam",
@@ -19048,7 +19069,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "User cannot move next turn."
     },
     "ingrain": {
       "name": "Ingrain",
@@ -19058,7 +19080,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 20,
+      "desc": "Traps/grounds user; heals 1/16 max HP per turn."
     },
     "knockoff": {
       "name": "Knock Off",
@@ -19068,7 +19091,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "1.5× damage if foe holds an item. Removes item."
     },
     "leafstorm": {
       "name": "Leaf Storm",
@@ -19078,7 +19102,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "Lowers the user's Sp. Atk by 2."
     },
     "leechseed": {
       "name": "Leech Seed",
@@ -19088,7 +19113,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "1/8 of target's HP is restored to user every turn."
     },
     "lightscreen": {
       "name": "Light Screen",
@@ -19098,7 +19124,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "allySide",
-      "desc": ""
+      "pp": 20,
+      "desc": "For 5 turns, special damage to allies is halved."
     },
     "outrage": {
       "name": "Outrage",
@@ -19108,7 +19135,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "randomNormal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Lasts 2-3 turns. Confuses the user afterwards."
     },
     "petalblizzard": {
       "name": "Petal Blizzard",
@@ -19118,7 +19146,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "allAdjacent",
-      "desc": ""
+      "pp": 16,
+      "desc": "No additional effect. Hits adjacent Pokemon."
     },
     "petaldance": {
       "name": "Petal Dance",
@@ -19128,7 +19157,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "randomNormal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Lasts 2-3 turns. Confuses the user afterwards."
     },
     "poisonjab": {
       "name": "Poison Jab",
@@ -19138,7 +19168,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "30% chance to poison the target."
     },
     "poisonpowder": {
       "name": "Poison Powder",
@@ -19148,7 +19179,8 @@
       "accuracy": 75,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Poisons the target."
     },
     "powerwhip": {
       "name": "Power Whip",
@@ -19158,7 +19190,8 @@
       "accuracy": 85,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "No additional effect."
     },
     "protect": {
       "name": "Protect",
@@ -19168,7 +19201,8 @@
       "accuracy": 0,
       "priority": 4,
       "target": "self",
-      "desc": ""
+      "pp": 8,
+      "desc": "Prevents moves from affecting the user this turn."
     },
     "rest": {
       "name": "Rest",
@@ -19178,7 +19212,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 8,
+      "desc": "User sleeps 2 turns and restores HP and status."
     },
     "roar": {
       "name": "Roar",
@@ -19188,7 +19223,8 @@
       "accuracy": 0,
       "priority": -6,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Forces the target to switch to a random ally."
     },
     "round": {
       "name": "Round",
@@ -19198,7 +19234,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "Power doubles if others used Round this turn."
     },
     "scaryface": {
       "name": "Scary Face",
@@ -19208,7 +19245,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Lowers the target's Speed by 2."
     },
     "seedbomb": {
       "name": "Seed Bomb",
@@ -19218,7 +19256,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "No additional effect."
     },
     "sleeppowder": {
       "name": "Sleep Powder",
@@ -19228,7 +19267,8 @@
       "accuracy": 75,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "Causes the target to fall asleep."
     },
     "sleeptalk": {
       "name": "Sleep Talk",
@@ -19238,7 +19278,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 12,
+      "desc": "User must be asleep. Uses another known move."
     },
     "sludgebomb": {
       "name": "Sludge Bomb",
@@ -19248,7 +19289,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "30% chance to poison the target."
     },
     "sludgewave": {
       "name": "Sludge Wave",
@@ -19258,7 +19300,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "allAdjacent",
-      "desc": ""
+      "pp": 12,
+      "desc": "10% chance to poison adjacent Pokemon."
     },
     "snore": {
       "name": "Snore",
@@ -19268,7 +19311,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "User must be asleep. 30% chance to flinch target."
     },
     "solarbeam": {
       "name": "Solar Beam",
@@ -19278,7 +19322,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Charges turn 1. Hits turn 2. No charge in sunlight."
     },
     "stompingtantrum": {
       "name": "Stomping Tantrum",
@@ -19288,7 +19333,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Power doubles if the user's last move failed."
     },
     "substitute": {
       "name": "Substitute",
@@ -19298,7 +19344,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 12,
+      "desc": "User takes 1/4 its max HP to put in a substitute."
     },
     "sunnyday": {
       "name": "Sunny Day",
@@ -19308,7 +19355,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "all",
-      "desc": ""
+      "pp": 8,
+      "desc": "For 5 turns, intense sunlight powers Fire moves."
     },
     "sweetscent": {
       "name": "Sweet Scent",
@@ -19318,7 +19366,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "allAdjacentFoes",
-      "desc": ""
+      "pp": 20,
+      "desc": "Lowers the foe(s) evasiveness by 2."
     },
     "swordsdance": {
       "name": "Swords Dance",
@@ -19328,7 +19377,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 20,
+      "desc": "Raises the user's Attack by 2."
     },
     "synthesis": {
       "name": "Synthesis",
@@ -19338,7 +19388,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 8,
+      "desc": "Heals the user by a weather-dependent amount."
     },
     "terrainpulse": {
       "name": "Terrain Pulse",
@@ -19348,7 +19399,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "User on terrain: power doubles, type varies."
     },
     "toxic": {
       "name": "Toxic",
@@ -19358,7 +19410,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Badly poisons the target. Poison types can't miss."
     },
     "trailblaze": {
       "name": "Trailblaze",
@@ -19368,7 +19421,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "100% chance to raise the user's Speed by 1."
     },
     "venoshock": {
       "name": "Venoshock",
@@ -19378,7 +19432,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Power doubles if the target is poisoned."
     },
     "weatherball": {
       "name": "Weather Ball",
@@ -19388,7 +19443,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Power doubles and type varies in each weather."
     },
     "worryseed": {
       "name": "Worry Seed",
@@ -19398,7 +19454,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "The target's Ability becomes Insomnia."
     },
     "acrobatics": {
       "name": "Acrobatics",
@@ -19408,7 +19465,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "any",
-      "desc": ""
+      "pp": 16,
+      "desc": "Power doubles if the user has no held item."
     },
     "aerialace": {
       "name": "Aerial Ace",
@@ -19418,7 +19476,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "any",
-      "desc": ""
+      "pp": 20,
+      "desc": "This move does not check accuracy."
     },
     "aircutter": {
       "name": "Air Cutter",
@@ -19428,7 +19487,8 @@
       "accuracy": 95,
       "priority": 0,
       "target": "allAdjacentFoes",
-      "desc": ""
+      "pp": 20,
+      "desc": "High critical hit ratio. Hits adjacent foes."
     },
     "airslash": {
       "name": "Air Slash",
@@ -19438,7 +19498,8 @@
       "accuracy": 95,
       "priority": 0,
       "target": "any",
-      "desc": ""
+      "pp": 16,
+      "desc": "30% chance to make the target flinch."
     },
     "ancientpower": {
       "name": "Ancient Power",
@@ -19448,7 +19509,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "10% chance to raise all stats by 1 (not acc/eva)."
     },
     "beatup": {
       "name": "Beat Up",
@@ -19458,7 +19520,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "All healthy allies aid in damaging the target."
     },
     "bellydrum": {
       "name": "Belly Drum",
@@ -19468,7 +19531,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 12,
+      "desc": "User loses 50% max HP. Maximizes Attack."
     },
     "bite": {
       "name": "Bite",
@@ -19478,7 +19542,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "30% chance to make the target flinch."
     },
     "blastburn": {
       "name": "Blast Burn",
@@ -19488,7 +19553,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "User cannot move next turn."
     },
     "breakingswipe": {
       "name": "Breaking Swipe",
@@ -19498,7 +19564,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "allAdjacentFoes",
-      "desc": ""
+      "pp": 16,
+      "desc": "100% chance to lower the foe(s) Attack by 1."
     },
     "brickbreak": {
       "name": "Brick Break",
@@ -19508,7 +19575,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "Destroys screens, unless the target is immune."
     },
     "brutalswing": {
       "name": "Brutal Swing",
@@ -19518,7 +19586,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "allAdjacent",
-      "desc": ""
+      "pp": 20,
+      "desc": "No additional effect. Hits adjacent Pokemon."
     },
     "counter": {
       "name": "Counter",
@@ -19528,7 +19597,8 @@
       "accuracy": 100,
       "priority": -5,
       "target": "scripted",
-      "desc": ""
+      "pp": 20,
+      "desc": "If hit by physical attack, returns double damage."
     },
     "crunch": {
       "name": "Crunch",
@@ -19538,7 +19608,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "20% chance to lower the target's Defense by 1."
     },
     "dig": {
       "name": "Dig",
@@ -19548,7 +19619,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Digs underground turn 1, strikes turn 2."
     },
     "dragoncheer": {
       "name": "Dragon Cheer",
@@ -19558,7 +19630,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "adjacentAlly",
-      "desc": ""
+      "pp": 16,
+      "desc": "Ally: Crit ratio +1, or +2 if ally is Dragon type."
     },
     "dragonclaw": {
       "name": "Dragon Claw",
@@ -19568,7 +19641,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "No additional effect."
     },
     "dragondance": {
       "name": "Dragon Dance",
@@ -19578,7 +19652,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 20,
+      "desc": "Raises the user's Attack and Speed by 1."
     },
     "dragonpulse": {
       "name": "Dragon Pulse",
@@ -19588,7 +19663,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "any",
-      "desc": ""
+      "pp": 12,
+      "desc": "No additional effect."
     },
     "dragonrush": {
       "name": "Dragon Rush",
@@ -19598,7 +19674,8 @@
       "accuracy": 75,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "20% chance to make the target flinch."
     },
     "dragontail": {
       "name": "Dragon Tail",
@@ -19608,7 +19685,8 @@
       "accuracy": 90,
       "priority": -6,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Forces the target to switch to a random ally."
     },
     "fireblast": {
       "name": "Fire Blast",
@@ -19618,7 +19696,8 @@
       "accuracy": 85,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "10% chance to burn the target."
     },
     "firefang": {
       "name": "Fire Fang",
@@ -19628,7 +19707,8 @@
       "accuracy": 95,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "10% chance to burn. 10% chance to flinch."
     },
     "firepunch": {
       "name": "Fire Punch",
@@ -19638,7 +19718,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "10% chance to burn the target."
     },
     "firespin": {
       "name": "Fire Spin",
@@ -19648,7 +19729,8 @@
       "accuracy": 85,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "Traps and damages the target for 4-5 turns."
     },
     "flamecharge": {
       "name": "Flame Charge",
@@ -19658,7 +19740,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "100% chance to raise the user's Speed by 1."
     },
     "flamethrower": {
       "name": "Flamethrower",
@@ -19668,7 +19751,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "10% chance to burn the target."
     },
     "flareblitz": {
       "name": "Flare Blitz",
@@ -19678,7 +19762,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "Has 33% recoil. 10% chance to burn. Thaws user."
     },
     "fling": {
       "name": "Fling",
@@ -19688,7 +19773,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Flings the user's item at the target. Power varies."
     },
     "fly": {
       "name": "Fly",
@@ -19698,7 +19784,8 @@
       "accuracy": 95,
       "priority": 0,
       "target": "any",
-      "desc": ""
+      "pp": 16,
+      "desc": "Flies up on first turn, then strikes the next turn."
     },
     "focusblast": {
       "name": "Focus Blast",
@@ -19708,7 +19795,8 @@
       "accuracy": 70,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "10% chance to lower the target's Sp. Def by 1."
     },
     "focuspunch": {
       "name": "Focus Punch",
@@ -19718,7 +19806,8 @@
       "accuracy": 100,
       "priority": -3,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Fails if the user takes damage before it hits."
     },
     "heatcrash": {
       "name": "Heat Crash",
@@ -19728,7 +19817,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "More power the heavier the user than the target."
     },
     "heatwave": {
       "name": "Heat Wave",
@@ -19738,7 +19828,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "allAdjacentFoes",
-      "desc": ""
+      "pp": 12,
+      "desc": "10% chance to burn the foe(s)."
     },
     "hurricane": {
       "name": "Hurricane",
@@ -19748,7 +19839,8 @@
       "accuracy": 70,
       "priority": 0,
       "target": "any",
-      "desc": ""
+      "pp": 12,
+      "desc": "30% chance to confuse target. Can't miss in rain."
     },
     "inferno": {
       "name": "Inferno",
@@ -19758,7 +19850,8 @@
       "accuracy": 50,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "100% chance to burn the target."
     },
     "irontail": {
       "name": "Iron Tail",
@@ -19768,7 +19861,8 @@
       "accuracy": 75,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "30% chance to lower the target's Defense by 1."
     },
     "megakick": {
       "name": "Mega Kick",
@@ -19778,7 +19872,8 @@
       "accuracy": 75,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "No additional effect."
     },
     "overheat": {
       "name": "Overheat",
@@ -19788,7 +19883,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "Lowers the user's Sp. Atk by 2."
     },
     "rockslide": {
       "name": "Rock Slide",
@@ -19798,7 +19894,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "allAdjacentFoes",
-      "desc": ""
+      "pp": 12,
+      "desc": "30% chance to make the foe(s) flinch."
     },
     "rocktomb": {
       "name": "Rock Tomb",
@@ -19808,7 +19905,8 @@
       "accuracy": 95,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "100% chance to lower the target's Speed by 1."
     },
     "roost": {
       "name": "Roost",
@@ -19818,7 +19916,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 8,
+      "desc": "Heals 50% HP. Flying-type removed 'til turn ends."
     },
     "sandstorm": {
       "name": "Sandstorm",
@@ -19828,7 +19927,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "all",
-      "desc": ""
+      "pp": 8,
+      "desc": "For 5 turns, a sandstorm rages. Rock: 1.5× SpD."
     },
     "scaleshot": {
       "name": "Scale Shot",
@@ -19838,7 +19938,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Hits 2-5 times. User: -1 Def, +1 Spe after last hit."
     },
     "scorchingsands": {
       "name": "Scorching Sands",
@@ -19848,7 +19949,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "30% chance to burn the target. Thaws target."
     },
     "shadowclaw": {
       "name": "Shadow Claw",
@@ -19858,7 +19960,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "High critical hit ratio."
     },
     "slash": {
       "name": "Slash",
@@ -19868,7 +19971,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "High critical hit ratio."
     },
     "steelwing": {
       "name": "Steel Wing",
@@ -19878,7 +19982,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "10% chance to raise the user's Defense by 1."
     },
     "temperflare": {
       "name": "Temper Flare",
@@ -19888,7 +19993,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Power doubles if the user's last move failed."
     },
     "thunderpunch": {
       "name": "Thunder Punch",
@@ -19898,7 +20004,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "10% chance to paralyze the target."
     },
     "willowisp": {
       "name": "Will-O-Wisp",
@@ -19908,7 +20015,8 @@
       "accuracy": 85,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "Burns the target."
     },
     "aquajet": {
       "name": "Aqua Jet",
@@ -19918,7 +20026,8 @@
       "accuracy": 100,
       "priority": 1,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Usually goes first."
     },
     "aquaring": {
       "name": "Aqua Ring",
@@ -19928,7 +20037,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 20,
+      "desc": "User recovers 1/16 max HP per turn."
     },
     "aquatail": {
       "name": "Aqua Tail",
@@ -19938,7 +20048,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "No additional effect."
     },
     "aurasphere": {
       "name": "Aura Sphere",
@@ -19948,7 +20059,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "any",
-      "desc": ""
+      "pp": 20,
+      "desc": "This move does not check accuracy."
     },
     "avalanche": {
       "name": "Avalanche",
@@ -19958,7 +20070,8 @@
       "accuracy": 100,
       "priority": -4,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Power doubles if user is damaged by the target."
     },
     "blizzard": {
       "name": "Blizzard",
@@ -19968,7 +20081,8 @@
       "accuracy": 70,
       "priority": 0,
       "target": "allAdjacentFoes",
-      "desc": ""
+      "pp": 8,
+      "desc": "10% chance to freeze foe(s). Can't miss in Snow."
     },
     "bodypress": {
       "name": "Body Press",
@@ -19978,7 +20092,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Uses user's Def stat as Atk in damage calculation."
     },
     "chillingwater": {
       "name": "Chilling Water",
@@ -19988,7 +20103,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "100% chance to lower the target's Attack by 1."
     },
     "darkpulse": {
       "name": "Dark Pulse",
@@ -19998,7 +20114,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "any",
-      "desc": ""
+      "pp": 16,
+      "desc": "20% chance to make the target flinch."
     },
     "dive": {
       "name": "Dive",
@@ -20008,7 +20125,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Dives underwater turn 1, strikes turn 2."
     },
     "fakeout": {
       "name": "Fake Out",
@@ -20018,7 +20136,8 @@
       "accuracy": 100,
       "priority": 3,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Hits first. First turn out only. 100% flinch chance."
     },
     "flail": {
       "name": "Flail",
@@ -20028,7 +20147,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "More power the less HP the user has left."
     },
     "flashcannon": {
       "name": "Flash Cannon",
@@ -20038,7 +20158,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "10% chance to lower the target's Sp. Def by 1."
     },
     "flipturn": {
       "name": "Flip Turn",
@@ -20048,7 +20169,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "User switches out after damaging the target."
     },
     "gyroball": {
       "name": "Gyro Ball",
@@ -20058,9 +20180,20 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "More power the slower the user than the target."
     },
-    "haze": { "name": "Haze", "type": "Ice", "category": "Status", "power": 0, "accuracy": 0, "priority": 0, "target": "all", "desc": "" },
+    "haze": {
+      "name": "Haze",
+      "type": "Ice",
+      "category": "Status",
+      "power": 0,
+      "accuracy": 0,
+      "priority": 0,
+      "target": "all",
+      "pp": 20,
+      "desc": "Eliminates all stat changes."
+    },
     "hydrocannon": {
       "name": "Hydro Cannon",
       "type": "Water",
@@ -20069,7 +20202,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "User cannot move next turn."
     },
     "hydropump": {
       "name": "Hydro Pump",
@@ -20079,7 +20213,8 @@
       "accuracy": 80,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "No additional effect."
     },
     "icebeam": {
       "name": "Ice Beam",
@@ -20089,7 +20224,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "10% chance to freeze the target."
     },
     "icepunch": {
       "name": "Ice Punch",
@@ -20099,7 +20235,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "10% chance to freeze the target."
     },
     "icespinner": {
       "name": "Ice Spinner",
@@ -20109,7 +20246,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "Ends the effects of terrain."
     },
     "icywind": {
       "name": "Icy Wind",
@@ -20119,7 +20257,8 @@
       "accuracy": 95,
       "priority": 0,
       "target": "allAdjacentFoes",
-      "desc": ""
+      "pp": 16,
+      "desc": "100% chance to lower the foe(s) Speed by 1."
     },
     "irondefense": {
       "name": "Iron Defense",
@@ -20129,7 +20268,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 16,
+      "desc": "Raises the user's Defense by 2."
     },
     "ironhead": {
       "name": "Iron Head",
@@ -20139,7 +20279,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "30% chance to make the target flinch."
     },
     "lifedew": {
       "name": "Life Dew",
@@ -20149,7 +20290,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "allies",
-      "desc": ""
+      "pp": 12,
+      "desc": "Heals the user and its allies by 1/4 their max HP."
     },
     "liquidation": {
       "name": "Liquidation",
@@ -20159,7 +20301,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "20% chance to lower the target's Defense by 1."
     },
     "mirrorcoat": {
       "name": "Mirror Coat",
@@ -20169,7 +20312,8 @@
       "accuracy": 100,
       "priority": -5,
       "target": "scripted",
-      "desc": ""
+      "pp": 20,
+      "desc": "If hit by special attack, returns double damage."
     },
     "muddywater": {
       "name": "Muddy Water",
@@ -20179,7 +20323,8 @@
       "accuracy": 85,
       "priority": 0,
       "target": "allAdjacentFoes",
-      "desc": ""
+      "pp": 12,
+      "desc": "30% chance to lower the foe(s) accuracy by 1."
     },
     "mudshot": {
       "name": "Mud Shot",
@@ -20189,7 +20334,8 @@
       "accuracy": 95,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "100% chance to lower the target's Speed by 1."
     },
     "raindance": {
       "name": "Rain Dance",
@@ -20199,7 +20345,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "all",
-      "desc": ""
+      "pp": 8,
+      "desc": "For 5 turns, heavy rain powers Water moves."
     },
     "rapidspin": {
       "name": "Rapid Spin",
@@ -20209,7 +20356,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Free user from hazards/bind/Leech Seed; +1 Spe."
     },
     "shellsmash": {
       "name": "Shell Smash",
@@ -20219,7 +20367,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 16,
+      "desc": "Lowers Def, SpD by 1; raises Atk, SpA, Spe by 2."
     },
     "smackdown": {
       "name": "Smack Down",
@@ -20229,7 +20378,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "Removes the target's Ground immunity."
     },
     "surf": {
       "name": "Surf",
@@ -20239,7 +20389,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "allAdjacent",
-      "desc": ""
+      "pp": 16,
+      "desc": "Hits adjacent Pokemon. Double damage on Dive."
     },
     "waterfall": {
       "name": "Waterfall",
@@ -20249,7 +20400,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "20% chance to make the target flinch."
     },
     "waterpulse": {
       "name": "Water Pulse",
@@ -20259,7 +20411,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "any",
-      "desc": ""
+      "pp": 20,
+      "desc": "20% chance to confuse the target."
     },
     "waterspout": {
       "name": "Water Spout",
@@ -20269,7 +20422,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "allAdjacentFoes",
-      "desc": ""
+      "pp": 8,
+      "desc": "Less power as user's HP decreases. Hits foe(s)."
     },
     "wavecrash": {
       "name": "Wave Crash",
@@ -20279,7 +20433,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Has 33% recoil."
     },
     "whirlpool": {
       "name": "Whirlpool",
@@ -20289,7 +20444,8 @@
       "accuracy": 85,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "Traps and damages the target for 4-5 turns."
     },
     "yawn": {
       "name": "Yawn",
@@ -20299,7 +20455,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Puts the target to sleep after 1 turn."
     },
     "zenheadbutt": {
       "name": "Zen Headbutt",
@@ -20309,7 +20466,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "20% chance to make the target flinch."
     },
     "agility": {
       "name": "Agility",
@@ -20319,7 +20477,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 20,
+      "desc": "Raises the user's Speed by 2."
     },
     "assurance": {
       "name": "Assurance",
@@ -20329,7 +20488,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Power doubles if target was damaged this turn."
     },
     "attract": {
       "name": "Attract",
@@ -20339,7 +20499,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "A target of the opposite gender gets infatuated."
     },
     "batonpass": {
       "name": "Baton Pass",
@@ -20349,7 +20510,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 20,
+      "desc": "User switches, passing stat changes and more."
     },
     "bugbite": {
       "name": "Bug Bite",
@@ -20359,7 +20521,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "User steals and eats the target's Berry."
     },
     "bugbuzz": {
       "name": "Bug Buzz",
@@ -20369,7 +20532,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "10% chance to lower the target's Sp. Def by 1."
     },
     "crosspoison": {
       "name": "Cross Poison",
@@ -20379,7 +20543,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "High critical hit ratio. 10% chance to poison."
     },
     "doublehit": {
       "name": "Double Hit",
@@ -20389,7 +20554,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Hits 2 times in one turn."
     },
     "drillrun": {
       "name": "Drill Run",
@@ -20399,7 +20565,8 @@
       "accuracy": 95,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "High critical hit ratio."
     },
     "dualwingbeat": {
       "name": "Dual Wingbeat",
@@ -20409,7 +20576,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Hits 2 times in one turn."
     },
     "electroweb": {
       "name": "Electroweb",
@@ -20419,7 +20587,8 @@
       "accuracy": 95,
       "priority": 0,
       "target": "allAdjacentFoes",
-      "desc": ""
+      "pp": 16,
+      "desc": "100% chance to lower the foe(s) Speed by 1."
     },
     "endeavor": {
       "name": "Endeavor",
@@ -20429,7 +20598,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "Lowers the target's HP to the user's HP."
     },
     "fellstinger": {
       "name": "Fell Stinger",
@@ -20439,7 +20609,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Raises user's Attack by 3 if this KOes the target."
     },
     "focusenergy": {
       "name": "Focus Energy",
@@ -20449,7 +20620,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 20,
+      "desc": "Raises the user's critical hit ratio by 2."
     },
     "lunge": {
       "name": "Lunge",
@@ -20459,7 +20631,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "100% chance to lower the target's Attack by 1."
     },
     "payback": {
       "name": "Payback",
@@ -20469,7 +20642,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Power doubles if the user moves after the target."
     },
     "pinmissile": {
       "name": "Pin Missile",
@@ -20479,7 +20653,8 @@
       "accuracy": 95,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Hits 2-5 times in one turn."
     },
     "pollenpuff": {
       "name": "Pollen Puff",
@@ -20489,7 +20664,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "If the target is an ally, heals 50% of its max HP."
     },
     "pounce": {
       "name": "Pounce",
@@ -20499,7 +20675,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "100% chance to lower the target's Speed by 1."
     },
     "screech": {
       "name": "Screech",
@@ -20509,7 +20686,8 @@
       "accuracy": 85,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Lowers the target's Defense by 2."
     },
     "skittersmack": {
       "name": "Skitter Smack",
@@ -20519,7 +20697,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "100% chance to lower target's Sp. Atk by 1."
     },
     "stringshot": {
       "name": "String Shot",
@@ -20529,7 +20708,8 @@
       "accuracy": 95,
       "priority": 0,
       "target": "allAdjacentFoes",
-      "desc": ""
+      "pp": 20,
+      "desc": "Lowers the foe(s) Speed by 2."
     },
     "thief": {
       "name": "Thief",
@@ -20539,7 +20719,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "If the user has no item, it steals the target's."
     },
     "throatchop": {
       "name": "Throat Chop",
@@ -20549,7 +20730,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "For 2 turns, the target cannot use sound moves."
     },
     "toxicspikes": {
       "name": "Toxic Spikes",
@@ -20559,7 +20741,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "foeSide",
-      "desc": ""
+      "pp": 20,
+      "desc": "Poisons grounded foes on switch-in. Max 2 layers."
     },
     "uturn": {
       "name": "U-turn",
@@ -20569,7 +20752,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "User switches out after damaging the target."
     },
     "xscissor": {
       "name": "X-Scissor",
@@ -20579,7 +20763,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "No additional effect."
     },
     "bravebird": {
       "name": "Brave Bird",
@@ -20589,7 +20774,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "any",
-      "desc": ""
+      "pp": 16,
+      "desc": "Has 33% recoil."
     },
     "featherdance": {
       "name": "Feather Dance",
@@ -20599,7 +20785,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "Lowers the target's Attack by 2."
     },
     "quickattack": {
       "name": "Quick Attack",
@@ -20609,7 +20796,8 @@
       "accuracy": 100,
       "priority": 1,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Usually goes first."
     },
     "skyattack": {
       "name": "Sky Attack",
@@ -20619,7 +20807,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "any",
-      "desc": ""
+      "pp": 8,
+      "desc": "Charges, then hits turn 2. 30% flinch. High crit."
     },
     "tailwind": {
       "name": "Tailwind",
@@ -20629,7 +20818,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "allySide",
-      "desc": ""
+      "pp": 16,
+      "desc": "For 4 turns, allies' Speed is doubled."
     },
     "uproar": {
       "name": "Uproar",
@@ -20639,7 +20829,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "randomNormal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Lasts 3 turns. Active Pokemon cannot fall asleep."
     },
     "whirlwind": {
       "name": "Whirlwind",
@@ -20649,7 +20840,8 @@
       "accuracy": 0,
       "priority": -6,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Forces the target to switch to a random ally."
     },
     "belch": {
       "name": "Belch",
@@ -20659,7 +20851,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Cannot be selected until the user eats a Berry."
     },
     "coil": {
       "name": "Coil",
@@ -20669,7 +20862,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 20,
+      "desc": "Raises user's Attack, Defense, accuracy by 1."
     },
     "gastroacid": {
       "name": "Gastro Acid",
@@ -20679,7 +20873,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Nullifies the target's Ability."
     },
     "glare": {
       "name": "Glare",
@@ -20689,7 +20884,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Paralyzes the target."
     },
     "gunkshot": {
       "name": "Gunk Shot",
@@ -20699,7 +20895,8 @@
       "accuracy": 80,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "30% chance to poison the target."
     },
     "icefang": {
       "name": "Ice Fang",
@@ -20709,7 +20906,8 @@
       "accuracy": 95,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "10% chance to freeze. 10% chance to flinch."
     },
     "lashout": {
       "name": "Lash Out",
@@ -20719,7 +20917,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "2× power if the user had a stat lowered this turn."
     },
     "leechlife": {
       "name": "Leech Life",
@@ -20729,7 +20928,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "User recovers 50% of the damage dealt."
     },
     "mudslap": {
       "name": "Mud-Slap",
@@ -20739,7 +20939,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "100% chance to lower the target's accuracy by 1."
     },
     "painsplit": {
       "name": "Pain Split",
@@ -20749,7 +20950,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Shares HP of user and target equally."
     },
     "poisonfang": {
       "name": "Poison Fang",
@@ -20759,7 +20961,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "50% chance to badly poison the target."
     },
     "psychicfangs": {
       "name": "Psychic Fangs",
@@ -20769,7 +20972,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Destroys screens, unless the target is immune."
     },
     "snarl": {
       "name": "Snarl",
@@ -20779,7 +20983,8 @@
       "accuracy": 95,
       "priority": 0,
       "target": "allAdjacentFoes",
-      "desc": ""
+      "pp": 16,
+      "desc": "100% chance to lower the foe(s) Sp. Atk by 1."
     },
     "spite": {
       "name": "Spite",
@@ -20789,7 +20994,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Lowers the PP of the target's last move by 4."
     },
     "spitup": {
       "name": "Spit Up",
@@ -20799,7 +21005,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "More power with more uses of Stockpile."
     },
     "stockpile": {
       "name": "Stockpile",
@@ -20809,7 +21016,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 20,
+      "desc": "Raises user's Defense, Sp. Def by 1. Max 3 uses."
     },
     "suckerpunch": {
       "name": "Sucker Punch",
@@ -20819,7 +21027,8 @@
       "accuracy": 100,
       "priority": 1,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "Usually goes first. Fails if target is not attacking."
     },
     "swallow": {
       "name": "Swallow",
@@ -20829,7 +21038,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 12,
+      "desc": "Heals the user based on uses of Stockpile."
     },
     "switcheroo": {
       "name": "Switcheroo",
@@ -20839,7 +21049,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "User switches its held item with the target's."
     },
     "thunderfang": {
       "name": "Thunder Fang",
@@ -20849,7 +21060,8 @@
       "accuracy": 95,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "10% chance to paralyze. 10% chance to flinch."
     },
     "wrap": {
       "name": "Wrap",
@@ -20859,7 +21071,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Traps and damages the target for 4-5 turns."
     },
     "alluringvoice": {
       "name": "Alluring Voice",
@@ -20869,7 +21082,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "100% confuse target that had a stat rise this turn."
     },
     "charge": {
       "name": "Charge",
@@ -20879,7 +21093,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 20,
+      "desc": "+1 SpD, user's next Electric move 2× power."
     },
     "chargebeam": {
       "name": "Charge Beam",
@@ -20889,7 +21104,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "70% chance to raise the user's Sp. Atk by 1."
     },
     "discharge": {
       "name": "Discharge",
@@ -20899,7 +21115,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "allAdjacent",
-      "desc": ""
+      "pp": 16,
+      "desc": "30% chance to paralyze adjacent Pokemon."
     },
     "doubleteam": {
       "name": "Double Team",
@@ -20909,7 +21126,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 16,
+      "desc": "Raises the user's evasiveness by 1."
     },
     "drainingkiss": {
       "name": "Draining Kiss",
@@ -20919,7 +21137,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "User recovers 75% of the damage dealt."
     },
     "eerieimpulse": {
       "name": "Eerie Impulse",
@@ -20929,7 +21148,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "Lowers the target's Sp. Atk by 2."
     },
     "electricterrain": {
       "name": "Electric Terrain",
@@ -20939,7 +21159,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "all",
-      "desc": ""
+      "pp": 12,
+      "desc": "5 turns. Grounded: +Electric power, can't sleep."
     },
     "electroball": {
       "name": "Electro Ball",
@@ -20949,7 +21170,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "More power the faster the user is than the target."
     },
     "encore": {
       "name": "Encore",
@@ -20959,7 +21181,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "Target repeats its last move for its next 3 turns."
     },
     "faketears": {
       "name": "Fake Tears",
@@ -20969,7 +21192,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Lowers the target's Sp. Def by 2."
     },
     "feint": {
       "name": "Feint",
@@ -20979,7 +21203,8 @@
       "accuracy": 100,
       "priority": 2,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Nullifies Detect, Protect, and Quick/Wide Guard."
     },
     "nastyplot": {
       "name": "Nasty Plot",
@@ -20989,7 +21214,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 20,
+      "desc": "Raises the user's Sp. Atk by 2."
     },
     "nuzzle": {
       "name": "Nuzzle",
@@ -20999,7 +21225,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "100% chance to paralyze the target."
     },
     "playrough": {
       "name": "Play Rough",
@@ -21009,7 +21236,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "10% chance to lower the target's Attack by 1."
     },
     "reflect": {
       "name": "Reflect",
@@ -21019,7 +21247,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "allySide",
-      "desc": ""
+      "pp": 20,
+      "desc": "For 5 turns, physical damage to allies is halved."
     },
     "reversal": {
       "name": "Reversal",
@@ -21029,7 +21258,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "More power the less HP the user has left."
     },
     "risingvoltage": {
       "name": "Rising Voltage",
@@ -21039,7 +21269,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "2× power if target is grounded in Electric Terrain."
     },
     "sweetkiss": {
       "name": "Sweet Kiss",
@@ -21049,7 +21280,8 @@
       "accuracy": 75,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Causes the target to become confused."
     },
     "thunder": {
       "name": "Thunder",
@@ -21059,7 +21291,8 @@
       "accuracy": 70,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "30% chance to paralyze. Can't miss in rain."
     },
     "thunderbolt": {
       "name": "Thunderbolt",
@@ -21069,7 +21302,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "10% chance to paralyze the target."
     },
     "thunderwave": {
       "name": "Thunder Wave",
@@ -21079,7 +21313,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Paralyzes the target."
     },
     "tickle": {
       "name": "Tickle",
@@ -21089,7 +21324,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Lowers the target's Attack and Defense by 1."
     },
     "upperhand": {
       "name": "Upper Hand",
@@ -21099,7 +21335,8 @@
       "accuracy": 100,
       "priority": 3,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "100% flinch. Fails unless target using priority attack."
     },
     "voltswitch": {
       "name": "Volt Switch",
@@ -21109,7 +21346,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "User switches out after damaging the target."
     },
     "volttackle": {
       "name": "Volt Tackle",
@@ -21119,7 +21357,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "Has 33% recoil. 10% chance to paralyze target."
     },
     "wildcharge": {
       "name": "Wild Charge",
@@ -21129,7 +21368,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "Has 1/4 recoil."
     },
     "wish": {
       "name": "Wish",
@@ -21139,7 +21379,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 8,
+      "desc": "Next turn, 50% of the user's max HP is restored."
     },
     "zapcannon": {
       "name": "Zap Cannon",
@@ -21149,7 +21390,8 @@
       "accuracy": 50,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "100% chance to paralyze the target."
     },
     "dazzlinggleam": {
       "name": "Dazzling Gleam",
@@ -21159,7 +21401,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "allAdjacentFoes",
-      "desc": ""
+      "pp": 12,
+      "desc": "No additional effect. Hits adjacent foes."
     },
     "drainpunch": {
       "name": "Drain Punch",
@@ -21169,7 +21412,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "User recovers 50% of the damage dealt."
     },
     "calmmind": {
       "name": "Calm Mind",
@@ -21179,7 +21423,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 20,
+      "desc": "Raises the user's Sp. Atk and Sp. Def by 1."
     },
     "expandingforce": {
       "name": "Expanding Force",
@@ -21189,7 +21434,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "User on Psychic Terrain: 1.5× power, hits foes."
     },
     "magicroom": {
       "name": "Magic Room",
@@ -21199,7 +21445,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "all",
-      "desc": ""
+      "pp": 12,
+      "desc": "For 5 turns, all held items have no effect."
     },
     "psychic": {
       "name": "Psychic",
@@ -21209,7 +21456,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "10% chance to lower the target's Sp. Def by 1."
     },
     "psychicnoise": {
       "name": "Psychic Noise",
@@ -21219,7 +21467,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "For 2 turns, the target is prevented from healing."
     },
     "psychicterrain": {
       "name": "Psychic Terrain",
@@ -21229,7 +21478,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "all",
-      "desc": ""
+      "pp": 12,
+      "desc": "5 turns. Grounded: +Psychic power, priority-safe."
     },
     "psyshock": {
       "name": "Psyshock",
@@ -21239,7 +21489,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Damages target based on Defense, not Sp. Def."
     },
     "skillswap": {
       "name": "Skill Swap",
@@ -21249,7 +21500,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "The user and the target trade Abilities."
     },
     "speedswap": {
       "name": "Speed Swap",
@@ -21259,7 +21511,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Swaps Speed stat with target."
     },
     "storedpower": {
       "name": "Stored Power",
@@ -21269,7 +21522,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": " + 20 power for each of the user's stat boosts."
     },
     "afteryou": {
       "name": "After You",
@@ -21279,7 +21533,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "The target makes its move right after the user."
     },
     "bounce": {
       "name": "Bounce",
@@ -21289,7 +21544,8 @@
       "accuracy": 85,
       "priority": 0,
       "target": "any",
-      "desc": ""
+      "pp": 8,
+      "desc": "Bounces turn 1. Hits turn 2. 30% paralyze."
     },
     "copycat": {
       "name": "Copycat",
@@ -21299,7 +21555,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 20,
+      "desc": "Uses the last move used in the battle."
     },
     "cosmicpower": {
       "name": "Cosmic Power",
@@ -21309,7 +21566,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 20,
+      "desc": "Raises the user's Defense and Sp. Def by 1."
     },
     "followme": {
       "name": "Follow Me",
@@ -21319,7 +21577,8 @@
       "accuracy": 0,
       "priority": 2,
       "target": "self",
-      "desc": ""
+      "pp": 20,
+      "desc": "The foes' moves target the user on the turn used."
     },
     "futuresight": {
       "name": "Future Sight",
@@ -21329,7 +21588,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Hits two turns after being used."
     },
     "gravity": {
       "name": "Gravity",
@@ -21339,7 +21599,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "all",
-      "desc": ""
+      "pp": 8,
+      "desc": "5 turns: no Ground immunities, 1.67× accuracy."
     },
     "healingwish": {
       "name": "Healing Wish",
@@ -21349,7 +21610,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 12,
+      "desc": "User faints. Next hurt Pokemon is fully healed."
     },
     "healpulse": {
       "name": "Heal Pulse",
@@ -21359,7 +21621,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "any",
-      "desc": ""
+      "pp": 12,
+      "desc": "Heals the target by 50% of its max HP."
     },
     "hypervoice": {
       "name": "Hyper Voice",
@@ -21369,7 +21632,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "allAdjacentFoes",
-      "desc": ""
+      "pp": 12,
+      "desc": "No additional effect. Hits adjacent foes."
     },
     "imprison": {
       "name": "Imprison",
@@ -21379,7 +21643,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 12,
+      "desc": "No foe can use any move known by the user."
     },
     "meteorbeam": {
       "name": "Meteor Beam",
@@ -21389,7 +21654,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Raises user's Sp. Atk by 1 on turn 1. Hits turn 2."
     },
     "meteormash": {
       "name": "Meteor Mash",
@@ -21399,7 +21665,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "20% chance to raise the user's Attack by 1."
     },
     "mistyexplosion": {
       "name": "Misty Explosion",
@@ -21409,7 +21676,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "allAdjacent",
-      "desc": ""
+      "pp": 8,
+      "desc": "User faints. User on Misty Terrain: 1.5× power."
     },
     "mistyterrain": {
       "name": "Misty Terrain",
@@ -21419,7 +21687,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "all",
-      "desc": ""
+      "pp": 12,
+      "desc": "5 turns. Can't status,-Dragon power vs grounded."
     },
     "moonblast": {
       "name": "Moonblast",
@@ -21429,7 +21698,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "30% chance to lower the target's Sp. Atk by 1."
     },
     "moonlight": {
       "name": "Moonlight",
@@ -21439,7 +21709,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 8,
+      "desc": "Heals the user by a weather-dependent amount."
     },
     "mysticalfire": {
       "name": "Mystical Fire",
@@ -21449,7 +21720,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "100% chance to lower the target's Sp. Atk by 1."
     },
     "nightshade": {
       "name": "Night Shade",
@@ -21459,7 +21731,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "Does damage equal to the user's level."
     },
     "psychup": {
       "name": "Psych Up",
@@ -21469,7 +21742,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Copies the target's current stat stages."
     },
     "safeguard": {
       "name": "Safeguard",
@@ -21479,7 +21753,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "allySide",
-      "desc": ""
+      "pp": 20,
+      "desc": "For 5 turns, protects user's party from status."
     },
     "shadowball": {
       "name": "Shadow Ball",
@@ -21489,7 +21764,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "20% chance to lower the target's Sp. Def by 1."
     },
     "sing": {
       "name": "Sing",
@@ -21499,7 +21775,8 @@
       "accuracy": 55,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "Causes the target to fall asleep."
     },
     "stealthrock": {
       "name": "Stealth Rock",
@@ -21509,7 +21786,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "foeSide",
-      "desc": ""
+      "pp": 20,
+      "desc": "Hurts foes on switch-in. Factors Rock weakness."
     },
     "triattack": {
       "name": "Tri Attack",
@@ -21519,7 +21797,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "20% chance to paralyze or burn or freeze target."
     },
     "trick": {
       "name": "Trick",
@@ -21529,7 +21808,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "User switches its held item with the target's."
     },
     "wonderroom": {
       "name": "Wonder Room",
@@ -21539,7 +21819,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "all",
-      "desc": ""
+      "pp": 12,
+      "desc": "For 5 turns, all Defense and Sp. Def stats switch."
     },
     "babydolleyes": {
       "name": "Baby-Doll Eyes",
@@ -21549,7 +21830,8 @@
       "accuracy": 100,
       "priority": 1,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Lowers the target's Attack by 1."
     },
     "burningjealousy": {
       "name": "Burning Jealousy",
@@ -21559,7 +21841,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "allAdjacentFoes",
-      "desc": ""
+      "pp": 8,
+      "desc": "100% burns a target that had a stat rise this turn."
     },
     "confuseray": {
       "name": "Confuse Ray",
@@ -21569,7 +21852,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Confuses the target."
     },
     "disable": {
       "name": "Disable",
@@ -21579,7 +21863,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "For 4 turns, disables the target's last move used."
     },
     "extrasensory": {
       "name": "Extrasensory",
@@ -21589,7 +21874,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "10% chance to make the target flinch."
     },
     "foulplay": {
       "name": "Foul Play",
@@ -21599,7 +21885,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "Uses target's Attack stat in damage calculation."
     },
     "hex": {
       "name": "Hex",
@@ -21609,7 +21896,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Power doubles if the target has a status ailment."
     },
     "howl": {
       "name": "Howl",
@@ -21619,7 +21907,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "allies",
-      "desc": ""
+      "pp": 20,
+      "desc": "Raises the user's and ally's Attack by 1."
     },
     "hypnosis": {
       "name": "Hypnosis",
@@ -21629,7 +21918,8 @@
       "accuracy": 60,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Causes the target to fall asleep."
     },
     "memento": {
       "name": "Memento",
@@ -21639,7 +21929,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Lowers target's Attack, Sp. Atk by 2. User faints."
     },
     "powerswap": {
       "name": "Power Swap",
@@ -21649,7 +21940,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Swaps Attack and Sp. Atk stat stages with target."
     },
     "tailslap": {
       "name": "Tail Slap",
@@ -21659,7 +21951,8 @@
       "accuracy": 85,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Hits 2-5 times in one turn."
     },
     "auroraveil": {
       "name": "Aurora Veil",
@@ -21669,7 +21962,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "allySide",
-      "desc": ""
+      "pp": 20,
+      "desc": "For 5 turns, damage to allies halved. Snow only."
     },
     "freezedry": {
       "name": "Freeze-Dry",
@@ -21679,7 +21973,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "10% chance to freeze. Super effective on Water."
     },
     "iceshard": {
       "name": "Ice Shard",
@@ -21689,7 +21984,8 @@
       "accuracy": 100,
       "priority": 1,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Usually goes first."
     },
     "iciclespear": {
       "name": "Icicle Spear",
@@ -21699,7 +21995,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Hits 2-5 times in one turn."
     },
     "snowscape": {
       "name": "Snowscape",
@@ -21709,7 +22006,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "all",
-      "desc": ""
+      "pp": 8,
+      "desc": "For 5 turns, snow falls. Ice: 1.5× Def."
     },
     "tripleaxel": {
       "name": "Triple Axel",
@@ -21719,7 +22017,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Hits 3 times. Each hit can miss, but power rises."
     },
     "covet": {
       "name": "Covet",
@@ -21729,7 +22028,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "If the user has no item, it steals the target's."
     },
     "lastresort": {
       "name": "Last Resort",
@@ -21739,7 +22039,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "Fails unless each known move has been used."
     },
     "perishsong": {
       "name": "Perish Song",
@@ -21749,7 +22050,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "all",
-      "desc": ""
+      "pp": 8,
+      "desc": "All active Pokemon will faint in 3 turns."
     },
     "selfdestruct": {
       "name": "Self-Destruct",
@@ -21759,7 +22061,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "allAdjacent",
-      "desc": ""
+      "pp": 8,
+      "desc": "Hits adjacent Pokemon. The user faints."
     },
     "steelroller": {
       "name": "Steel Roller",
@@ -21769,7 +22072,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "Fails if there is no terrain active. Ends the terrain."
     },
     "taunt": {
       "name": "Taunt",
@@ -21779,7 +22083,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Target can't use status moves its next 3 turns."
     },
     "solarblade": {
       "name": "Solar Blade",
@@ -21789,7 +22094,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Charges turn 1. Hits turn 2. No charge in sunlight."
     },
     "strengthsap": {
       "name": "Strength Sap",
@@ -21799,7 +22105,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "User heals HP=target's Atk stat. Lowers Atk by 1."
     },
     "stunspore": {
       "name": "Stun Spore",
@@ -21809,7 +22116,8 @@
       "accuracy": 75,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Paralyzes the target."
     },
     "teeterdance": {
       "name": "Teeter Dance",
@@ -21819,7 +22127,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "allAdjacent",
-      "desc": ""
+      "pp": 20,
+      "desc": "Confuses adjacent Pokemon."
     },
     "powergem": {
       "name": "Power Gem",
@@ -21829,7 +22138,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "No additional effect."
     },
     "flatter": {
       "name": "Flatter",
@@ -21839,7 +22149,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "Raises the target's Sp. Atk by 1 and confuses it."
     },
     "nightslash": {
       "name": "Night Slash",
@@ -21849,7 +22160,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "High critical hit ratio."
     },
     "partingshot": {
       "name": "Parting Shot",
@@ -21859,7 +22171,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Lowers target's Atk, Sp. Atk by 1. User switches."
     },
     "quash": {
       "name": "Quash",
@@ -21869,7 +22182,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "Forces the target to move last this turn."
     },
     "bulkup": {
       "name": "Bulk Up",
@@ -21879,7 +22193,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 20,
+      "desc": "Raises the user's Attack and Defense by 1."
     },
     "closecombat": {
       "name": "Close Combat",
@@ -21889,7 +22204,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "Lowers the user's Defense and Sp. Def by 1."
     },
     "heavyslam": {
       "name": "Heavy Slam",
@@ -21899,7 +22215,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "More power the heavier the user than the target."
     },
     "metalburst": {
       "name": "Metal Burst",
@@ -21909,7 +22226,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "scripted",
-      "desc": ""
+      "pp": 12,
+      "desc": "If hit by an attack, returns 1.5× damage."
     },
     "metalsound": {
       "name": "Metal Sound",
@@ -21919,7 +22237,8 @@
       "accuracy": 85,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Lowers the target's Sp. Def by 2."
     },
     "spikes": {
       "name": "Spikes",
@@ -21929,7 +22248,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "foeSide",
-      "desc": ""
+      "pp": 20,
+      "desc": "Hurts grounded foes on switch-in. Max 3 layers."
     },
     "steelbeam": {
       "name": "Steel Beam",
@@ -21939,7 +22259,8 @@
       "accuracy": 95,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "User loses 50% max HP."
     },
     "swagger": {
       "name": "Swagger",
@@ -21949,7 +22270,8 @@
       "accuracy": 85,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "Raises the target's Attack by 2 and confuses it."
     },
     "thrash": {
       "name": "Thrash",
@@ -21959,7 +22281,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "randomNormal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Lasts 2-3 turns. Confuses the user afterwards."
     },
     "extremespeed": {
       "name": "Extreme Speed",
@@ -21969,7 +22292,8 @@
       "accuracy": 100,
       "priority": 2,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "Nearly always goes first."
     },
     "morningsun": {
       "name": "Morning Sun",
@@ -21979,7 +22303,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 8,
+      "desc": "Heals the user by a weather-dependent amount."
     },
     "ragingfury": {
       "name": "Raging Fury",
@@ -21989,7 +22314,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "randomNormal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Lasts 2-3 turns. Confuses the user afterwards."
     },
     "headsmash": {
       "name": "Head Smash",
@@ -21999,7 +22325,8 @@
       "accuracy": 80,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "Has 1/2 recoil."
     },
     "rockblast": {
       "name": "Rock Blast",
@@ -22009,7 +22336,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Hits 2-5 times in one turn."
     },
     "smartstrike": {
       "name": "Smart Strike",
@@ -22019,7 +22347,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "This move does not check accuracy."
     },
     "stoneedge": {
       "name": "Stone Edge",
@@ -22029,7 +22358,8 @@
       "accuracy": 80,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "High critical hit ratio."
     },
     "lowkick": {
       "name": "Low Kick",
@@ -22039,7 +22369,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "More power the heavier the target."
     },
     "lowsweep": {
       "name": "Low Sweep",
@@ -22049,7 +22380,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "100% chance to lower the target's Speed by 1."
     },
     "allyswitch": {
       "name": "Ally Switch",
@@ -22059,7 +22391,8 @@
       "accuracy": 0,
       "priority": 2,
       "target": "self",
-      "desc": ""
+      "pp": 16,
+      "desc": "User and ally swap positions; using again can fail."
     },
     "guardsplit": {
       "name": "Guard Split",
@@ -22069,7 +22402,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Averages Defense and Sp. Def stats with target."
     },
     "guardswap": {
       "name": "Guard Swap",
@@ -22079,7 +22413,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Swaps Defense and Sp. Def changes with target."
     },
     "psychocut": {
       "name": "Psycho Cut",
@@ -22089,7 +22424,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "High critical hit ratio."
     },
     "recover": {
       "name": "Recover",
@@ -22099,7 +22435,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 8,
+      "desc": "Heals the user by 50% of its max HP."
     },
     "roleplay": {
       "name": "Role Play",
@@ -22109,7 +22446,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "User replaces its Ability with the target's."
     },
     "trickroom": {
       "name": "Trick Room",
@@ -22119,7 +22457,8 @@
       "accuracy": 0,
       "priority": -7,
       "target": "all",
-      "desc": ""
+      "pp": 8,
+      "desc": "Goes last. For 5 turns, turn order is reversed."
     },
     "bulletpunch": {
       "name": "Bullet Punch",
@@ -22129,7 +22468,8 @@
       "accuracy": 100,
       "priority": 1,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Usually goes first."
     },
     "coaching": {
       "name": "Coaching",
@@ -22139,7 +22479,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "adjacentAlly",
-      "desc": ""
+      "pp": 12,
+      "desc": "Raises an ally's Attack and Defense by 1."
     },
     "crosschop": {
       "name": "Cross Chop",
@@ -22149,7 +22490,8 @@
       "accuracy": 80,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "High critical hit ratio."
     },
     "darkestlariat": {
       "name": "Darkest Lariat",
@@ -22159,7 +22501,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Ignores the target's stat stage changes."
     },
     "detect": {
       "name": "Detect",
@@ -22169,7 +22512,8 @@
       "accuracy": 0,
       "priority": 4,
       "target": "self",
-      "desc": ""
+      "pp": 8,
+      "desc": "Prevents moves from affecting the user this turn."
     },
     "dynamicpunch": {
       "name": "Dynamic Punch",
@@ -22179,7 +22523,8 @@
       "accuracy": 50,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "100% chance to confuse the target."
     },
     "highhorsepower": {
       "name": "High Horsepower",
@@ -22189,7 +22534,8 @@
       "accuracy": 95,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "No additional effect."
     },
     "quickguard": {
       "name": "Quick Guard",
@@ -22199,7 +22545,8 @@
       "accuracy": 0,
       "priority": 3,
       "target": "allySide",
-      "desc": ""
+      "pp": 16,
+      "desc": "Protects allies from priority attacks this turn."
     },
     "seismictoss": {
       "name": "Seismic Toss",
@@ -22209,7 +22556,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Does damage equal to the user's level."
     },
     "superpower": {
       "name": "Superpower",
@@ -22219,7 +22567,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "Lowers the user's Attack and Defense by 1."
     },
     "wideguard": {
       "name": "Wide Guard",
@@ -22229,7 +22578,8 @@
       "accuracy": 0,
       "priority": 3,
       "target": "allySide",
-      "desc": ""
+      "pp": 12,
+      "desc": "Protects allies from multi-target moves this turn."
     },
     "clearsmog": {
       "name": "Clear Smog",
@@ -22239,7 +22589,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "Resets all of the target's stat stages to 0."
     },
     "leafblade": {
       "name": "Leaf Blade",
@@ -22249,7 +22600,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "High critical hit ratio."
     },
     "block": {
       "name": "Block",
@@ -22259,7 +22611,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "Prevents the target from switching out."
     },
     "razorshell": {
       "name": "Razor Shell",
@@ -22269,7 +22622,8 @@
       "accuracy": 95,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "50% chance to lower the target's Defense by 1."
     },
     "scald": {
       "name": "Scald",
@@ -22279,7 +22633,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "30% chance to burn the target. Thaws target."
     },
     "slackoff": {
       "name": "Slack Off",
@@ -22289,7 +22644,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 8,
+      "desc": "Heals the user by 50% of its max HP."
     },
     "shellsidearm": {
       "name": "Shell Side Arm",
@@ -22299,7 +22655,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "20% psn. Physical+contact if it would be stronger."
     },
     "chillyreception": {
       "name": "Chilly Reception",
@@ -22309,7 +22666,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "all",
-      "desc": ""
+      "pp": 12,
+      "desc": "Starts Snow. User switches out."
     },
     "eeriespell": {
       "name": "Eerie Spell",
@@ -22319,7 +22677,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "Removes 3 PP from the target's last move."
     },
     "finalgambit": {
       "name": "Final Gambit",
@@ -22329,7 +22688,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "Does damage equal to the user's HP. User faints."
     },
     "firstimpression": {
       "name": "First Impression",
@@ -22339,7 +22699,8 @@
       "accuracy": 100,
       "priority": 2,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Nearly always goes first. First turn out only."
     },
     "simplebeam": {
       "name": "Simple Beam",
@@ -22349,7 +22710,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "The target's Ability becomes Simple."
     },
     "defog": {
       "name": "Defog",
@@ -22359,7 +22721,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "-1 evasion; ends user and target hazards/terrain."
     },
     "destinybond": {
       "name": "Destiny Bond",
@@ -22369,7 +22732,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 8,
+      "desc": "If an opponent knocks out the user, it also faints."
     },
     "meanlook": {
       "name": "Mean Look",
@@ -22379,7 +22743,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "Prevents the target from switching out."
     },
     "phantomforce": {
       "name": "Phantom Force",
@@ -22389,7 +22754,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Disappears turn 1. Hits turn 2. Breaks protection."
     },
     "poltergeist": {
       "name": "Poltergeist",
@@ -22399,7 +22765,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "Fails if the target has no held item."
     },
     "reflecttype": {
       "name": "Reflect Type",
@@ -22409,7 +22776,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "User becomes the same type as the target."
     },
     "shadowpunch": {
       "name": "Shadow Punch",
@@ -22419,7 +22787,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "This move does not check accuracy."
     },
     "bind": {
       "name": "Bind",
@@ -22429,7 +22798,8 @@
       "accuracy": 85,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Traps and damages the target for 4-5 turns."
     },
     "fissure": {
       "name": "Fissure",
@@ -22439,7 +22809,8 @@
       "accuracy": 30,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "OHKOs the target. Fails if user is a lower level."
     },
     "magnetrise": {
       "name": "Magnet Rise",
@@ -22449,7 +22820,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 12,
+      "desc": "For 5 turns, the user has immunity to Ground."
     },
     "rockpolish": {
       "name": "Rock Polish",
@@ -22459,7 +22831,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 20,
+      "desc": "Raises the user's Speed by 2."
     },
     "sandtomb": {
       "name": "Sand Tomb",
@@ -22469,7 +22842,8 @@
       "accuracy": 85,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "Traps and damages the target for 4-5 turns."
     },
     "hammerarm": {
       "name": "Hammer Arm",
@@ -22479,7 +22853,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Lowers the user's Speed by 1."
     },
     "horndrill": {
       "name": "Horn Drill",
@@ -22489,7 +22864,8 @@
       "accuracy": 30,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "OHKOs the target. Fails if user is a lower level."
     },
     "megahorn": {
       "name": "Megahorn",
@@ -22499,7 +22875,8 @@
       "accuracy": 85,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "No additional effect."
     },
     "rockwrecker": {
       "name": "Rock Wrecker",
@@ -22509,7 +22886,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "User cannot move next turn."
     },
     "supercellslam": {
       "name": "Supercell Slam",
@@ -22519,7 +22897,8 @@
       "accuracy": 95,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "User is hurt by 50% of its max HP if it misses."
     },
     "circlethrow": {
       "name": "Circle Throw",
@@ -22529,7 +22908,8 @@
       "accuracy": 90,
       "priority": -6,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Forces the target to switch to a random ally."
     },
     "minimize": {
       "name": "Minimize",
@@ -22539,7 +22919,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 12,
+      "desc": "Raises the user's evasiveness by 2."
     },
     "powersplit": {
       "name": "Power Split",
@@ -22549,7 +22930,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Averages Attack and Sp. Atk stats with target."
     },
     "recycle": {
       "name": "Recycle",
@@ -22559,7 +22941,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 12,
+      "desc": "Restores the item the user last used."
     },
     "torment": {
       "name": "Torment",
@@ -22569,7 +22952,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "Target can't select the same move twice in a row."
     },
     "frostbreath": {
       "name": "Frost Breath",
@@ -22579,7 +22963,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Always results in a critical hit."
     },
     "sheercold": {
       "name": "Sheer Cold",
@@ -22589,7 +22974,8 @@
       "accuracy": 30,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "OHKOs non-Ice targets. Fails if user's lower level."
     },
     "hardpress": {
       "name": "Hard Press",
@@ -22599,7 +22985,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "More power the more HP the target has left."
     },
     "strugglebug": {
       "name": "Struggle Bug",
@@ -22609,7 +22996,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "allAdjacentFoes",
-      "desc": ""
+      "pp": 20,
+      "desc": "100% chance to lower the foe(s) Sp. Atk by 1."
     },
     "vacuumwave": {
       "name": "Vacuum Wave",
@@ -22619,7 +23007,8 @@
       "accuracy": 100,
       "priority": 1,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Usually goes first."
     },
     "stoneaxe": {
       "name": "Stone Axe",
@@ -22629,7 +23018,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "Sets Stealth Rock on the target's side."
     },
     "guillotine": {
       "name": "Guillotine",
@@ -22639,7 +23029,8 @@
       "accuracy": 30,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "OHKOs the target. Fails if user is a lower level."
     },
     "ragingbull": {
       "name": "Raging Bull",
@@ -22649,7 +23040,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Destroys screens. Type depends on user's form."
     },
     "transform": {
       "name": "Transform",
@@ -22659,7 +23051,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Copies target's stats, moves, types, and Ability."
     },
     "acidarmor": {
       "name": "Acid Armor",
@@ -22669,7 +23062,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 20,
+      "desc": "Raises the user's Defense by 2."
     },
     "lavaplume": {
       "name": "Lava Plume",
@@ -22679,7 +23073,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "allAdjacent",
-      "desc": ""
+      "pp": 16,
+      "desc": "30% chance to burn adjacent Pokemon."
     },
     "dracometeor": {
       "name": "Draco Meteor",
@@ -22689,7 +23084,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "Lowers the user's Sp. Atk by 2."
     },
     "eruption": {
       "name": "Eruption",
@@ -22699,7 +23095,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "allAdjacentFoes",
-      "desc": ""
+      "pp": 8,
+      "desc": "Less power as user's HP decreases. Hits foe(s)."
     },
     "infernalparade": {
       "name": "Infernal Parade",
@@ -22709,7 +23106,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "30% burn. 2× power if target is already statused."
     },
     "infestation": {
       "name": "Infestation",
@@ -22719,7 +23117,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Traps and damages the target for 4-5 turns."
     },
     "ragepowder": {
       "name": "Rage Powder",
@@ -22729,7 +23128,8 @@
       "accuracy": 0,
       "priority": 2,
       "target": "self",
-      "desc": ""
+      "pp": 20,
+      "desc": "The foes' moves target the user on the turn used."
     },
     "shadowsneak": {
       "name": "Shadow Sneak",
@@ -22739,7 +23139,8 @@
       "accuracy": 100,
       "priority": 1,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Usually goes first."
     },
     "stickyweb": {
       "name": "Sticky Web",
@@ -22749,7 +23150,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "foeSide",
-      "desc": ""
+      "pp": 20,
+      "desc": "Lowers Speed of grounded foes by 1 on switch-in."
     },
     "toxicthread": {
       "name": "Toxic Thread",
@@ -22759,7 +23161,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Lowers the target's Speed by 1 and poisons it."
     },
     "cottonguard": {
       "name": "Cotton Guard",
@@ -22769,7 +23172,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 12,
+      "desc": "Raises the user's Defense by 3."
     },
     "cottonspore": {
       "name": "Cotton Spore",
@@ -22779,7 +23183,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "allAdjacentFoes",
-      "desc": ""
+      "pp": 20,
+      "desc": "Lowers the target's Speed by 2."
     },
     "magneticflux": {
       "name": "Magnetic Flux",
@@ -22789,7 +23194,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "allySide",
-      "desc": ""
+      "pp": 20,
+      "desc": "Raises Def, Sp. Def of allies with Plus/Minus by 1."
     },
     "paraboliccharge": {
       "name": "Parabolic Charge",
@@ -22799,7 +23205,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "allAdjacent",
-      "desc": ""
+      "pp": 20,
+      "desc": "User recovers 50% of the damage dealt."
     },
     "soak": {
       "name": "Soak",
@@ -22809,7 +23216,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Changes the target's type to Water."
     },
     "twinbeam": {
       "name": "Twin Beam",
@@ -22819,7 +23227,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Hits 2 times in one turn."
     },
     "explosion": {
       "name": "Explosion",
@@ -22829,7 +23238,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "allAdjacent",
-      "desc": ""
+      "pp": 8,
+      "desc": "Hits adjacent Pokemon. The user faints."
     },
     "powertrick": {
       "name": "Power Trick",
@@ -22839,7 +23249,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 12,
+      "desc": "Switches user's Attack and Defense stats."
     },
     "crabhammer": {
       "name": "Crabhammer",
@@ -22849,7 +23260,8 @@
       "accuracy": 95,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "High critical hit ratio."
     },
     "acupressure": {
       "name": "Acupressure",
@@ -22859,7 +23271,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "adjacentAllyOrSelf",
-      "desc": ""
+      "pp": 20,
+      "desc": "Raises a random stat of the user or an ally by 2."
     },
     "barbbarrage": {
       "name": "Barb Barrage",
@@ -22869,7 +23282,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "50% psn. 2× power if target already poisoned."
     },
     "iciclecrash": {
       "name": "Icicle Crash",
@@ -22879,7 +23293,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "30% chance to make the target flinch."
     },
     "direclaw": {
       "name": "Dire Claw",
@@ -22889,7 +23304,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "50% chance to sleep, poison, or paralyze target."
     },
     "drillpeck": {
       "name": "Drill Peck",
@@ -22899,7 +23315,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "any",
-      "desc": ""
+      "pp": 20,
+      "desc": "No additional effect."
     },
     "comeuppance": {
       "name": "Comeuppance",
@@ -22909,7 +23326,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "scripted",
-      "desc": ""
+      "pp": 12,
+      "desc": "If hit by an attack, returns 1.5× damage."
     },
     "superfang": {
       "name": "Super Fang",
@@ -22919,7 +23337,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Does damage equal to 1/2 target's current HP."
     },
     "psyshieldbash": {
       "name": "Psyshield Bash",
@@ -22929,7 +23348,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "100% chance to raise the user's Defense by 1."
     },
     "shedtail": {
       "name": "Shed Tail",
@@ -22939,7 +23359,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 12,
+      "desc": "User takes 1/2 its max HP to pass a substitute."
     },
     "blazekick": {
       "name": "Blaze Kick",
@@ -22949,7 +23370,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "High critical hit ratio. 10% chance to burn."
     },
     "crushclaw": {
       "name": "Crush Claw",
@@ -22959,7 +23381,8 @@
       "accuracy": 95,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "50% chance to lower the target's Defense by 1."
     },
     "highjumpkick": {
       "name": "High Jump Kick",
@@ -22969,7 +23392,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "User is hurt by 50% of its max HP if it misses."
     },
     "aquacutter": {
       "name": "Aqua Cutter",
@@ -22979,7 +23403,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "High critical hit ratio."
     },
     "sacredsword": {
       "name": "Sacred Sword",
@@ -22989,7 +23414,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "Ignores the target's stat stage changes."
     },
     "axekick": {
       "name": "Axe Kick",
@@ -22999,7 +23425,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "30% confusion. User loses 50% max HP if miss."
     },
     "stuffcheeks": {
       "name": "Stuff Cheeks",
@@ -23009,7 +23436,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 12,
+      "desc": "Must hold Berry to use. User eats Berry, Def +2."
     },
     "pluck": {
       "name": "Pluck",
@@ -23019,7 +23447,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "any",
-      "desc": ""
+      "pp": 20,
+      "desc": "User steals and eats the target's Berry."
     },
     "boomburst": {
       "name": "Boomburst",
@@ -23029,7 +23458,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "allAdjacent",
-      "desc": ""
+      "pp": 12,
+      "desc": "No additional effect. Hits adjacent Pokemon."
     },
     "healbell": {
       "name": "Heal Bell",
@@ -23039,7 +23469,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "allyTeam",
-      "desc": ""
+      "pp": 8,
+      "desc": "Cures the user's party of all status conditions."
     },
     "headlongrush": {
       "name": "Headlong Rush",
@@ -23049,7 +23480,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "Lowers the user's Defense and Sp. Def by 1."
     },
     "woodhammer": {
       "name": "Wood Hammer",
@@ -23059,7 +23491,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "Has 33% recoil."
     },
     "machpunch": {
       "name": "Mach Punch",
@@ -23069,7 +23502,8 @@
       "accuracy": 100,
       "priority": 1,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Usually goes first."
     },
     "powertrip": {
       "name": "Power Trip",
@@ -23079,7 +23513,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": " + 20 power for each of the user's stat boosts."
     },
     "entrainment": {
       "name": "Entrainment",
@@ -23089,7 +23524,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "The target's Ability changes to match the user's."
     },
     "bonerush": {
       "name": "Bone Rush",
@@ -23099,7 +23535,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Hits 2-5 times in one turn."
     },
     "icehammer": {
       "name": "Ice Hammer",
@@ -23109,7 +23546,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Lowers the user's Speed by 1."
     },
     "ceaselessedge": {
       "name": "Ceaseless Edge",
@@ -23119,7 +23557,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "Sets a layer of Spikes on the opposing side."
     },
     "lastrespects": {
       "name": "Last Respects",
@@ -23129,7 +23568,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "+50 power for each time a party member fainted."
     },
     "nightdaze": {
       "name": "Night Daze",
@@ -23139,7 +23579,8 @@
       "accuracy": 95,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "40% chance to lower the target's accuracy by 1."
     },
     "bittermalice": {
       "name": "Bitter Malice",
@@ -23149,7 +23590,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "100% chance to lower the target's Attack by 1."
     },
     "fierydance": {
       "name": "Fiery Dance",
@@ -23159,7 +23601,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "50% chance to raise the user's Sp. Atk by 1."
     },
     "quiverdance": {
       "name": "Quiver Dance",
@@ -23169,7 +23612,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 20,
+      "desc": "Raises the user's Sp. Atk, Sp. Def, Speed by 1."
     },
     "spikyshield": {
       "name": "Spiky Shield",
@@ -23179,7 +23623,8 @@
       "accuracy": 0,
       "priority": 4,
       "target": "self",
-      "desc": ""
+      "pp": 8,
+      "desc": "Protects from moves. Contact: loses 1/8 max HP."
     },
     "watershuriken": {
       "name": "Water Shuriken",
@@ -23189,7 +23634,8 @@
       "accuracy": 100,
       "priority": 1,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Usually goes first. Hits 2-5 times in one turn."
     },
     "nobleroar": {
       "name": "Noble Roar",
@@ -23199,7 +23645,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Lowers the target's Attack and Sp. Atk by 1."
     },
     "tearfullook": {
       "name": "Tearful Look",
@@ -23209,7 +23656,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Lowers the target's Attack and Sp. Atk by 1."
     },
     "hornleech": {
       "name": "Horn Leech",
@@ -23219,7 +23667,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "User recovers 50% of the damage dealt."
     },
     "milkdrink": {
       "name": "Milk Drink",
@@ -23229,7 +23678,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 8,
+      "desc": "Heals the user by 50% of its max HP."
     },
     "aromaticmist": {
       "name": "Aromatic Mist",
@@ -23239,7 +23689,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "adjacentAlly",
-      "desc": ""
+      "pp": 20,
+      "desc": "Raises an ally's Sp. Def by 1."
     },
     "topsyturvy": {
       "name": "Topsy-Turvy",
@@ -23249,7 +23700,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Inverts the target's stat stages."
     },
     "flyingpress": {
       "name": "Flying Press",
@@ -23259,7 +23711,8 @@
       "accuracy": 95,
       "priority": 0,
       "target": "any",
-      "desc": ""
+      "pp": 12,
+      "desc": "Combines Flying in its type effectiveness."
     },
     "shelter": {
       "name": "Shelter",
@@ -23269,7 +23722,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 12,
+      "desc": "Raises the user's Defense by 2."
     },
     "fairylock": {
       "name": "Fairy Lock",
@@ -23279,7 +23733,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "all",
-      "desc": ""
+      "pp": 12,
+      "desc": "Prevents all Pokemon from switching next turn."
     },
     "forestscurse": {
       "name": "Forest's Curse",
@@ -23289,7 +23744,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Adds Grass to the target's type(s)."
     },
     "mountaingale": {
       "name": "Mountain Gale",
@@ -23299,7 +23755,8 @@
       "accuracy": 85,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "30% chance to make the target flinch."
     },
     "spiritshackle": {
       "name": "Spirit Shackle",
@@ -23309,7 +23766,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Prevents the target from switching out."
     },
     "triplearrows": {
       "name": "Triple Arrows",
@@ -23319,7 +23777,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "High crit. Target: 50% -1 Defense, 30% flinch."
     },
     "sparklingaria": {
       "name": "Sparkling Aria",
@@ -23329,7 +23788,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "allAdjacent",
-      "desc": ""
+      "pp": 12,
+      "desc": "The target is cured of its burn."
     },
     "beakblast": {
       "name": "Beak Blast",
@@ -23339,7 +23799,8 @@
       "accuracy": 100,
       "priority": -3,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "Burns on contact with the user before it moves."
     },
     "accelerock": {
       "name": "Accelerock",
@@ -23349,7 +23810,8 @@
       "accuracy": 100,
       "priority": 1,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Usually goes first."
     },
     "banefulbunker": {
       "name": "Baneful Bunker",
@@ -23359,7 +23821,8 @@
       "accuracy": 0,
       "priority": 4,
       "target": "self",
-      "desc": ""
+      "pp": 8,
+      "desc": "Protects from moves. Contact: poison."
     },
     "firelash": {
       "name": "Fire Lash",
@@ -23369,7 +23832,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "100% chance to lower the target's Defense by 1."
     },
     "tropkick": {
       "name": "Trop Kick",
@@ -23379,7 +23843,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "100% chance to lower the target's Attack by 1."
     },
     "instruct": {
       "name": "Instruct",
@@ -23389,7 +23854,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "The target immediately uses its last used move."
     },
     "clangingscales": {
       "name": "Clanging Scales",
@@ -23399,7 +23865,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "allAdjacentFoes",
-      "desc": ""
+      "pp": 8,
+      "desc": "Lowers the user's Defense by 1."
     },
     "clangoroussoul": {
       "name": "Clangorous Soul",
@@ -23409,7 +23876,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 8,
+      "desc": "User loses 33% of its max HP. +1 to all stats."
     },
     "drumbeating": {
       "name": "Drum Beating",
@@ -23419,7 +23887,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "100% chance to lower the target's Speed by 1."
     },
     "courtchange": {
       "name": "Court Change",
@@ -23429,7 +23898,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "all",
-      "desc": ""
+      "pp": 12,
+      "desc": "Swaps user's field effects with the opposing side."
     },
     "pyroball": {
       "name": "Pyro Ball",
@@ -23439,7 +23909,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "10% chance to burn the target. Thaws user."
     },
     "snipeshot": {
       "name": "Snipe Shot",
@@ -23449,7 +23920,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "High critical hit ratio. Cannot be redirected."
     },
     "gravapple": {
       "name": "Grav Apple",
@@ -23459,7 +23931,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Target: 100% -1 Def. During Gravity: 1.5× power."
     },
     "appleacid": {
       "name": "Apple Acid",
@@ -23469,7 +23942,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "100% chance to lower the target's Sp. Def by 1."
     },
     "overdrive": {
       "name": "Overdrive",
@@ -23479,7 +23953,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "allAdjacentFoes",
-      "desc": ""
+      "pp": 12,
+      "desc": "No additional effect. Hits foe(s)."
     },
     "shiftgear": {
       "name": "Shift Gear",
@@ -23489,7 +23964,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 12,
+      "desc": "Raises the user's Speed by 2 and Attack by 1."
     },
     "teatime": {
       "name": "Teatime",
@@ -23499,7 +23975,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "all",
-      "desc": ""
+      "pp": 12,
+      "desc": "All active Pokemon consume held Berries."
     },
     "magicpowder": {
       "name": "Magic Powder",
@@ -23509,7 +23986,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 20,
+      "desc": "Changes the target's type to Psychic."
     },
     "spiritbreak": {
       "name": "Spirit Break",
@@ -23519,7 +23997,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "100% chance to lower the target's Sp. Atk by 1."
     },
     "decorate": {
       "name": "Decorate",
@@ -23529,7 +24008,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "Raises the target's Attack and Sp. Atk by 2."
     },
     "noretreat": {
       "name": "No Retreat",
@@ -23539,7 +24019,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 8,
+      "desc": "Raises all stats by 1 (not acc/eva). Traps user."
     },
     "zingzap": {
       "name": "Zing Zap",
@@ -23549,7 +24030,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "30% chance to make the target flinch."
     },
     "aurawheel": {
       "name": "Aura Wheel",
@@ -23559,7 +24041,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Morpeko: Electric; Hangry: Dark; 100% +1 Spe."
     },
     "dragondarts": {
       "name": "Dragon Darts",
@@ -23569,7 +24052,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Hits twice. Doubles: Tries to hit each foe once."
     },
     "lockon": {
       "name": "Lock-On",
@@ -23579,7 +24063,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "User's next move will not miss the target."
     },
     "flowertrick": {
       "name": "Flower Trick",
@@ -23589,7 +24074,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Always results in a critical hit; no accuracy check."
     },
     "torchsong": {
       "name": "Torch Song",
@@ -23599,7 +24085,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "100% chance to raise the user's Sp. Atk by 1."
     },
     "aquastep": {
       "name": "Aqua Step",
@@ -23609,7 +24096,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "100% chance to raise the user's Speed by 1."
     },
     "luminacrash": {
       "name": "Lumina Crash",
@@ -23619,7 +24107,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "100% chance to lower the target's Sp. Def by 2."
     },
     "jetpunch": {
       "name": "Jet Punch",
@@ -23629,7 +24118,8 @@
       "accuracy": 100,
       "priority": 1,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "Usually goes first."
     },
     "spicyextract": {
       "name": "Spicy Extract",
@@ -23639,7 +24129,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "Raises target's Atk by 2 and lowers its Def by 2."
     },
     "populationbomb": {
       "name": "Population Bomb",
@@ -23649,7 +24140,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Hits 10 times. Each hit can miss."
     },
     "tidyup": {
       "name": "Tidy Up",
@@ -23659,7 +24151,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 12,
+      "desc": "User +1 Atk, Spe. Clears all substitutes/hazards."
     },
     "glaiverush": {
       "name": "Glaive Rush",
@@ -23669,7 +24162,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "User takes sure-hit 2× damage until its next turn."
     },
     "doubleshock": {
       "name": "Double Shock",
@@ -23679,7 +24173,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "User's Electric type: typeless; must be Electric."
     },
     "revivalblessing": {
       "name": "Revival Blessing",
@@ -23689,7 +24184,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "self",
-      "desc": ""
+      "pp": 1,
+      "desc": "Revives a fainted Pokemon to 50% HP."
     },
     "saltcure": {
       "name": "Salt Cure",
@@ -23699,7 +24195,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 16,
+      "desc": "Deals 1/8 max HP each turn; 1/4 on Steel, Water."
     },
     "mortalspin": {
       "name": "Mortal Spin",
@@ -23709,7 +24206,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "allAdjacentFoes",
-      "desc": ""
+      "pp": 16,
+      "desc": "Poisons foes, frees user from hazards/bind/leech."
     },
     "jawlock": {
       "name": "Jaw Lock",
@@ -23719,7 +24217,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Prevents both user and target from switching out."
     },
     "makeitrain": {
       "name": "Make It Rain",
@@ -23729,7 +24228,8 @@
       "accuracy": 95,
       "priority": 0,
       "target": "allAdjacentFoes",
-      "desc": ""
+      "pp": 8,
+      "desc": "Lowers the user's Sp. Atk by 1. Hits foe(s)."
     },
     "gigatonhammer": {
       "name": "Gigaton Hammer",
@@ -23739,7 +24239,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "Cannot be selected the turn after it's used."
     },
     "armorcannon": {
       "name": "Armor Cannon",
@@ -23749,7 +24250,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "Lowers the user's Defense and Sp. Def by 1."
     },
     "bitterblade": {
       "name": "Bitter Blade",
@@ -23759,7 +24261,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "User recovers 50% of the damage dealt."
     },
     "kowtowcleave": {
       "name": "Kowtow Cleave",
@@ -23769,7 +24272,8 @@
       "accuracy": 0,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "This move does not check accuracy."
     },
     "ragefist": {
       "name": "Rage Fist",
@@ -23779,7 +24283,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "+50 power for each time user was hit. Max 6 hits."
     },
     "matchagotcha": {
       "name": "Matcha Gotcha",
@@ -23789,7 +24294,8 @@
       "accuracy": 90,
       "priority": 0,
       "target": "allAdjacentFoes",
-      "desc": ""
+      "pp": 16,
+      "desc": "20% burn. Recovers 50% dmg dealt. Thaws foe(s)."
     },
     "electroshot": {
       "name": "Electro Shot",
@@ -23799,7 +24305,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Raises Sp. Atk by 1, hits turn 2. Rain: no charge."
     },
     "ficklebeam": {
       "name": "Fickle Beam",
@@ -23809,7 +24316,8 @@
       "accuracy": 100,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 8,
+      "desc": "Has a 30% chance this move's power is doubled."
     },
     "syrupbomb": {
       "name": "Syrup Bomb",
@@ -23819,174 +24327,807 @@
       "accuracy": 90,
       "priority": 0,
       "target": "normal",
-      "desc": ""
+      "pp": 12,
+      "desc": "Target's Speed is lowered by 1 stage for 3 turns."
     }
   },
   "items": {
-    "abomasite": { "name": "Abomasite", "megaStone": { "Abomasnow": "Abomasnow-Mega" } },
-    "absolite": { "name": "Absolite", "megaStone": { "Absol": "Absol-Mega" } },
-    "absolitez": { "name": "Absolite Z", "megaStone": { "Absol": "Absol-Mega-Z" } },
-    "aerodactylite": { "name": "Aerodactylite", "megaStone": { "Aerodactyl": "Aerodactyl-Mega" } },
-    "aggronite": { "name": "Aggronite", "megaStone": { "Aggron": "Aggron-Mega" } },
-    "airballoon": { "name": "Air Balloon" },
-    "alakazite": { "name": "Alakazite", "megaStone": { "Alakazam": "Alakazam-Mega" } },
-    "altarianite": { "name": "Altarianite", "megaStone": { "Altaria": "Altaria-Mega" } },
-    "ampharosite": { "name": "Ampharosite", "megaStone": { "Ampharos": "Ampharos-Mega" } },
-    "aspearberry": { "name": "Aspear Berry" },
-    "audinite": { "name": "Audinite", "megaStone": { "Audino": "Audino-Mega" } },
-    "babiriberry": { "name": "Babiri Berry" },
-    "banettite": { "name": "Banettite", "megaStone": { "Banette": "Banette-Mega" } },
-    "barbaracite": { "name": "Barbaracite", "megaStone": { "Barbaracle": "Barbaracle-Mega" } },
-    "baxcalibrite": { "name": "Baxcalibrite", "megaStone": { "Baxcalibur": "Baxcalibur-Mega" } },
-    "beedrillite": { "name": "Beedrillite", "megaStone": { "Beedrill": "Beedrill-Mega" } },
-    "bigroot": { "name": "Big Root" },
-    "bindingband": { "name": "Binding Band" },
-    "blackbelt": { "name": "Black Belt" },
-    "blackglasses": { "name": "Black Glasses" },
-    "blastoisinite": { "name": "Blastoisinite", "megaStone": { "Blastoise": "Blastoise-Mega" } },
-    "blazikenite": { "name": "Blazikenite", "megaStone": { "Blaziken": "Blaziken-Mega" } },
-    "brightpowder": { "name": "Bright Powder" },
-    "cameruptite": { "name": "Cameruptite", "megaStone": { "Camerupt": "Camerupt-Mega" } },
-    "chandelurite": { "name": "Chandelurite", "megaStone": { "Chandelure": "Chandelure-Mega" } },
-    "charcoal": { "name": "Charcoal" },
-    "charizarditex": { "name": "Charizardite X", "megaStone": { "Charizard": "Charizard-Mega-X" } },
-    "charizarditey": { "name": "Charizardite Y", "megaStone": { "Charizard": "Charizard-Mega-Y" } },
-    "chartiberry": { "name": "Charti Berry" },
-    "cheriberry": { "name": "Cheri Berry" },
-    "chesnaughtite": { "name": "Chesnaughtite", "megaStone": { "Chesnaught": "Chesnaught-Mega" } },
-    "chestoberry": { "name": "Chesto Berry" },
-    "chilanberry": { "name": "Chilan Berry" },
-    "chimechite": { "name": "Chimechite", "megaStone": { "Chimecho": "Chimecho-Mega" } },
-    "choicescarf": { "name": "Choice Scarf" },
-    "chopleberry": { "name": "Chople Berry" },
-    "clefablite": { "name": "Clefablite", "megaStone": { "Clefable": "Clefable-Mega" } },
-    "cobaberry": { "name": "Coba Berry" },
-    "colburberry": { "name": "Colbur Berry" },
-    "crabominite": { "name": "Crabominite", "megaStone": { "Crabominable": "Crabominable-Mega" } },
-    "damprock": { "name": "Damp Rock" },
-    "delphoxite": { "name": "Delphoxite", "megaStone": { "Delphox": "Delphox-Mega" } },
-    "dragalgite": { "name": "Dragalgite", "megaStone": { "Dragalge": "Dragalge-Mega" } },
-    "dragonfang": { "name": "Dragon Fang" },
-    "dragoninite": { "name": "Dragoninite", "megaStone": { "Dragonite": "Dragonite-Mega" } },
-    "drampanite": { "name": "Drampanite", "megaStone": { "Drampa": "Drampa-Mega" } },
-    "eelektrossite": { "name": "Eelektrossite", "megaStone": { "Eelektross": "Eelektross-Mega" } },
-    "ejectbutton": { "name": "Eject Button" },
-    "electricseed": { "name": "Electric Seed" },
-    "emboarite": { "name": "Emboarite", "megaStone": { "Emboar": "Emboar-Mega" } },
-    "excadrite": { "name": "Excadrite", "megaStone": { "Excadrill": "Excadrill-Mega" } },
-    "expertbelt": { "name": "Expert Belt" },
-    "fairyfeather": { "name": "Fairy Feather" },
-    "falinksite": { "name": "Falinksite", "megaStone": { "Falinks": "Falinks-Mega" } },
-    "feraligite": { "name": "Feraligite", "megaStone": { "Feraligatr": "Feraligatr-Mega" } },
-    "floettite": { "name": "Floettite", "megaStone": { "Floette-Eternal": "Floette-Mega" } },
-    "focusband": { "name": "Focus Band" },
-    "focussash": { "name": "Focus Sash" },
-    "froslassite": { "name": "Froslassite", "megaStone": { "Froslass": "Froslass-Mega" } },
-    "galladite": { "name": "Galladite", "megaStone": { "Gallade": "Gallade-Mega" } },
-    "garchompite": { "name": "Garchompite", "megaStone": { "Garchomp": "Garchomp-Mega" } },
-    "garchompitez": { "name": "Garchompite Z", "megaStone": { "Garchomp": "Garchomp-Mega-Z" } },
-    "gardevoirite": { "name": "Gardevoirite", "megaStone": { "Gardevoir": "Gardevoir-Mega" } },
-    "gengarite": { "name": "Gengarite", "megaStone": { "Gengar": "Gengar-Mega" } },
-    "glalitite": { "name": "Glalitite", "megaStone": { "Glalie": "Glalie-Mega" } },
-    "glimmoranite": { "name": "Glimmoranite", "megaStone": { "Glimmora": "Glimmora-Mega" } },
-    "golisopite": { "name": "Golisopite", "megaStone": { "Golisopod": "Golisopod-Mega" } },
-    "golurkite": { "name": "Golurkite", "megaStone": { "Golurk": "Golurk-Mega" } },
-    "grassyseed": { "name": "Grassy Seed" },
-    "greninjite": { "name": "Greninjite", "megaStone": { "Greninja": "Greninja-Mega" } },
-    "gyaradosite": { "name": "Gyaradosite", "megaStone": { "Gyarados": "Gyarados-Mega" } },
-    "habanberry": { "name": "Haban Berry" },
-    "hardstone": { "name": "Hard Stone" },
-    "hawluchanite": { "name": "Hawluchanite", "megaStone": { "Hawlucha": "Hawlucha-Mega" } },
-    "heatrock": { "name": "Heat Rock" },
-    "heracronite": { "name": "Heracronite", "megaStone": { "Heracross": "Heracross-Mega" } },
-    "houndoominite": { "name": "Houndoominite", "megaStone": { "Houndoom": "Houndoom-Mega" } },
-    "icyrock": { "name": "Icy Rock" },
-    "ironball": { "name": "Iron Ball" },
-    "kangaskhanite": { "name": "Kangaskhanite", "megaStone": { "Kangaskhan": "Kangaskhan-Mega" } },
-    "kasibberry": { "name": "Kasib Berry" },
-    "kebiaberry": { "name": "Kebia Berry" },
-    "kingsrock": { "name": "King's Rock" },
-    "leek": { "name": "Leek" },
-    "leftovers": { "name": "Leftovers" },
-    "leppaberry": { "name": "Leppa Berry" },
-    "lifeorb": { "name": "Life Orb" },
-    "lightball": { "name": "Light Ball" },
-    "lightclay": { "name": "Light Clay" },
-    "lopunnite": { "name": "Lopunnite", "megaStone": { "Lopunny": "Lopunny-Mega" } },
-    "lucarionite": { "name": "Lucarionite", "megaStone": { "Lucario": "Lucario-Mega" } },
-    "lucarionitez": { "name": "Lucarionite Z", "megaStone": { "Lucario": "Lucario-Mega-Z" } },
-    "lumberry": { "name": "Lum Berry" },
-    "magnet": { "name": "Magnet" },
-    "malamarite": { "name": "Malamarite", "megaStone": { "Malamar": "Malamar-Mega" } },
-    "manectite": { "name": "Manectite", "megaStone": { "Manectric": "Manectric-Mega" } },
-    "mawilite": { "name": "Mawilite", "megaStone": { "Mawile": "Mawile-Mega" } },
-    "medichamite": { "name": "Medichamite", "megaStone": { "Medicham": "Medicham-Mega" } },
-    "meganiumite": { "name": "Meganiumite", "megaStone": { "Meganium": "Meganium-Mega" } },
-    "mentalherb": { "name": "Mental Herb" },
-    "meowsticite": { "name": "Meowsticite", "megaStone": { "Meowstic": "Meowstic-M-Mega", "Meowstic-F": "Meowstic-F-Mega" } },
-    "metagrossite": { "name": "Metagrossite", "megaStone": { "Metagross": "Metagross-Mega" } },
-    "metalcoat": { "name": "Metal Coat" },
-    "metronome": { "name": "Metronome" },
-    "miracleseed": { "name": "Miracle Seed" },
-    "mistyseed": { "name": "Misty Seed" },
-    "muscleband": { "name": "Muscle Band" },
-    "mysticwater": { "name": "Mystic Water" },
-    "nevermeltice": { "name": "Never-Melt Ice" },
-    "occaberry": { "name": "Occa Berry" },
-    "oranberry": { "name": "Oran Berry" },
-    "passhoberry": { "name": "Passho Berry" },
-    "payapaberry": { "name": "Payapa Berry" },
-    "pechaberry": { "name": "Pecha Berry" },
-    "persimberry": { "name": "Persim Berry" },
-    "pidgeotite": { "name": "Pidgeotite", "megaStone": { "Pidgeot": "Pidgeot-Mega" } },
-    "pinsirite": { "name": "Pinsirite", "megaStone": { "Pinsir": "Pinsir-Mega" } },
-    "poisonbarb": { "name": "Poison Barb" },
-    "psychicseed": { "name": "Psychic Seed" },
-    "pyroarite": { "name": "Pyroarite", "megaStone": { "Pyroar": "Pyroar-Mega" } },
-    "quickclaw": { "name": "Quick Claw" },
-    "raichunitex": { "name": "Raichunite X", "megaStone": { "Raichu": "Raichu-Mega-X" } },
-    "raichunitey": { "name": "Raichunite Y", "megaStone": { "Raichu": "Raichu-Mega-Y" } },
-    "rawstberry": { "name": "Rawst Berry" },
-    "redcard": { "name": "Red Card" },
-    "rindoberry": { "name": "Rindo Berry" },
-    "rockyhelmet": { "name": "Rocky Helmet" },
-    "roseliberry": { "name": "Roseli Berry" },
-    "sablenite": { "name": "Sablenite", "megaStone": { "Sableye": "Sableye-Mega" } },
-    "salamencite": { "name": "Salamencite", "megaStone": { "Salamence": "Salamence-Mega" } },
-    "sceptilite": { "name": "Sceptilite", "megaStone": { "Sceptile": "Sceptile-Mega" } },
-    "scizorite": { "name": "Scizorite", "megaStone": { "Scizor": "Scizor-Mega" } },
-    "scolipite": { "name": "Scolipite", "megaStone": { "Scolipede": "Scolipede-Mega" } },
-    "scopelens": { "name": "Scope Lens" },
-    "scovillainite": { "name": "Scovillainite", "megaStone": { "Scovillain": "Scovillain-Mega" } },
-    "scraftinite": { "name": "Scraftinite", "megaStone": { "Scrafty": "Scrafty-Mega" } },
-    "sharpbeak": { "name": "Sharp Beak" },
-    "sharpedonite": { "name": "Sharpedonite", "megaStone": { "Sharpedo": "Sharpedo-Mega" } },
-    "shedshell": { "name": "Shed Shell" },
-    "shellbell": { "name": "Shell Bell" },
-    "shucaberry": { "name": "Shuca Berry" },
-    "silkscarf": { "name": "Silk Scarf" },
-    "silverpowder": { "name": "Silver Powder" },
-    "sitrusberry": { "name": "Sitrus Berry" },
-    "skarmorite": { "name": "Skarmorite", "megaStone": { "Skarmory": "Skarmory-Mega" } },
-    "slowbronite": { "name": "Slowbronite", "megaStone": { "Slowbro": "Slowbro-Mega" } },
-    "smoothrock": { "name": "Smooth Rock" },
-    "softsand": { "name": "Soft Sand" },
-    "spelltag": { "name": "Spell Tag" },
-    "staraptite": { "name": "Staraptite", "megaStone": { "Staraptor": "Staraptor-Mega" } },
-    "starminite": { "name": "Starminite", "megaStone": { "Starmie": "Starmie-Mega" } },
-    "steelixite": { "name": "Steelixite", "megaStone": { "Steelix": "Steelix-Mega" } },
-    "swampertite": { "name": "Swampertite", "megaStone": { "Swampert": "Swampert-Mega" } },
-    "tangaberry": { "name": "Tanga Berry" },
-    "terrainextender": { "name": "Terrain Extender" },
-    "twistedspoon": { "name": "Twisted Spoon" },
-    "tyranitarite": { "name": "Tyranitarite", "megaStone": { "Tyranitar": "Tyranitar-Mega" } },
-    "venusaurite": { "name": "Venusaurite", "megaStone": { "Venusaur": "Venusaur-Mega" } },
-    "victreebelite": { "name": "Victreebelite", "megaStone": { "Victreebel": "Victreebel-Mega" } },
-    "wacanberry": { "name": "Wacan Berry" },
-    "whiteherb": { "name": "White Herb" },
-    "widelens": { "name": "Wide Lens" },
-    "wiseglasses": { "name": "Wise Glasses" },
-    "yacheberry": { "name": "Yache Berry" },
-    "zoomlens": { "name": "Zoom Lens" }
+    "abomasite": {
+      "name": "Abomasite",
+      "desc": "If held by an Abomasnow, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Abomasnow": "Abomasnow-Mega" }
+    },
+    "absolite": {
+      "name": "Absolite",
+      "desc": "If held by an Absol, this item allows it to Mega Evolve into Mega Absol in battle.",
+      "megaStone": { "Absol": "Absol-Mega" }
+    },
+    "absolitez": {
+      "name": "Absolite Z",
+      "desc": "If held by an Absol, this item allows it to Mega Evolve into Mega Absol Z in battle.",
+      "megaStone": { "Absol": "Absol-Mega-Z" }
+    },
+    "aerodactylite": {
+      "name": "Aerodactylite",
+      "desc": "If held by an Aerodactyl, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Aerodactyl": "Aerodactyl-Mega" }
+    },
+    "aggronite": {
+      "name": "Aggronite",
+      "desc": "If held by an Aggron, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Aggron": "Aggron-Mega" }
+    },
+    "airballoon": { "name": "Air Balloon", "desc": "Holder is immune to Ground-type attacks. Pops when holder is hit." },
+    "alakazite": {
+      "name": "Alakazite",
+      "desc": "If held by an Alakazam, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Alakazam": "Alakazam-Mega" }
+    },
+    "altarianite": {
+      "name": "Altarianite",
+      "desc": "If held by an Altaria, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Altaria": "Altaria-Mega" }
+    },
+    "ampharosite": {
+      "name": "Ampharosite",
+      "desc": "If held by an Ampharos, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Ampharos": "Ampharos-Mega" }
+    },
+    "aspearberry": { "name": "Aspear Berry", "desc": "Holder is cured if it is frozen. Single use." },
+    "audinite": {
+      "name": "Audinite",
+      "desc": "If held by an Audino, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Audino": "Audino-Mega" }
+    },
+    "babiriberry": { "name": "Babiri Berry", "desc": "Halves damage taken from a supereffective Steel-type attack. Single use." },
+    "banettite": {
+      "name": "Banettite",
+      "desc": "If held by a Banette, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Banette": "Banette-Mega" }
+    },
+    "barbaracite": {
+      "name": "Barbaracite",
+      "desc": "If held by a Barbaracle, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Barbaracle": "Barbaracle-Mega" }
+    },
+    "baxcalibrite": {
+      "name": "Baxcalibrite",
+      "desc": "If held by a Baxcalibur, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Baxcalibur": "Baxcalibur-Mega" }
+    },
+    "beedrillite": {
+      "name": "Beedrillite",
+      "desc": "If held by a Beedrill, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Beedrill": "Beedrill-Mega" }
+    },
+    "bigroot": { "name": "Big Root", "desc": "Holder gains 1.3× HP from draining/Aqua Ring/Ingrain/Leech Seed/Strength Sap." },
+    "bindingband": { "name": "Binding Band", "desc": "Holder's partial-trapping moves deal 1/6 max HP per turn instead of 1/8." },
+    "blackbelt": { "name": "Black Belt", "desc": "Holder's Fighting-type attacks have 1.2× power." },
+    "blackglasses": { "name": "Black Glasses", "desc": "Holder's Dark-type attacks have 1.2× power." },
+    "blastoisinite": {
+      "name": "Blastoisinite",
+      "desc": "If held by a Blastoise, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Blastoise": "Blastoise-Mega" }
+    },
+    "blazikenite": {
+      "name": "Blazikenite",
+      "desc": "If held by a Blaziken, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Blaziken": "Blaziken-Mega" }
+    },
+    "brightpowder": { "name": "Bright Powder", "desc": "The accuracy of attacks against the holder is 0.9×." },
+    "cameruptite": {
+      "name": "Cameruptite",
+      "desc": "If held by a Camerupt, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Camerupt": "Camerupt-Mega" }
+    },
+    "chandelurite": {
+      "name": "Chandelurite",
+      "desc": "If held by a Chandelure, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Chandelure": "Chandelure-Mega" }
+    },
+    "charcoal": { "name": "Charcoal", "desc": "Holder's Fire-type attacks have 1.2× power." },
+    "charizarditex": {
+      "name": "Charizardite X",
+      "desc": "If held by a Charizard, this item allows it to Mega Evolve into Mega Charizard X.",
+      "megaStone": { "Charizard": "Charizard-Mega-X" }
+    },
+    "charizarditey": {
+      "name": "Charizardite Y",
+      "desc": "If held by a Charizard, this item allows it to Mega Evolve into Mega Charizard Y.",
+      "megaStone": { "Charizard": "Charizard-Mega-Y" }
+    },
+    "chartiberry": { "name": "Charti Berry", "desc": "Halves damage taken from a supereffective Rock-type attack. Single use." },
+    "cheriberry": { "name": "Cheri Berry", "desc": "Holder cures itself if it is paralyzed. Single use." },
+    "chesnaughtite": {
+      "name": "Chesnaughtite",
+      "desc": "If held by a Chesnaught, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Chesnaught": "Chesnaught-Mega" }
+    },
+    "chestoberry": { "name": "Chesto Berry", "desc": "Holder wakes up if it is asleep. Single use." },
+    "chilanberry": { "name": "Chilan Berry", "desc": "Halves damage taken from a Normal-type attack. Single use." },
+    "chimechite": {
+      "name": "Chimechite",
+      "desc": "If held by a Chimecho, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Chimecho": "Chimecho-Mega" }
+    },
+    "choicescarf": { "name": "Choice Scarf", "desc": "Holder's Speed is 1.5×, but it can only select the first move it executes." },
+    "chopleberry": { "name": "Chople Berry", "desc": "Halves damage taken from a supereffective Fighting-type attack. Single use." },
+    "clefablite": {
+      "name": "Clefablite",
+      "desc": "If held by a Clefable, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Clefable": "Clefable-Mega" }
+    },
+    "cobaberry": { "name": "Coba Berry", "desc": "Halves damage taken from a supereffective Flying-type attack. Single use." },
+    "colburberry": { "name": "Colbur Berry", "desc": "Halves damage taken from a supereffective Dark-type attack. Single use." },
+    "crabominite": {
+      "name": "Crabominite",
+      "desc": "If held by a Crabominable, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Crabominable": "Crabominable-Mega" }
+    },
+    "damprock": { "name": "Damp Rock", "desc": "Holder's use of Rain Dance lasts 8 turns instead of 5." },
+    "delphoxite": {
+      "name": "Delphoxite",
+      "desc": "If held by a Delphox, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Delphox": "Delphox-Mega" }
+    },
+    "dragalgite": {
+      "name": "Dragalgite",
+      "desc": "If held by a Dragalge, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Dragalge": "Dragalge-Mega" }
+    },
+    "dragonfang": { "name": "Dragon Fang", "desc": "Holder's Dragon-type attacks have 1.2× power." },
+    "dragoninite": {
+      "name": "Dragoninite",
+      "desc": "If held by a Dragonite, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Dragonite": "Dragonite-Mega" }
+    },
+    "drampanite": {
+      "name": "Drampanite",
+      "desc": "If held by a Drampa, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Drampa": "Drampa-Mega" }
+    },
+    "eelektrossite": {
+      "name": "Eelektrossite",
+      "desc": "If held by an Eelektross, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Eelektross": "Eelektross-Mega" }
+    },
+    "ejectbutton": {
+      "name": "Eject Button",
+      "desc": "If holder survives a hit, it immediately switches out to a chosen ally. Single use."
+    },
+    "electricseed": {
+      "name": "Electric Seed",
+      "desc": "If the terrain is Electric Terrain, raises holder's Defense by 1 stage. Single use."
+    },
+    "emboarite": {
+      "name": "Emboarite",
+      "desc": "If held by an Emboar, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Emboar": "Emboar-Mega" }
+    },
+    "excadrite": {
+      "name": "Excadrite",
+      "desc": "If held by an Excadrill, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Excadrill": "Excadrill-Mega" }
+    },
+    "expertbelt": { "name": "Expert Belt", "desc": "Holder's attacks that are super effective against the target do 1.2× damage." },
+    "fairyfeather": { "name": "Fairy Feather", "desc": "Holder's Fairy-type attacks have 1.2× power." },
+    "falinksite": {
+      "name": "Falinksite",
+      "desc": "If held by a Falinks, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Falinks": "Falinks-Mega" }
+    },
+    "feraligite": {
+      "name": "Feraligite",
+      "desc": "If held by a Feraligatr, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Feraligatr": "Feraligatr-Mega" }
+    },
+    "floettite": {
+      "name": "Floettite",
+      "desc": "If held by an Eternal Flower Floette, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Floette-Eternal": "Floette-Mega" }
+    },
+    "focusband": { "name": "Focus Band", "desc": "Holder has a 10% chance to survive an attack that would KO it with 1 HP." },
+    "focussash": { "name": "Focus Sash", "desc": "If holder's HP is full, will survive an attack that would KO it with 1 HP. Single use." },
+    "froslassite": {
+      "name": "Froslassite",
+      "desc": "If held by a Froslass, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Froslass": "Froslass-Mega" }
+    },
+    "galladite": {
+      "name": "Galladite",
+      "desc": "If held by a Gallade, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Gallade": "Gallade-Mega" }
+    },
+    "garchompite": {
+      "name": "Garchompite",
+      "desc": "If held by a Garchomp, this item allows it to Mega Evolve into Mega Garchomp.",
+      "megaStone": { "Garchomp": "Garchomp-Mega" }
+    },
+    "garchompitez": {
+      "name": "Garchompite Z",
+      "desc": "If held by a Garchomp, this item allows it to Mega Evolve into Mega Garchomp Z.",
+      "megaStone": { "Garchomp": "Garchomp-Mega-Z" }
+    },
+    "gardevoirite": {
+      "name": "Gardevoirite",
+      "desc": "If held by a Gardevoir, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Gardevoir": "Gardevoir-Mega" }
+    },
+    "gengarite": {
+      "name": "Gengarite",
+      "desc": "If held by a Gengar, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Gengar": "Gengar-Mega" }
+    },
+    "glalitite": {
+      "name": "Glalitite",
+      "desc": "If held by a Glalie, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Glalie": "Glalie-Mega" }
+    },
+    "glimmoranite": {
+      "name": "Glimmoranite",
+      "desc": "If held by a Glimmora, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Glimmora": "Glimmora-Mega" }
+    },
+    "golisopite": {
+      "name": "Golisopite",
+      "desc": "If held by a Golisopod, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Golisopod": "Golisopod-Mega" }
+    },
+    "golurkite": {
+      "name": "Golurkite",
+      "desc": "If held by a Golurk, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Golurk": "Golurk-Mega" }
+    },
+    "grassyseed": { "name": "Grassy Seed", "desc": "If the terrain is Grassy Terrain, raises holder's Defense by 1 stage. Single use." },
+    "greninjite": {
+      "name": "Greninjite",
+      "desc": "If held by a Greninja, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Greninja": "Greninja-Mega" }
+    },
+    "gyaradosite": {
+      "name": "Gyaradosite",
+      "desc": "If held by a Gyarados, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Gyarados": "Gyarados-Mega" }
+    },
+    "habanberry": { "name": "Haban Berry", "desc": "Halves damage taken from a supereffective Dragon-type attack. Single use." },
+    "hardstone": { "name": "Hard Stone", "desc": "Holder's Rock-type attacks have 1.2× power." },
+    "hawluchanite": {
+      "name": "Hawluchanite",
+      "desc": "If held by a Hawlucha, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Hawlucha": "Hawlucha-Mega" }
+    },
+    "heatrock": { "name": "Heat Rock", "desc": "Holder's use of Sunny Day lasts 8 turns instead of 5." },
+    "heracronite": {
+      "name": "Heracronite",
+      "desc": "If held by a Heracross, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Heracross": "Heracross-Mega" }
+    },
+    "houndoominite": {
+      "name": "Houndoominite",
+      "desc": "If held by a Houndoom, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Houndoom": "Houndoom-Mega" }
+    },
+    "icyrock": { "name": "Icy Rock", "desc": "Holder's use of Snowscape lasts 8 turns instead of 5." },
+    "ironball": { "name": "Iron Ball", "desc": "Holder is grounded, Speed halved. If Flying type, takes neutral Ground damage." },
+    "kangaskhanite": {
+      "name": "Kangaskhanite",
+      "desc": "If held by a Kangaskhan, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Kangaskhan": "Kangaskhan-Mega" }
+    },
+    "kasibberry": { "name": "Kasib Berry", "desc": "Halves damage taken from a supereffective Ghost-type attack. Single use." },
+    "kebiaberry": { "name": "Kebia Berry", "desc": "Halves damage taken from a supereffective Poison-type attack. Single use." },
+    "kingsrock": { "name": "King's Rock", "desc": "Holder's attacks without a chance to flinch gain a 10% chance to flinch." },
+    "leek": { "name": "Leek", "desc": "If held by a Farfetch’d or Sirfetch’d, its critical hit ratio is raised by 2 stages." },
+    "leftovers": { "name": "Leftovers", "desc": "At the end of every turn, holder restores 1/16 of its max HP." },
+    "leppaberry": { "name": "Leppa Berry", "desc": "Restores 10 PP to the first of the holder's moves to reach 0 PP. Single use." },
+    "lifeorb": { "name": "Life Orb", "desc": "Holder's attacks do 1.3× damage, and it loses 1/10 its max HP after the attack." },
+    "lightball": { "name": "Light Ball", "desc": "If held by a Pikachu, its Attack and Sp. Atk are doubled." },
+    "lightclay": { "name": "Light Clay", "desc": "Holder's use of Aurora Veil, Light Screen, or Reflect lasts 8 turns instead of 5." },
+    "lopunnite": {
+      "name": "Lopunnite",
+      "desc": "If held by a Lopunny, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Lopunny": "Lopunny-Mega" }
+    },
+    "lucarionite": {
+      "name": "Lucarionite",
+      "desc": "If held by a Lucario, this item allows it to Mega Evolve into Mega Lucario in battle.",
+      "megaStone": { "Lucario": "Lucario-Mega" }
+    },
+    "lucarionitez": {
+      "name": "Lucarionite Z",
+      "desc": "If held by a Lucario, this item allows it to Mega Evolve into Mega Lucario Z in battle.",
+      "megaStone": { "Lucario": "Lucario-Mega-Z" }
+    },
+    "lumberry": { "name": "Lum Berry", "desc": "Holder cures itself if it has a non-volatile status or is confused. Single use." },
+    "magnet": { "name": "Magnet", "desc": "Holder's Electric-type attacks have 1.2× power." },
+    "malamarite": {
+      "name": "Malamarite",
+      "desc": "If held by a Malamar, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Malamar": "Malamar-Mega" }
+    },
+    "manectite": {
+      "name": "Manectite",
+      "desc": "If held by a Manectric, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Manectric": "Manectric-Mega" }
+    },
+    "mawilite": {
+      "name": "Mawilite",
+      "desc": "If held by a Mawile, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Mawile": "Mawile-Mega" }
+    },
+    "medichamite": {
+      "name": "Medichamite",
+      "desc": "If held by a Medicham, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Medicham": "Medicham-Mega" }
+    },
+    "meganiumite": {
+      "name": "Meganiumite",
+      "desc": "If held by a Meganium, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Meganium": "Meganium-Mega" }
+    },
+    "mentalherb": { "name": "Mental Herb", "desc": "Cures holder of Attract, Disable, Encore, Heal Block, Taunt, Torment. Single use." },
+    "meowsticite": {
+      "name": "Meowsticite",
+      "desc": "If held by a Meowstic, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Meowstic": "Meowstic-M-Mega", "Meowstic-F": "Meowstic-F-Mega" }
+    },
+    "metagrossite": {
+      "name": "Metagrossite",
+      "desc": "If held by a Metagross, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Metagross": "Metagross-Mega" }
+    },
+    "metalcoat": { "name": "Metal Coat", "desc": "Holder's Steel-type attacks have 1.2× power." },
+    "metronome": { "name": "Metronome", "desc": "Damage of moves used on consecutive turns is increased. Max 2× after 5 turns." },
+    "miracleseed": { "name": "Miracle Seed", "desc": "Holder's Grass-type attacks have 1.2× power." },
+    "mistyseed": { "name": "Misty Seed", "desc": "If the terrain is Misty Terrain, raises holder's Sp. Def by 1 stage. Single use." },
+    "muscleband": { "name": "Muscle Band", "desc": "Holder's physical attacks have 1.1× power." },
+    "mysticwater": { "name": "Mystic Water", "desc": "Holder's Water-type attacks have 1.2× power." },
+    "nevermeltice": { "name": "Never-Melt Ice", "desc": "Holder's Ice-type attacks have 1.2× power." },
+    "occaberry": { "name": "Occa Berry", "desc": "Halves damage taken from a supereffective Fire-type attack. Single use." },
+    "oranberry": { "name": "Oran Berry", "desc": "Restores 10 HP when at 1/2 max HP or less. Single use." },
+    "passhoberry": { "name": "Passho Berry", "desc": "Halves damage taken from a supereffective Water-type attack. Single use." },
+    "payapaberry": { "name": "Payapa Berry", "desc": "Halves damage taken from a supereffective Psychic-type attack. Single use." },
+    "pechaberry": { "name": "Pecha Berry", "desc": "Holder is cured if it is poisoned. Single use." },
+    "persimberry": { "name": "Persim Berry", "desc": "Holder is cured if it is confused. Single use." },
+    "pidgeotite": {
+      "name": "Pidgeotite",
+      "desc": "If held by a Pidgeot, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Pidgeot": "Pidgeot-Mega" }
+    },
+    "pinsirite": {
+      "name": "Pinsirite",
+      "desc": "If held by a Pinsir, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Pinsir": "Pinsir-Mega" }
+    },
+    "poisonbarb": { "name": "Poison Barb", "desc": "Holder's Poison-type attacks have 1.2× power." },
+    "psychicseed": { "name": "Psychic Seed", "desc": "If the terrain is Psychic Terrain, raises holder's Sp. Def by 1 stage. Single use." },
+    "pyroarite": {
+      "name": "Pyroarite",
+      "desc": "If held by a Pyroar, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Pyroar": "Pyroar-Mega" }
+    },
+    "quickclaw": { "name": "Quick Claw", "desc": "Each turn, holder has a 20% chance to move first in its priority bracket." },
+    "raichunitex": {
+      "name": "Raichunite X",
+      "desc": "If held by a Raichu, this item allows it to Mega Evolve into Mega Raichu X in battle.",
+      "megaStone": { "Raichu": "Raichu-Mega-X" }
+    },
+    "raichunitey": {
+      "name": "Raichunite Y",
+      "desc": "If held by a Raichu, this item allows it to Mega Evolve into Mega Raichu Y in battle.",
+      "megaStone": { "Raichu": "Raichu-Mega-Y" }
+    },
+    "rawstberry": { "name": "Rawst Berry", "desc": "Holder is cured if it is burned. Single use." },
+    "redcard": { "name": "Red Card", "desc": "If holder survives a hit, attacker is forced to switch to a random ally. Single use." },
+    "rindoberry": { "name": "Rindo Berry", "desc": "Halves damage taken from a supereffective Grass-type attack. Single use." },
+    "rockyhelmet": { "name": "Rocky Helmet", "desc": "If holder is hit by a contact move, the attacker loses 1/6 of its max HP." },
+    "roseliberry": { "name": "Roseli Berry", "desc": "Halves damage taken from a supereffective Fairy-type attack. Single use." },
+    "sablenite": {
+      "name": "Sablenite",
+      "desc": "If held by a Sableye, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Sableye": "Sableye-Mega" }
+    },
+    "salamencite": {
+      "name": "Salamencite",
+      "desc": "If held by a Salamence, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Salamence": "Salamence-Mega" }
+    },
+    "sceptilite": {
+      "name": "Sceptilite",
+      "desc": "If held by a Sceptile, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Sceptile": "Sceptile-Mega" }
+    },
+    "scizorite": {
+      "name": "Scizorite",
+      "desc": "If held by a Scizor, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Scizor": "Scizor-Mega" }
+    },
+    "scolipite": {
+      "name": "Scolipite",
+      "desc": "If held by a Scolipede, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Scolipede": "Scolipede-Mega" }
+    },
+    "scopelens": { "name": "Scope Lens", "desc": "Holder's critical hit ratio is raised by 1 stage." },
+    "scovillainite": {
+      "name": "Scovillainite",
+      "desc": "If held by a Scovillain, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Scovillain": "Scovillain-Mega" }
+    },
+    "scraftinite": {
+      "name": "Scraftinite",
+      "desc": "If held by a Scrafty, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Scrafty": "Scrafty-Mega" }
+    },
+    "sharpbeak": { "name": "Sharp Beak", "desc": "Holder's Flying-type attacks have 1.2× power." },
+    "sharpedonite": {
+      "name": "Sharpedonite",
+      "desc": "If held by a Sharpedo, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Sharpedo": "Sharpedo-Mega" }
+    },
+    "shedshell": { "name": "Shed Shell", "desc": "Holder cannot be prevented from choosing to switch out by any effect." },
+    "shellbell": { "name": "Shell Bell", "desc": "After an attack, holder gains 1/8 of the damage in HP dealt to other Pokemon." },
+    "shucaberry": { "name": "Shuca Berry", "desc": "Halves damage taken from a supereffective Ground-type attack. Single use." },
+    "silkscarf": { "name": "Silk Scarf", "desc": "Holder's Normal-type attacks have 1.2× power." },
+    "silverpowder": { "name": "Silver Powder", "desc": "Holder's Bug-type attacks have 1.2× power." },
+    "sitrusberry": { "name": "Sitrus Berry", "desc": "Restores 1/4 max HP when at 1/2 max HP or less. Single use." },
+    "skarmorite": {
+      "name": "Skarmorite",
+      "desc": "If held by a Skarmory, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Skarmory": "Skarmory-Mega" }
+    },
+    "slowbronite": {
+      "name": "Slowbronite",
+      "desc": "If held by a Slowbro, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Slowbro": "Slowbro-Mega" }
+    },
+    "smoothrock": { "name": "Smooth Rock", "desc": "Holder's use of Sandstorm lasts 8 turns instead of 5." },
+    "softsand": { "name": "Soft Sand", "desc": "Holder's Ground-type attacks have 1.2× power." },
+    "spelltag": { "name": "Spell Tag", "desc": "Holder's Ghost-type attacks have 1.2× power." },
+    "staraptite": {
+      "name": "Staraptite",
+      "desc": "If held by a Staraptor, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Staraptor": "Staraptor-Mega" }
+    },
+    "starminite": {
+      "name": "Starminite",
+      "desc": "If held by a Starmie, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Starmie": "Starmie-Mega" }
+    },
+    "steelixite": {
+      "name": "Steelixite",
+      "desc": "If held by a Steelix, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Steelix": "Steelix-Mega" }
+    },
+    "swampertite": {
+      "name": "Swampertite",
+      "desc": "If held by a Swampert, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Swampert": "Swampert-Mega" }
+    },
+    "tangaberry": { "name": "Tanga Berry", "desc": "Halves damage taken from a supereffective Bug-type attack. Single use." },
+    "terrainextender": {
+      "name": "Terrain Extender",
+      "desc": "Holder's use of Electric/Grassy/Misty/Psychic Terrain lasts 8 turns instead of 5."
+    },
+    "twistedspoon": { "name": "Twisted Spoon", "desc": "Holder's Psychic-type attacks have 1.2× power." },
+    "tyranitarite": {
+      "name": "Tyranitarite",
+      "desc": "If held by a Tyranitar, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Tyranitar": "Tyranitar-Mega" }
+    },
+    "venusaurite": {
+      "name": "Venusaurite",
+      "desc": "If held by a Venusaur, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Venusaur": "Venusaur-Mega" }
+    },
+    "victreebelite": {
+      "name": "Victreebelite",
+      "desc": "If held by a Victreebel, this item allows it to Mega Evolve in battle.",
+      "megaStone": { "Victreebel": "Victreebel-Mega" }
+    },
+    "wacanberry": { "name": "Wacan Berry", "desc": "Halves damage taken from a supereffective Electric-type attack. Single use." },
+    "whiteherb": { "name": "White Herb", "desc": "Restores all lowered stat stages to 0 when one is less than 0. Single use." },
+    "widelens": { "name": "Wide Lens", "desc": "The accuracy of attacks by the holder is 1.1×." },
+    "wiseglasses": { "name": "Wise Glasses", "desc": "Holder's special attacks have 1.1× power." },
+    "yacheberry": { "name": "Yache Berry", "desc": "Halves damage taken from a supereffective Ice-type attack. Single use." },
+    "zoomlens": { "name": "Zoom Lens", "desc": "The accuracy of attacks by the holder is 1.2× if it moves after its target." }
+  },
+  "abilities": {
+    "overgrow": { "name": "Overgrow", "desc": "At 1/3 or less of its max HP, this Pokemon's offensive stat is 1.5× with Grass attacks." },
+    "chlorophyll": { "name": "Chlorophyll", "desc": "If Sun is active, this Pokemon's Speed is doubled." },
+    "thickfat": { "name": "Thick Fat", "desc": "Fire-/Ice-type moves against this Pokemon deal damage with a halved offensive stat." },
+    "blaze": { "name": "Blaze", "desc": "At 1/3 or less of its max HP, this Pokemon's offensive stat is 1.5× with Fire attacks." },
+    "solarpower": { "name": "Solar Power", "desc": "If Sun is active, this Pokemon's Sp. Atk is 1.5×; loses 1/8 max HP per turn." },
+    "toughclaws": { "name": "Tough Claws", "desc": "This Pokemon's contact moves have their power multiplied by 1.3." },
+    "drought": { "name": "Drought", "desc": "On switch-in, this Pokemon summons Sun." },
+    "torrent": { "name": "Torrent", "desc": "At 1/3 or less of its max HP, this Pokemon's offensive stat is 1.5× with Water attacks." },
+    "raindish": { "name": "Rain Dish", "desc": "If Rain is active, this Pokemon heals 1/16 of its max HP each turn." },
+    "megalauncher": {
+      "name": "Mega Launcher",
+      "desc": "This Pokemon's pulse moves have 1.5× power. Heal Pulse heals 3/4 target's max HP."
+    },
+    "swarm": { "name": "Swarm", "desc": "At 1/3 or less of its max HP, this Pokemon's offensive stat is 1.5× with Bug attacks." },
+    "sniper": { "name": "Sniper", "desc": "If this Pokemon strikes with a critical hit, the damage is multiplied by 1.5." },
+    "adaptability": { "name": "Adaptability", "desc": "This Pokemon's same-type attack bonus (STAB) is 2 instead of 1.5." },
+    "keeneye": { "name": "Keen Eye", "desc": "This Pokemon's accuracy can't be lowered by others; ignores their evasiveness stat." },
+    "tangledfeet": { "name": "Tangled Feet", "desc": "This Pokemon's evasiveness is doubled as long as it is confused." },
+    "bigpecks": { "name": "Big Pecks", "desc": "Prevents other Pokemon from lowering this Pokemon's Defense stat stage." },
+    "noguard": { "name": "No Guard", "desc": "Every move used by or against this Pokemon will always hit." },
+    "intimidate": { "name": "Intimidate", "desc": "On switch-in, this Pokemon lowers the Attack of opponents by 1 stage." },
+    "shedskin": { "name": "Shed Skin", "desc": "This Pokemon has a 33% chance to have its status cured at the end of each turn." },
+    "unnerve": { "name": "Unnerve", "desc": "While this Pokemon is active, it prevents opposing Pokemon from using their Berries." },
+    "static": { "name": "Static", "desc": "30% chance a Pokemon making contact with this Pokemon will be paralyzed." },
+    "lightningrod": {
+      "name": "Lightning Rod",
+      "desc": "This Pokemon draws Electric moves to itself to raise Sp. Atk by 1; Electric immunity."
+    },
+    "surgesurfer": { "name": "Surge Surfer", "desc": "If Electric Terrain is active, this Pokemon's Speed is doubled." },
+    "electricsurge": { "name": "Electric Surge", "desc": "On switch-in, this Pokemon summons Electric Terrain." },
+    "cutecharm": { "name": "Cute Charm", "desc": "30% chance of infatuating Pokemon of the opposite gender if they make contact." },
+    "magicguard": { "name": "Magic Guard", "desc": "This Pokemon can only be damaged by direct attacks." },
+    "unaware": { "name": "Unaware", "desc": "This Pokemon ignores other Pokemon's stat stages when taking or doing damage." },
+    "magicbounce": { "name": "Magic Bounce", "desc": "This Pokemon blocks certain Status moves and bounces them back to the user." },
+    "flashfire": { "name": "Flash Fire", "desc": "This Pokemon's Fire attacks do 1.5× damage if hit by one Fire move; Fire immunity." },
+    "snowcloak": { "name": "Snow Cloak", "desc": "If Snow is active, this Pokemon's evasiveness is 1.25×." },
+    "snowwarning": { "name": "Snow Warning", "desc": "On switch-in, this Pokemon summons Snow." },
+    "competitive": {
+      "name": "Competitive",
+      "desc": "This Pokemon's Sp. Atk is raised by 2 for each of its stats that is lowered by a foe."
+    },
+    "frisk": { "name": "Frisk", "desc": "On switch-in, this Pokemon identifies the held items of all opposing Pokemon." },
+    "effectspore": { "name": "Effect Spore", "desc": "30% chance of poison/paralysis/sleep on others making contact with this Pokemon." },
+    "limber": { "name": "Limber", "desc": "This Pokemon cannot be paralyzed. Gaining this Ability while paralyzed cures it." },
+    "technician": { "name": "Technician", "desc": "This Pokemon's moves of 60 power or less have 1.5× power, including Struggle." },
+    "furcoat": { "name": "Fur Coat", "desc": "This Pokemon's Defense is doubled." },
+    "rattled": { "name": "Rattled", "desc": "Speed is raised 1 stage if hit by a Bug-, Dark-, or Ghost-type attack, or Intimidated." },
+    "battlearmor": { "name": "Battle Armor", "desc": "This Pokemon cannot be struck by a critical hit." },
+    "steelyspirit": {
+      "name": "Steely Spirit",
+      "desc": "This Pokemon and its allies' Steel-type moves have their power multiplied by 1.5."
+    },
+    "justified": { "name": "Justified", "desc": "This Pokemon's Attack is raised by 1 stage after it is damaged by a Dark-type move." },
+    "rockhead": { "name": "Rock Head", "desc": "This Pokemon does not take recoil damage besides Struggle/Life Orb/crash damage." },
+    "waterabsorb": { "name": "Water Absorb", "desc": "This Pokemon heals 1/4 of its max HP when hit by Water moves; Water immunity." },
+    "damp": { "name": "Damp", "desc": "Prevents Explosion/Mind Blown/Misty Explosion/Self-Destruct/Aftermath while active." },
+    "drizzle": { "name": "Drizzle", "desc": "On switch-in, this Pokemon summons Rain." },
+    "synchronize": { "name": "Synchronize", "desc": "If another Pokemon burns/poisons/paralyzes this Pokemon, it also gets that status." },
+    "innerfocus": { "name": "Inner Focus", "desc": "This Pokemon cannot be made to flinch. Immune to Intimidate." },
+    "trace": { "name": "Trace", "desc": "On switch-in, or when it can, this Pokemon copies a random adjacent foe's Ability." },
+    "guts": { "name": "Guts", "desc": "If this Pokemon is statused, its Attack is 1.5×; ignores burn halving physical damage." },
+    "steadfast": { "name": "Steadfast", "desc": "If this Pokemon flinches, its Speed is raised by 1 stage." },
+    "gluttony": { "name": "Gluttony", "desc": "This Pokemon eats Berries at 1/2 max HP or less instead of their usual 1/4 max HP." },
+    "innardsout": { "name": "Innards Out", "desc": "If this Pokemon is KOed with a move, that move's user loses an equal amount of HP." },
+    "oblivious": { "name": "Oblivious", "desc": "This Pokemon cannot be infatuated or taunted. Immune to Intimidate." },
+    "owntempo": { "name": "Own Tempo", "desc": "This Pokemon cannot be confused. Immune to Intimidate." },
+    "regenerator": { "name": "Regenerator", "desc": "This Pokemon restores 1/3 of its maximum HP, rounded down, when it switches out." },
+    "shellarmor": { "name": "Shell Armor", "desc": "This Pokemon cannot be struck by a critical hit." },
+    "quickdraw": {
+      "name": "Quick Draw",
+      "desc": "This Pokemon has a 30% chance to move first in its priority bracket with attacking moves."
+    },
+    "curiousmedicine": { "name": "Curious Medicine", "desc": "On switch-in, this Pokemon's allies have their stat stages reset to 0." },
+    "defiant": { "name": "Defiant", "desc": "This Pokemon's Attack is raised by 2 for each of its stats that is lowered by a foe." },
+    "scrappy": { "name": "Scrappy", "desc": "Fighting, Normal moves hit Ghost. Immune to Intimidate." },
+    "cursedbody": { "name": "Cursed Body", "desc": "If this Pokemon is hit by an attack, there is a 30% chance that move gets disabled." },
+    "shadowtag": { "name": "Shadow Tag", "desc": "Prevents foes from choosing to switch unless they also have this Ability." },
+    "sturdy": { "name": "Sturdy", "desc": "If this Pokemon is at full HP, it survives one hit with at least 1 HP. Immune to OHKO." },
+    "sheerforce": {
+      "name": "Sheer Force",
+      "desc": "This Pokemon's attacks with secondary effects have 1.3× power; nullifies the effects."
+    },
+    "sandforce": { "name": "Sand Force", "desc": "This Pokemon's Ground/Rock/Steel attacks do 1.3× in Sandstorm; immunity to it." },
+    "solidrock": { "name": "Solid Rock", "desc": "This Pokemon receives 3/4 damage from supereffective attacks." },
+    "reckless": { "name": "Reckless", "desc": "This Pokemon's attacks with recoil or crash damage have 1.2× power; not Struggle." },
+    "earlybird": { "name": "Early Bird", "desc": "This Pokemon's sleep counter drops by 2 instead of 1." },
+    "parentalbond": {
+      "name": "Parental Bond",
+      "desc": "This Pokemon's damaging moves hit twice. The second hit has its damage quartered."
+    },
+    "illuminate": { "name": "Illuminate", "desc": "This Pokemon's accuracy can't be lowered by others; ignores their evasiveness stat." },
+    "naturalcure": { "name": "Natural Cure", "desc": "This Pokemon has its non-volatile status condition cured when it switches out." },
+    "analytic": { "name": "Analytic", "desc": "This Pokemon's attacks have 1.3× power if it is the last to move in a turn." },
+    "hugepower": { "name": "Huge Power", "desc": "This Pokemon's Attack is doubled." },
+    "soundproof": { "name": "Soundproof", "desc": "This Pokemon is immune to sound-based moves, unless it used the move." },
+    "filter": { "name": "Filter", "desc": "This Pokemon receives 3/4 damage from supereffective attacks." },
+    "screencleaner": {
+      "name": "Screen Cleaner",
+      "desc": "On switch-in, the effects of Aurora Veil, Light Screen, and Reflect end for both sides."
+    },
+    "icebody": { "name": "Ice Body", "desc": "If Snow is active, this Pokemon heals 1/16 of its max HP each turn." },
+    "lightmetal": { "name": "Light Metal", "desc": "This Pokemon's weight is halved." },
+    "sharpness": { "name": "Sharpness", "desc": "This Pokemon's slicing moves have their power multiplied by 1.5." },
+    "hypercutter": { "name": "Hyper Cutter", "desc": "Prevents other Pokemon from lowering this Pokemon's Attack stat stage." },
+    "moldbreaker": { "name": "Mold Breaker", "desc": "This Pokemon's moves and their effects ignore the Abilities of other Pokemon." },
+    "moxie": { "name": "Moxie", "desc": "This Pokemon's Attack is raised by 1 stage if it attacks and KOes another Pokemon." },
+    "aerilate": { "name": "Aerilate", "desc": "This Pokemon's Normal-type moves become Flying type and have 1.2× power." },
+    "angerpoint": {
+      "name": "Anger Point",
+      "desc": "If this Pokemon (not its substitute) takes a critical hit, its Attack is raised 12 stages."
+    },
+    "cudchew": { "name": "Cud Chew", "desc": "If this Pokemon eats a Berry, it will eat that Berry again at the end of the next turn." },
+    "imposter": { "name": "Imposter", "desc": "On switch-in, this Pokemon Transforms into the opposing Pokemon that is facing it." },
+    "hydration": { "name": "Hydration", "desc": "This Pokemon has its status cured at the end of each turn if Rain is active." },
+    "voltabsorb": { "name": "Volt Absorb", "desc": "This Pokemon heals 1/4 of its max HP when hit by Electric moves; Electric immunity." },
+    "quickfeet": { "name": "Quick Feet", "desc": "If this Pokemon is statused, its Speed is 1.5×; ignores Speed drop from paralysis." },
+    "leafguard": { "name": "Leaf Guard", "desc": "If Sun is active, this Pokemon cannot be statused and Rest will fail for it." },
+    "pixilate": { "name": "Pixilate", "desc": "This Pokemon's Normal-type moves become Fairy type and have 1.2× power." },
+    "pressure": { "name": "Pressure", "desc": "If this Pokemon is the target of a foe's move, that move loses one additional PP." },
+    "immunity": { "name": "Immunity", "desc": "This Pokemon cannot be poisoned. Gaining this Ability while poisoned cures it." },
+    "multiscale": { "name": "Multiscale", "desc": "If this Pokemon is at full HP, damage taken from attacks is halved." },
+    "megasol": { "name": "Mega Sol", "desc": "This Pokemon's moves are used as if the effects of Sun were active." },
+    "dragonize": { "name": "Dragonize", "desc": "This Pokemon's Normal-type moves become Dragon type and have 1.2× power." },
+    "insomnia": { "name": "Insomnia", "desc": "This Pokemon cannot fall asleep. Gaining this Ability while asleep cures it." },
+    "plus": { "name": "Plus", "desc": "If an active ally has this Ability or the Minus Ability, this Pokemon's Sp. Atk is 1.5×." },
+    "sapsipper": { "name": "Sap Sipper", "desc": "This Pokemon's Attack is raised 1 stage if hit by a Grass move; Grass immunity." },
+    "armortail": { "name": "Armor Tail", "desc": "This Pokemon and its allies are protected from opposing priority moves." },
+    "overcoat": { "name": "Overcoat", "desc": "This Pokemon is immune to powder moves, Sandstorm damage, and Effect Spore." },
+    "sandveil": { "name": "Sand Veil", "desc": "If Sandstorm is active, this Pokemon's evasiveness is 1.25×; immunity to Sandstorm." },
+    "poisonheal": { "name": "Poison Heal", "desc": "This Pokemon is healed by 1/8 of its max HP each turn when poisoned; no HP loss." },
+    "poisonpoint": { "name": "Poison Point", "desc": "30% chance a Pokemon making contact with this Pokemon will be poisoned." },
+    "swiftswim": { "name": "Swift Swim", "desc": "If Rain is active, this Pokemon's Speed is doubled." },
+    "skilllink": { "name": "Skill Link", "desc": "This Pokemon's multi-hit attacks always hit the maximum number of times." },
+    "pickpocket": {
+      "name": "Pickpocket",
+      "desc": "If this Pokemon has no item and is hit by a contact move, it steals the attacker's item."
+    },
+    "unburden": { "name": "Unburden", "desc": "Speed is doubled on held item loss; boost is lost if it switches, gets new item/Ability." },
+    "poisontouch": { "name": "Poison Touch", "desc": "This Pokemon's contact moves have a 30% chance of poisoning." },
+    "weakarmor": { "name": "Weak Armor", "desc": "If a physical attack hits this Pokemon, Defense is lowered by 1, Speed is raised by 2." },
+    "stalwart": { "name": "Stalwart", "desc": "This Pokemon's moves cannot be redirected to a different target by any effect." },
+    "sandstream": { "name": "Sand Stream", "desc": "On switch-in, this Pokemon summons Sandstorm." },
+    "speedboost": { "name": "Speed Boost", "desc": "This Pokemon's Speed is raised 1 stage at the end of each full turn on the field." },
+    "telepathy": { "name": "Telepathy", "desc": "This Pokemon does not take damage from attacks made by its allies." },
+    "stall": { "name": "Stall", "desc": "This Pokemon moves last among Pokemon using the same or greater priority moves." },
+    "prankster": { "name": "Prankster", "desc": "This Pokemon's Status moves have priority raised by 1, but Dark types are immune." },
+    "heavymetal": { "name": "Heavy Metal", "desc": "This Pokemon's weight is doubled." },
+    "purepower": { "name": "Pure Power", "desc": "This Pokemon's Attack is doubled." },
+    "minus": { "name": "Minus", "desc": "If an active ally has this Ability or the Plus Ability, this Pokemon's Sp. Atk is 1.5×." },
+    "liquidooze": { "name": "Liquid Ooze", "desc": "This Pokemon damages those draining HP from it for as much as they would heal." },
+    "stickyhold": { "name": "Sticky Hold", "desc": "This Pokemon cannot lose its held item due to another Pokemon's Ability or attack." },
+    "roughskin": { "name": "Rough Skin", "desc": "Pokemon making contact with this Pokemon lose 1/8 of their max HP." },
+    "strongjaw": { "name": "Strong Jaw", "desc": "This Pokemon's bite-based attacks have 1.5× power. Bug Bite is not boosted." },
+    "magmaarmor": { "name": "Magma Armor", "desc": "This Pokemon cannot be frozen. Gaining this Ability while frozen cures it." },
+    "whitesmoke": { "name": "White Smoke", "desc": "Prevents other Pokemon from lowering this Pokemon's stat stages." },
+    "cloudnine": { "name": "Cloud Nine", "desc": "While this Pokemon is active, the effects of weather conditions are disabled." },
+    "marvelscale": {
+      "name": "Marvel Scale",
+      "desc": "If this Pokemon has a non-volatile status condition, its Defense is multiplied by 1.5."
+    },
+    "forecast": { "name": "Forecast", "desc": "Castform's type changes to the current weather condition's type, except Sandstorm." },
+    "levitate": { "name": "Levitate", "desc": "This Pokemon is immune to Ground; Gravity/Ingrain/Smack Down/Iron Ball nullify it." },
+    "superluck": { "name": "Super Luck", "desc": "This Pokemon's critical hit ratio is raised by 1 stage." },
+    "moody": { "name": "Moody", "desc": "Boosts a random stat (except accuracy/evasion) +2 and another stat -1 every turn." },
+    "refrigerate": { "name": "Refrigerate", "desc": "This Pokemon's Normal-type moves become Ice type and have 1.2× power." },
+    "clearbody": { "name": "Clear Body", "desc": "Prevents other Pokemon from lowering this Pokemon's stat stages." },
+    "ironfist": { "name": "Iron Fist", "desc": "This Pokemon's punch-based attacks have 1.2× power. Sucker Punch is not boosted." },
+    "contrary": { "name": "Contrary", "desc": "If this Pokemon has a stat stage raised it is lowered instead, and vice versa." },
+    "rivalry": { "name": "Rivalry", "desc": "This Pokemon's attacks do 1.25× on same gender targets; 0.75× on opposite gender." },
+    "klutz": { "name": "Klutz", "desc": "This Pokemon's held item has no effect, except Macho Brace. Fling cannot be used." },
+    "infiltrator": { "name": "Infiltrator", "desc": "Moves ignore substitutes and foe's Reflect/Light Screen/Safeguard/Mist/Aurora Veil." },
+    "auraguard": { "name": "Aura Guard", "desc": "This Pokemon receives 1/2 damage from contact moves." },
+    "anticipation": { "name": "Anticipation", "desc": "On switch-in, this Pokemon shudders if any foe has a supereffective or OHKO move." },
+    "dryskin": { "name": "Dry Skin", "desc": "This Pokemon is healed 1/4 by Water, 1/8 by Rain; is hurt 1.25× by Fire, 1/8 by Sun." },
+    "forewarn": { "name": "Forewarn", "desc": "On switch-in, this Pokemon is alerted to the foes' move with the highest power." },
+    "sandrush": { "name": "Sand Rush", "desc": "If Sandstorm is active, this Pokemon's Speed is doubled; immunity to Sandstorm." },
+    "piercingdrill": {
+      "name": "Piercing Drill",
+      "desc": "This Pokemon's contact moves ignore a target's protection and deal 1/4 the usual damage."
+    },
+    "healer": { "name": "Healer", "desc": "30% chance this Pokemon's ally has its status cured at the end of each turn." },
+    "mummy": { "name": "Mummy", "desc": "Pokemon making contact with this Pokemon have their Ability changed to Mummy." },
+    "wanderingspirit": {
+      "name": "Wandering Spirit",
+      "desc": "Pokemon making contact with this Pokemon have their Ability swapped with this one."
+    },
+    "stench": { "name": "Stench", "desc": "This Pokemon's attacks without a chance to flinch gain a 10% chance to flinch." },
+    "aftermath": { "name": "Aftermath", "desc": "If this Pokemon is KOed with a contact move, that move's user loses 1/4 its max HP." },
+    "illusion": { "name": "Illusion", "desc": "This Pokemon appears as the last Pokemon in the party until it takes direct damage." },
+    "motordrive": {
+      "name": "Motor Drive",
+      "desc": "This Pokemon's Speed is raised 1 stage if hit by an Electric move; Electric immunity."
+    },
+    "eelevate": { "name": "Eelevate", "desc": "This Pokemon is immune to Ground; +1 to highest stat if it KOes another Pokemon." },
+    "flamebody": { "name": "Flame Body", "desc": "30% chance a Pokemon making contact with this Pokemon will be burned." },
+    "slushrush": { "name": "Slush Rush", "desc": "If Snow is active, this Pokemon's Speed is doubled." },
+    "mimicry": { "name": "Mimicry", "desc": "This Pokemon's types change to match the Terrain. Type reverts when Terrain ends." },
+    "unseenfist": { "name": "Unseen Fist", "desc": "This Pokemon's contact moves ignore the target's protection, except Max Guard." },
+    "bulletproof": { "name": "Bulletproof", "desc": "This Pokemon is immune to bullet moves." },
+    "magician": { "name": "Magician", "desc": "If this Pokemon has no item, it steals the item off a Pokemon it hits with an attack." },
+    "protean": { "name": "Protean", "desc": "This Pokemon's type changes to the type of the move it is using. Once per switch-in." },
+    "battlebond": { "name": "Battle Bond", "desc": "After KOing a Pokemon: raises Attack, Sp. Atk, Speed by 1 stage. Once per battle." },
+    "pickup": { "name": "Pickup", "desc": "If this Pokemon has no item, it finds one used by an adjacent Pokemon this turn." },
+    "cheekpouch": {
+      "name": "Cheek Pouch",
+      "desc": "If this Pokemon eats a Berry, it restores 1/3 of its max HP after the Berry's effect."
+    },
+    "galewings": {
+      "name": "Gale Wings",
+      "desc": "If this Pokemon is at full HP, its Flying-type moves have their priority increased by 1."
+    },
+    "shielddust": { "name": "Shield Dust", "desc": "This Pokemon is not affected by the secondary effect of another Pokemon's attack." },
+    "compoundeyes": { "name": "Compound Eyes", "desc": "This Pokemon's moves have their accuracy multiplied by 1.3." },
+    "friendguard": { "name": "Friend Guard", "desc": "This Pokemon's allies receive 3/4 damage from other Pokemon's attacks." },
+    "firemane": { "name": "Fire Mane", "desc": "This Pokemon's offensive stat is multiplied by 1.5 while using a Fire-type attack." },
+    "flowerveil": {
+      "name": "Flower Veil",
+      "desc": "This side's Grass types can't have stats lowered or status inflicted by other Pokemon."
+    },
+    "symbiosis": { "name": "Symbiosis", "desc": "If an ally uses its item, this Pokemon gives its item to that ally immediately." },
+    "fairyaura": { "name": "Fairy Aura", "desc": "While this Pokemon is active, a Fairy move used by any Pokemon has 1.33× power." },
+    "grasspelt": { "name": "Grass Pelt", "desc": "If Grassy Terrain is active, this Pokemon's Defense is multiplied by 1.5." },
+    "stancechange": {
+      "name": "Stance Change",
+      "desc": "If Aegislash, changes Forme to Blade before attacks and Shield before King's Shield."
+    },
+    "aromaveil": { "name": "Aroma Veil", "desc": "Protects user/allies from Attract, Disable, Encore, Heal Block, Taunt, and Torment." },
+    "sweetveil": { "name": "Sweet Veil", "desc": "This Pokemon and its allies cannot fall asleep; those already asleep do not wake up." },
+    "suctioncups": { "name": "Suction Cups", "desc": "This Pokemon cannot be forced to switch out by another Pokemon's attack or item." },
+    "gooey": { "name": "Gooey", "desc": "Pokemon making contact with this Pokemon have their Speed lowered by 1 stage." },
+    "harvest": { "name": "Harvest", "desc": "If last item used is a Berry, 50% chance to restore it each end of turn. 100% in Sun." },
+    "longreach": { "name": "Long Reach", "desc": "This Pokemon's attacks do not make contact with the target." },
+    "liquidvoice": { "name": "Liquid Voice", "desc": "This Pokemon's sound-based moves become Water type." },
+    "vitalspirit": { "name": "Vital Spirit", "desc": "This Pokemon cannot fall asleep. Gaining this Ability while asleep cures it." },
+    "merciless": { "name": "Merciless", "desc": "This Pokemon's attacks are critical hits if the target is poisoned." },
+    "stamina": { "name": "Stamina", "desc": "This Pokemon's Defense is raised by 1 stage after it is damaged by a move." },
+    "waterbubble": {
+      "name": "Water Bubble",
+      "desc": "This Pokemon's Water power is 2×; it can't be burned; Fire power against it is halved."
+    },
+    "corrosion": { "name": "Corrosion", "desc": "This Pokemon can poison or badly poison a Pokemon regardless of its typing." },
+    "queenlymajesty": { "name": "Queenly Majesty", "desc": "This Pokemon and its allies are protected from opposing priority moves." },
+    "receiver": { "name": "Receiver", "desc": "This Pokemon copies the Ability of an ally that faints." },
+    "emergencyexit": { "name": "Emergency Exit", "desc": "This Pokemon switches out when it reaches 1/2 or less of its maximum HP." },
+    "disguise": { "name": "Disguise", "desc": "(Mimikyu only) The first hit it takes is blocked, and it takes 1/8 HP damage instead." },
+    "berserk": { "name": "Berserk", "desc": "This Pokemon's Sp. Atk is raised by 1 when it reaches 1/2 or less of its max HP." },
+    "grassysurge": { "name": "Grassy Surge", "desc": "On switch-in, this Pokemon summons Grassy Terrain." },
+    "libero": { "name": "Libero", "desc": "This Pokemon's type changes to the type of the move it is using. Once per switch-in." },
+    "mirrorarmor": {
+      "name": "Mirror Armor",
+      "desc": "If this Pokemon's stat stages would be lowered, the attacker's are lowered instead."
+    },
+    "runaway": { "name": "Run Away", "desc": "No competitive use." },
+    "stakeout": { "name": "Stakeout", "desc": "This Pokemon's offensive stat is doubled against a target that switched in this turn." },
+    "ripen": { "name": "Ripen", "desc": "When this Pokemon eats certain Berries, the effects are doubled." },
+    "hustle": { "name": "Hustle", "desc": "This Pokemon's Attack is 1.5× and accuracy of its physical attacks is 0.8×." },
+    "sandspit": { "name": "Sand Spit", "desc": "When this Pokemon is hit by an attack, the effect of Sandstorm begins." },
+    "punkrock": { "name": "Punk Rock", "desc": "This Pokemon receives 1/2 damage from sound moves. Its own have 1.3× power." },
+    "psychicsurge": { "name": "Psychic Surge", "desc": "On switch-in, this Pokemon summons Psychic Terrain." },
+    "hungerswitch": {
+      "name": "Hunger Switch",
+      "desc": "If Morpeko, it changes between Full Belly and Hangry Mode at the end of each turn."
+    },
+    "fluffy": { "name": "Fluffy", "desc": "This Pokemon takes 1/2 damage from contact moves, 2× damage from Fire moves." },
+    "opportunist": { "name": "Opportunist", "desc": "When an opposing Pokemon has a stat stage raised, this Pokemon copies the effect." },
+    "zerotohero": {
+      "name": "Zero to Hero",
+      "desc": "If this Pokemon is a Palafin in Zero Form, switching out has it change to Hero Form."
+    },
+    "seedsower": { "name": "Seed Sower", "desc": "When this Pokemon is hit by an attack, the effect of Grassy Terrain begins." },
+    "spicyspray": { "name": "Spicy Spray", "desc": "If this Pokemon is hit by an attack, the attacker becomes burned." },
+    "electromorphosis": { "name": "Electromorphosis", "desc": "This Pokemon gains the Charge effect when it takes a hit from an attack." },
+    "eartheater": { "name": "Earth Eater", "desc": "This Pokemon heals 1/4 of its max HP when hit by Ground moves; Ground immunity." },
+    "thermalexchange": {
+      "name": "Thermal Exchange",
+      "desc": "This Pokemon's Attack is raised by 1 when damaged by Fire moves; can't be burned."
+    },
+    "purifyingsalt": {
+      "name": "Purifying Salt",
+      "desc": "Ghost damage to this Pokemon dealt with a halved offensive stat; can't be statused."
+    },
+    "toxicdebris": {
+      "name": "Toxic Debris",
+      "desc": "If this Pokemon is hit by a physical attack, Toxic Spikes are set on the opposing side."
+    },
+    "guarddog": { "name": "Guard Dog", "desc": "Immune to Intimidate. Intimidated: +1 Attack. Cannot be forced to switch out." },
+    "goodasgold": { "name": "Good as Gold", "desc": "This Pokemon is immune to Status moves." },
+    "supremeoverlord": {
+      "name": "Supreme Overlord",
+      "desc": "This Pokemon's moves have 10% more power for each fainted ally, up to 5 allies."
+    },
+    "hospitality": { "name": "Hospitality", "desc": "On switch-in, this Pokemon restores 1/4 of its ally's maximum HP, rounded down." },
+    "heatproof": { "name": "Heatproof", "desc": "Fire damage against this Pokemon is dealt with 1/2 offensive stat; 1/2 burn damage." },
+    "supersweetsyrup": {
+      "name": "Supersweet Syrup",
+      "desc": "On switch-in, this Pokemon lowers the evasiveness of opponents 1 stage. Once per battle."
+    }
   }
 }

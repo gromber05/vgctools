@@ -71,3 +71,4 @@ export const formatSp = (sp: number[]) =>
     .join(' / ');
 
 export const spToEv = (sp: number) => (sp > 0 ? Math.min(252, sp * 8 - 4) : 0);
+export const evToSp = (ev: number) => (ev > 0 ? Math.min(SP_MAX, Math.round((ev + 4) / 8)) : 0);

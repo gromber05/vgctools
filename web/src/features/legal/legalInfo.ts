@@ -1,8 +1,7 @@
 export const LEGAL = {
-  owner: '[NOMBRE Y APELLIDOS DEL TITULAR]',
-  ownerId: '[NIF, solo si la web tiene actividad económica]',
-  email: '[CORREO DE CONTACTO]',
-  hosting: '[PROVEEDOR DE ALOJAMIENTO Y PAÍS]',
+  owner: 'Gonzalo Romero Bernal',
+  email: 'contacto@gromber05.dev',
+  hosting: 'Name.com (Estados Unidos)',
   backupDays: 30,
   updated: '11 de octubre de 2026',
   minAge: 14,

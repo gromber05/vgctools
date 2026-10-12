@@ -58,7 +58,12 @@ export function PrivacyPage() {
       </p>
 
       <h2>5. Con quién se comparten</h2>
-      <p>Tus datos no se venden ni se ceden a terceros. Se alojan en {LEGAL.hosting}, que actúa como encargado del tratamiento.</p>
+      <p>
+        Tus datos no se venden ni se ceden a terceros. Se alojan en {LEGAL.hosting}, que actúa como encargado del tratamiento. Al estar
+        fuera del Espacio Económico Europeo, esto supone una transferencia internacional de datos, que se ampara en las garantías del
+        artículo 46 del RGPD (cláusulas contractuales tipo de la Comisión Europea) o, en su caso, en el Marco de Privacidad de Datos UE-EE.
+        UU.
+      </p>
       <p>
         Para funcionar, tu navegador se conecta directamente a servicios externos, que reciben tu dirección IP según sus propias políticas:
       </p>
@@ -74,8 +79,10 @@ export function PrivacyPage() {
 
       <h2>6. Cookies y almacenamiento local</h2>
       <p>
-        VGC Tools no usa cookies de publicidad ni de analítica. Solo guarda en tu navegador (almacenamiento local) el identificador de tu
-        sesión, que es imprescindible para que sigas conectado. Al pulsar «Salir» se borra.
+        VGC Tools no usa cookies de publicidad ni de analítica. Guarda en tu navegador (almacenamiento local) el identificador de tu sesión,
+        que es imprescindible para que sigas conectado y se borra al pulsar «Salir». Si lo aceptas en el aviso de cookies, también guarda
+        los Pokémon y el campo que dejes en la calculadora, y tu elección para no volver a preguntarte. Esos datos no salen de tu navegador;
+        puedes cambiar de opinión en «Preferencias de cookies», al pie de la página, y al rechazar se borran.
       </p>
 
       <h2>7. Tus derechos</h2>

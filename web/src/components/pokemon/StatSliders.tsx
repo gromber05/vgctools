@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import type { StatMod } from '@/lib/champions/effective';
 import { calcStats, NATURES, SP_MAX, SP_TOTAL, spTotal, STAT_LABEL } from '@/lib/champions/rules';
 
 const BASE_SCALE = 180;
@@ -10,16 +11,18 @@ interface StatSlidersProps {
   onChange: (index: number, value: number) => void;
   label: string;
   extra?: (index: number) => ReactNode;
+  /** Valor final tras objetos, habilidades, cambios de nivel…; se muestra pequeño al lado. */
+  modified?: (StatMod | undefined)[];
 }
 
-export function StatSliders({ baseStats, sp, nature, onChange, label, extra }: StatSlidersProps) {
+export function StatSliders({ baseStats, sp, nature, onChange, label, extra, modified }: StatSlidersProps) {
   const stats = baseStats ? calcStats(baseStats, sp, nature) : null;
   const n = NATURES[nature];
   const total = spTotal(sp);
   const left = SP_TOTAL - total;
 
   return (
-    <div className="stats-panel" role="group" aria-label={label}>
+    <div className={modified?.some(Boolean) ? 'stats-panel has-mods' : 'stats-panel'} role="group" aria-label={label}>
       {STAT_LABEL.map((name, i) => {
         const mod = n?.[1] === i ? 'is-plus' : n?.[2] === i ? 'is-minus' : '';
         const base = baseStats?.[i] ?? 0;
@@ -54,7 +57,18 @@ export function StatSliders({ baseStats, sp, nature, onChange, label, extra }: S
               onChange={(e) => onChange(i, Math.max(0, Math.min(SP_MAX, parseInt(e.target.value, 10) || 0)))}
               aria-label={`Stat Points de ${name} (número)`}
             />
-            <span className="stat-final">{stats?.[i] ?? '–'}</span>
+            <span className="stat-final">
+              {stats?.[i] ?? '–'}
+              {stats && modified?.[i] && (
+                <span
+                  className={modified[i]!.value > stats[i] ? 'stat-mod is-up' : 'stat-mod is-down'}
+                  title={modified[i]!.notes.join(' · ')}
+                  aria-label={`Con modificadores: ${modified[i]!.value} (${modified[i]!.notes.join(', ')})`}
+                >
+                  {modified[i]!.value}
+                </span>
+              )}
+            </span>
             {extra && <span className="stat-extra">{extra(i)}</span>}
           </div>
         );

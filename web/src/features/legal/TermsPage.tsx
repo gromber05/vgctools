@@ -9,7 +9,7 @@ export function TermsPage() {
 
       <h2>1. Titular</h2>
       <p>
-        VGC Tools es un proyecto personal y gratuito cuyo titular es {LEGAL.owner} ({LEGAL.ownerId}). Contacto: <b>{LEGAL.email}</b>.
+        VGC Tools es un proyecto personal y gratuito cuyo titular es {LEGAL.owner}, sin actividad económica. Contacto: <b>{LEGAL.email}</b>.
       </p>
 
       <h2>2. Aceptación</h2>

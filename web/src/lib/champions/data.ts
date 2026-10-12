@@ -20,12 +20,19 @@ export interface MoveData {
   accuracy: number;
   priority: number;
   target: string;
+  pp: number;
   desc: string;
 }
 
 export interface Item {
   name: string;
+  desc: string;
   megaStone?: Record<string, string>;
+}
+
+export interface Ability {
+  name: string;
+  desc: string;
 }
 
 const data = raw as unknown as {
@@ -33,12 +40,14 @@ const data = raw as unknown as {
   species: Record<string, Species>;
   moves: Record<string, MoveData>;
   items: Record<string, Item>;
+  abilities: Record<string, Ability>;
 };
 
 export const DATA_DATE = data.generated;
 export const SPECIES = data.species;
 export const MOVES = data.moves;
 export const ITEMS = data.items;
+export const ABILITIES = data.abilities;
 
 const byName = <T extends { name: string }>(table: Record<string, T>) =>
   Object.fromEntries(Object.entries(table).map(([id, v]) => [toID(v.name), id]));
@@ -57,6 +66,7 @@ export const ITEM_NAMES = Object.values(ITEMS)
 export const findSpecies = (name: string): Species | undefined => SPECIES[speciesIndex[toID(name)]];
 export const findItem = (name: string): Item | undefined => ITEMS[itemIndex[toID(name)]];
 export const findMove = (name: string): MoveData | undefined => MOVES[moveIndex[toID(name)]];
+export const findAbility = (name: string): Ability | undefined => ABILITIES[toID(name)];
 
 export function baseSpecies(name: string): Species | undefined {
   const s = findSpecies(name);

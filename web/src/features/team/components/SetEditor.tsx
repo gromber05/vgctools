@@ -1,10 +1,13 @@
+import { useState } from 'react';
 import { CommitInput } from '@/components/ui';
+import { AbilityPicker, ItemPicker, MovePicker, PickField } from '@/components/pokemon/Pickers';
 import { Sprite } from '@/components/pokemon/Sprite';
 import { StatSliders } from '@/components/pokemon/StatSliders';
 import { TypeChip, TypeChips } from '@/components/pokemon/TypeChip';
-import { baseSpecies, battleForm, findItem, findMove, ITEM_NAMES, learnableMoves, SPECIES_NAMES } from '@/lib/champions/data';
+import { baseSpecies, battleForm, findMove, learnableMoves, SPECIES_NAMES } from '@/lib/champions/data';
+import { effectiveStats } from '@/lib/champions/effective';
 import { setWarnings } from '@/lib/champions/legality';
-import { formatSp, NATURES, natureLabel, parseSp, SP_MAX } from '@/lib/champions/rules';
+import { calcStats, formatSp, NATURES, natureLabel, parseSp, SP_MAX } from '@/lib/champions/rules';
 import type { PasteMon } from '@/lib/showdown/paste';
 
 const CATEGORY = { Physical: 'Físico', Special: 'Especial', Status: 'Estado' } as const;
@@ -21,7 +24,7 @@ export function SetEditor({ index, mon, team, onChange, onRemove }: SetEditorPro
   const species = baseSpecies(mon.species);
   const form = battleForm(mon.species, mon.item);
   const sp = parseSp(mon.evs);
-  const learnable = species ? learnableMoves(species.name) : [];
+  const [picker, setPicker] = useState<{ kind: 'move'; slot: number } | { kind: 'item' } | { kind: 'ability' } | null>(null);
   const warnings = setWarnings(mon, team);
   const set = (patch: Partial<PasteMon>) => onChange({ ...mon, ...patch });
 
@@ -40,7 +43,7 @@ export function SetEditor({ index, mon, team, onChange, onRemove }: SetEditorPro
 
   const setMove = (k: number, name: string) => {
     const moves = [...mon.moves, '', '', '', ''].slice(0, 4);
-    moves[k] = findMove(name)?.name ?? name;
+    moves[k] = name;
     set({ moves });
   };
 
@@ -74,23 +77,22 @@ export function SetEditor({ index, mon, team, onChange, onRemove }: SetEditorPro
       <div className="set-fields">
         <label className="field">
           <span>Objeto</span>
-          <CommitInput
-            key={mon.item}
-            list="dl-items"
+          <PickField
             value={mon.item}
-            options={ITEM_NAMES}
-            onCommit={(v) => set({ item: findItem(v)?.name ?? v })}
             placeholder="Sin objeto"
+            onClick={() => setPicker({ kind: 'item' })}
+            label={`Objeto del Pokémon ${index + 1}`}
           />
         </label>
         <label className="field">
           <span>Habilidad</span>
-          <select value={mon.ability} onChange={(e) => set({ ability: e.target.value })} disabled={!species}>
-            {!species?.abilities.includes(mon.ability) && <option value={mon.ability}>{mon.ability || '—'}</option>}
-            {species?.abilities.map((a) => (
-              <option key={a}>{a}</option>
-            ))}
-          </select>
+          <PickField
+            value={mon.ability}
+            placeholder="—"
+            onClick={() => setPicker({ kind: 'ability' })}
+            label={`Habilidad del Pokémon ${index + 1}`}
+            disabled={!species}
+          />
         </label>
         <label className="field">
           <span>Naturaleza</span>
@@ -109,13 +111,23 @@ export function SetEditor({ index, mon, team, onChange, onRemove }: SetEditorPro
       </div>
 
       <div className="section-label">Estadísticas</div>
-      <StatSliders baseStats={form?.species.stats ?? null} sp={sp} nature={mon.nature} onChange={setSp} label="Stat Points" />
+      <StatSliders
+        baseStats={form?.species.stats ?? null}
+        sp={sp}
+        nature={mon.nature}
+        onChange={setSp}
+        label="Stat Points"
+        modified={
+          form
+            ? effectiveStats(calcStats(form.species.stats, sp, mon.nature), {
+                species: form.species.name,
+                item: mon.item,
+                ability: form.mega ? form.species.abilities[0] : mon.ability,
+              })
+            : undefined
+        }
+      />
 
-      <datalist id={`dl-moves-${index}`}>
-        {learnable.map((m) => (
-          <option key={m} value={m} />
-        ))}
-      </datalist>
       <div className="section-label">Movimientos</div>
       <div className="set-moves">
         {[0, 1, 2, 3].map((k) => {
@@ -123,14 +135,12 @@ export function SetEditor({ index, mon, team, onChange, onRemove }: SetEditorPro
           const move = findMove(name);
           return (
             <div key={k} className="move-field">
-              <CommitInput
-                key={name}
-                list={`dl-moves-${index}`}
+              <PickField
                 value={name}
-                options={learnable}
-                onCommit={(v) => setMove(k, v)}
                 placeholder={`Movimiento ${k + 1}`}
-                aria-label={`Movimiento ${k + 1}`}
+                onClick={() => setPicker({ kind: 'move', slot: k })}
+                label={`Movimiento ${k + 1}`}
+                disabled={!species}
               />
               <span className="move-meta">
                 {move && (
@@ -151,6 +161,29 @@ export function SetEditor({ index, mon, team, onChange, onRemove }: SetEditorPro
           );
         })}
       </div>
+
+      {picker?.kind === 'move' && species && (
+        <MovePicker
+          open
+          onClose={() => setPicker(null)}
+          species={species.name}
+          current={mon.moves}
+          value={mon.moves[picker.slot] ?? ''}
+          onPick={(v) => setMove(picker.slot, v)}
+        />
+      )}
+      {picker?.kind === 'item' && (
+        <ItemPicker open onClose={() => setPicker(null)} species={mon.species} value={mon.item} onPick={(v) => set({ item: v })} />
+      )}
+      {picker?.kind === 'ability' && species && (
+        <AbilityPicker
+          open
+          onClose={() => setPicker(null)}
+          abilities={species.abilities}
+          value={mon.ability}
+          onPick={(v) => set({ ability: v })}
+        />
+      )}
 
       {warnings.length > 0 && (
         <ul className="warnings">

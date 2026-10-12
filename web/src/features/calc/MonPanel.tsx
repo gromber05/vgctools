@@ -1,12 +1,17 @@
+import { useState } from 'react';
 import { CommitInput } from '@/components/ui';
-import { Sprite } from '@/components/pokemon/Sprite';
+import { AbilityPicker, ItemPicker, MovePicker, PickField } from '@/components/pokemon/Pickers';
 import { StatSliders } from '@/components/pokemon/StatSliders';
-import { TypeChips } from '@/components/pokemon/TypeChip';
-import { baseSpecies, battleForm, findItem, findMove, ITEM_NAMES, learnableMoves, SPECIES_NAMES } from '@/lib/champions/data';
-import type { Status } from '@/lib/champions/damage';
-import { NATURES, natureLabel, parseSp, SP_MAX, STAT_KEYS, STAT_LABEL } from '@/lib/champions/rules';
+import { baseSpecies, battleForm } from '@/lib/champions/data';
+import type { CalcField, SideKey, Status } from '@/lib/champions/damage';
+import { calcStats, formatSp, NATURES, natureLabel, SP_MAX, STAT_KEYS, STAT_LABEL } from '@/lib/champions/rules';
+import { effectiveStats } from '@/lib/champions/effective';
+import { exportPaste, parsePaste } from '@/lib/showdown/paste';
 import type { Team } from '@/state/types';
-import { blankSide, type CalcSide } from './side';
+import { SideOptions } from './FieldPanel';
+import { Modal } from '@/components/ui';
+import { Optimizer } from './Optimizer';
+import { CALC_SPECIES, sideForSpecies, sideFromMon, type CalcSide } from './side';
 
 const STATUS: [Status, string][] = [
   ['', 'Sano'],
@@ -19,39 +24,52 @@ const STATUS: [Status, string][] = [
 ];
 const BOOSTS = [-6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6];
 
+type PickerState = { kind: 'move'; slot: number } | { kind: 'item' } | { kind: 'ability' } | null;
+
 interface MonPanelProps {
   title: string;
   side: CalcSide;
+  foe: CalcSide;
+  mySide: SideKey;
+  field: CalcField;
+  onFieldChange: (field: CalcField) => void;
   teams: Team[];
   onChange: (side: CalcSide) => void;
   idPrefix: string;
 }
 
-export function MonPanel({ title, side, teams, onChange, idPrefix }: MonPanelProps) {
+export function MonPanel({ title, side, foe, mySide, field, onFieldChange, teams, onChange, idPrefix }: MonPanelProps) {
   const species = baseSpecies(side.species);
   const form = battleForm(side.species, side.item);
   const shown = form?.mega && !side.megaEvolved ? species! : form?.species;
-  const learnable = species ? learnableMoves(species.name) : [];
   const set = (patch: Partial<CalcSide>) => onChange({ ...side, ...patch });
+  const [picker, setPicker] = useState<PickerState>(null);
+  const [modal, setModal] = useState<'' | 'optimizer' | 'set'>('');
 
   const loadFromTeam = (value: string) => {
     const [teamId, idx] = value.split(':');
     const mon = teams.find((t) => t.id === teamId)?.mons[+idx];
-    if (!mon) return;
-    onChange({
-      ...blankSide(mon.species),
-      item: mon.item,
-      ability: mon.ability || (baseSpecies(mon.species)?.abilities[0] ?? ''),
-      nature: mon.nature || 'Hardy',
-      sp: parseSp(mon.evs),
-      moves: [...mon.moves, '', '', '', ''].slice(0, 4),
-    });
+    if (mon) onChange(sideFromMon(mon));
   };
 
   return (
     <section className="card calc-mon">
       <header className="calc-mon-head">
-        <h3>{title}</h3>
+        <CommitInput
+          key={side.species}
+          className="species-input"
+          list="dl-calc-species"
+          value={side.species}
+          options={CALC_SPECIES}
+          onCommit={(v) => onChange(sideForSpecies(v, side))}
+          aria-label={`Especie de ${title.toLowerCase()}`}
+          placeholder={title}
+        />
+        {form?.mega && (
+          <label className="check small">
+            <input type="checkbox" checked={side.megaEvolved} onChange={(e) => set({ megaEvolved: e.target.checked })} /> Mega
+          </label>
+        )}
         {teams.some((t) => t.mons.length) && (
           <select
             id={`${idPrefix}-load`}
@@ -73,48 +91,25 @@ export function MonPanel({ title, side, teams, onChange, idPrefix }: MonPanelPro
         )}
       </header>
 
-      <div className="calc-mon-id">
-        {shown ? <Sprite name={shown.name} size={80} big /> : <span className="set-slot">?</span>}
-        <div className="grow">
-          <CommitInput
-            key={side.species}
-            className="species-input"
-            list="dl-species"
-            value={side.species}
-            options={SPECIES_NAMES}
-            onCommit={(v) => onChange({ ...blankSide(v), moves: side.moves.map((m) => (learnableMoves(v).includes(m) ? m : '')) })}
-            aria-label={`Pokémon ${title.toLowerCase()}`}
-          />
-          <div className="set-types">
-            {shown && <TypeChips types={shown.types} />}
-            {form?.mega && (
-              <label className="check">
-                <input type="checkbox" checked={side.megaEvolved} onChange={(e) => set({ megaEvolved: e.target.checked })} />{' '}
-                Megaevolucionado
-              </label>
-            )}
-          </div>
-        </div>
-      </div>
-
       <div className="set-fields">
         <label className="field">
           <span>Objeto</span>
-          <CommitInput
-            key={side.item}
-            list="dl-items"
+          <PickField
             value={side.item}
-            options={ITEM_NAMES}
-            onCommit={(v) => set({ item: findItem(v)?.name ?? v })}
+            placeholder="Sin objeto"
+            onClick={() => setPicker({ kind: 'item' })}
+            label={`Objeto de ${title.toLowerCase()}`}
           />
         </label>
         <label className="field">
           <span>Habilidad</span>
-          <select value={side.ability} onChange={(e) => set({ ability: e.target.value })} disabled={!!form?.mega && side.megaEvolved}>
-            {(form?.mega && side.megaEvolved ? form.species.abilities : (species?.abilities ?? [])).map((a) => (
-              <option key={a}>{a}</option>
-            ))}
-          </select>
+          <PickField
+            value={form?.mega && side.megaEvolved ? form.species.abilities[0] : side.ability}
+            placeholder="—"
+            onClick={() => setPicker({ kind: 'ability' })}
+            label={`Habilidad de ${title.toLowerCase()}`}
+            disabled={!species || (!!form?.mega && side.megaEvolved)}
+          />
         </label>
         <label className="field">
           <span>Naturaleza</span>
@@ -143,6 +138,20 @@ export function MonPanel({ title, side, teams, onChange, idPrefix }: MonPanelPro
         sp={side.sp}
         nature={side.nature}
         label={`Stat Points ${title.toLowerCase()}`}
+        modified={
+          shown
+            ? effectiveStats(calcStats(shown.stats, side.sp, side.nature), {
+                species: shown.name,
+                item: side.item,
+                ability: form?.mega && side.megaEvolved ? shown.abilities[0] : side.ability,
+                status: side.status,
+                boosts: side.boosts,
+                weather: field.weather,
+                terrain: field.terrain,
+                tailwind: field[mySide].tailwind,
+              })
+            : undefined
+        }
         onChange={(i, value) => set({ sp: side.sp.map((v, j) => (j === i ? Math.max(0, Math.min(SP_MAX, value)) : v)) })}
         extra={(i) => {
           const key = STAT_KEYS[i];
@@ -177,24 +186,124 @@ export function MonPanel({ title, side, teams, onChange, idPrefix }: MonPanelPro
         }}
       />
 
-      <datalist id={`${idPrefix}-moves`}>
-        {learnable.map((m) => (
-          <option key={m} value={m} />
-        ))}
-      </datalist>
       <div className="set-moves">
         {side.moves.map((name, k) => (
-          <CommitInput
-            key={`${k}-${name}`}
-            list={`${idPrefix}-moves`}
+          <PickField
+            key={k}
             value={name}
-            options={learnable}
-            onCommit={(v) => set({ moves: side.moves.map((m, j) => (j === k ? (findMove(v)?.name ?? v) : m)) })}
             placeholder={`Movimiento ${k + 1}`}
-            aria-label={`Movimiento ${k + 1} ${title.toLowerCase()}`}
+            onClick={() => setPicker({ kind: 'move', slot: k })}
+            label={`Movimiento ${k + 1} de ${title.toLowerCase()}`}
+            disabled={!species}
           />
         ))}
       </div>
+      {picker?.kind === 'move' && species && (
+        <MovePicker
+          open
+          onClose={() => setPicker(null)}
+          species={species.name}
+          current={side.moves}
+          value={side.moves[picker.slot]}
+          onPick={(v) => set({ moves: side.moves.map((m, j) => (j === picker.slot ? v : m)) })}
+        />
+      )}
+      {picker?.kind === 'item' && (
+        <ItemPicker open onClose={() => setPicker(null)} species={side.species} value={side.item} onPick={(v) => set({ item: v })} />
+      )}
+      {picker?.kind === 'ability' && species && (
+        <AbilityPicker
+          open
+          onClose={() => setPicker(null)}
+          abilities={species.abilities}
+          value={side.ability}
+          onPick={(v) => set({ ability: v })}
+        />
+      )}
+
+      <SideOptions side={field[mySide]} onChange={(s) => onFieldChange({ ...field, [mySide]: s })} name={side.species || title} />
+      <div className="calc-tools">
+        <button className="small" onClick={() => setModal('optimizer')}>
+          Optimizador de SP
+        </button>
+        <button className="small" onClick={() => setModal('set')}>
+          Importar / exportar set
+        </button>
+      </div>
+      <Modal open={modal === 'optimizer'} onClose={() => setModal('')} title={`Optimizador de SP · ${side.species || title}`}>
+        <Optimizer
+          me={side}
+          foe={foe}
+          mySide={mySide}
+          field={field}
+          onApply={(patch) => {
+            set(patch);
+            setModal('');
+          }}
+        />
+      </Modal>
+      <Modal open={modal === 'set'} onClose={() => setModal('')} title={`Set de ${side.species || title}`}>
+        {modal === 'set' && <SetText side={side} onImport={onChange} />}
+      </Modal>
     </section>
+  );
+}
+
+function SetText({ side, onImport }: { side: CalcSide; onImport: (side: CalcSide) => void }) {
+  const current = () =>
+    exportPaste([
+      {
+        species: side.species,
+        nickname: '',
+        item: side.item,
+        ability: side.ability,
+        nature: side.nature,
+        evs: formatSp(side.sp),
+        moves: side.moves,
+      },
+    ]);
+  const [text, setText] = useState(current);
+  const [msg, setMsg] = useState('');
+
+  return (
+    <div className="set-text">
+      <textarea
+        rows={8}
+        className="mono"
+        value={text}
+        onChange={(e) => setText(e.target.value)}
+        aria-label="Set en formato Showdown"
+        spellCheck={false}
+      />
+      <div className="row">
+        <button
+          className="small"
+          onClick={() => {
+            const [mon] = parsePaste(text);
+            if (!mon) return setMsg('No encuentro ningún Pokémon en el texto.');
+            onImport(sideFromMon(mon));
+            setMsg(`Cargado ${mon.species}.`);
+          }}
+        >
+          Importar
+        </button>
+        <button
+          className="small"
+          onClick={async () => {
+            const out = current();
+            setText(out);
+            try {
+              await navigator.clipboard.writeText(out);
+              setMsg('Copiado.');
+            } catch {
+              setMsg('No se pudo copiar: selecciona el texto y cópialo a mano.');
+            }
+          }}
+        >
+          Copiar set
+        </button>
+        {msg && <span className="muted small">{msg}</span>}
+      </div>
+    </div>
   );
 }

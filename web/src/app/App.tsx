@@ -10,6 +10,7 @@ import { useAccount, type Account } from '@/state/useAccount';
 import { useReplayLoader, type LoadReplays } from '@/state/useReplayLoader';
 import { AppFooter } from './AppFooter';
 import { AppHeader } from './AppHeader';
+import { CookieBanner } from './CookieBanner';
 import { useRoute, type Route } from './router';
 
 const CalcPage = lazy(() => import('@/features/calc/CalcPage').then((m) => ({ default: m.CalcPage })));
@@ -40,6 +41,7 @@ export function App() {
         )}
       </main>
       <AppFooter />
+      <CookieBanner />
     </div>
   );
 }

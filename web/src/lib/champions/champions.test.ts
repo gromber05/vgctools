@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { parsePaste, exportPaste } from '@/lib/showdown/paste';
-import { calcDamage, defaultField, type CalcMon } from './damage';
+import { calcDamage, defaultField, spDesc, type CalcMon } from './damage';
 import { battleForm, canLearn } from './data';
 import { setWarnings } from './legality';
 import { calcStats, formatSp, parseSp, spToEv } from './rules';
@@ -79,6 +79,13 @@ describe('calculadora', () => {
     );
     expect([eq.min, eq.max]).toEqual([138, 164]);
     expect(eq.ko).toMatch(/2HKO/);
+    expect(eq.desc).toMatch(/^32\+? Atk Garchomp Earthquake vs\. 32 HP \/ 0 Def Incineroar/);
+  });
+
+  it('describe la inversión en Stat Points y no en EVs', () => {
+    expect(spDesc('+1 252+ Atk Garchomp Earthquake vs. 252 HP / 76 Def Incineroar: 126-150 (62.3 - 74.2%)')).toBe(
+      '+1 32+ Atk Garchomp Earthquake vs. 32 HP / 10 Def Incineroar: 126-150 (62.3 - 74.2%)',
+    );
   });
 
   it('usa la forma Mega y omite movimientos de estado', () => {
