@@ -18,8 +18,7 @@ export function Modal({ open, onClose, title, children, className = '' }: ModalP
     if (open && !dialog.open) {
       dialog.showModal();
       dialog.querySelector<HTMLElement>('[data-autofocus]')?.focus();
-    }
-    else if (!open && dialog.open) dialog.close();
+    } else if (!open && dialog.open) dialog.close();
   }, [open]);
 
   return (
