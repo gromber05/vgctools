@@ -21,11 +21,8 @@
   margin-right: auto;
 }
 .brand-mark {
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  border: 2.5px solid var(--ink);
-  background: linear-gradient(var(--accent) 0 44%, var(--ink) 44% 56%, var(--surface) 56%);
+  flex: none;
+  display: block;
 }
 .appbar-status {
   font-size: 13px;

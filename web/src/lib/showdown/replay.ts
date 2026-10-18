@@ -25,6 +25,25 @@ export interface Game {
   gameNo: number | null;
   turns: number;
   myMoves: Record<string, Record<string, number>>;
+  // Campos añadidos después: las partidas leídas antes no los tienen.
+  oppMoves?: Record<string, Record<string, number>>;
+  kos?: KO[];
+  oppSets?: RevealedSet[];
+  duration?: number;
+}
+
+export interface KO {
+  turn: number;
+  mine: boolean;
+  mon: string;
+  by: string | null;
+}
+
+export interface RevealedSet {
+  species: string;
+  item: string;
+  ability: string;
+  moves: string[];
 }
 
 export interface ReplayJSON {
@@ -59,6 +78,12 @@ export function parseReplay(replay: ReplayJSON, myNames: string[]): Game {
   const nick: Record<Side, Record<string, string>> = { p1: {}, p2: {} };
   const moves: Record<Side, Record<string, Record<string, number>>> = { p1: {}, p2: {} };
   const after: Record<string, number> = {};
+  const sets: Record<Side, RevealedSet[]> = { p1: [], p2: [] };
+  const faints: { side: Side; mon: string; turn: number; by: string | null }[] = [];
+  const cause: Record<string, string | null> = {};
+  let lastMover: { side: Side; species: string } | null = null;
+  let t = 0;
+  let tStart = 0;
   let winner: string | null = null;
   let tie = false;
   let ots = false;
@@ -83,6 +108,20 @@ export function parseReplay(replay: ReplayJSON, myNames: string[]): Game {
         break;
       case 'showteam':
         ots = true;
+        sets[p[2] as Side] = p
+          .slice(3)
+          .join('|')
+          .split(']')
+          .map((packed) => {
+            const f = packed.split('|');
+            return { species: f[1] || f[0], item: f[2] ?? '', ability: f[3] ?? '', moves: (f[4] ?? '').split(',').filter(Boolean) };
+          });
+        break;
+      case 't:':
+        t = +p[2];
+        break;
+      case 'start':
+        tStart = t;
         break;
       case 'switch':
       case 'drag':
@@ -98,12 +137,24 @@ export function parseReplay(replay: ReplayJSON, myNames: string[]): Game {
         mega[sideOf(p[2])] = baseName(p[3]);
         break;
       case 'move': {
-        if (line.includes('[from]')) break;
         const side = sideOf(p[2]);
         const species = nick[side][nickOf(p[2])];
-        if (!species) break;
+        if (species) lastMover = { side, species };
+        if (line.includes('[from]') || !species) break;
         const bucket = (moves[side][species] ??= {});
         bucket[p[3]] = (bucket[p[3]] ?? 0) + 1;
+        break;
+      }
+      case '-damage':
+        if (p[3]?.includes('fnt')) {
+          const from = p.find((x) => x.startsWith('[from]'));
+          const side = sideOf(p[2]);
+          cause[p[2]] = from ? from.slice(6).replace(/^\s*(item|ability|move):\s*/, '').trim() : lastMover && lastMover.side !== side ? lastMover.species : null;
+        }
+        break;
+      case 'faint': {
+        const side = sideOf(p[2]);
+        faints.push({ side, mon: nick[side][nickOf(p[2])] ?? nickOf(p[2]), turn: turns, by: cause[p[2]] ?? null });
         break;
       }
       case 'turn':
@@ -169,5 +220,9 @@ export function parseReplay(replay: ReplayJSON, myNames: string[]): Game {
     gameNo,
     turns,
     myMoves: moves[me],
+    oppMoves: moves[op],
+    kos: faints.map(({ side, ...k }) => ({ ...k, mine: side === me })),
+    oppSets: sets[op],
+    duration: tStart && t > tStart ? t - tStart : 0,
   };
 }

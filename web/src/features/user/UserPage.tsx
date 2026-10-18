@@ -3,7 +3,7 @@ import { href } from '@/app/router';
 import { Card, StatTile } from '@/components/ui';
 import { Sprite } from '@/components/pokemon/Sprite';
 import { usageByMon } from '@/lib/stats/aggregates';
-import { pct } from '@/lib/utils';
+import { pct, toID } from '@/lib/utils';
 import { gamesOf } from '@/state/team';
 import type { Account } from '@/state/useAccount';
 
@@ -74,38 +74,72 @@ export function UserPage({ account }: { account: Account }) {
   );
 }
 
+const MAX_SHOWDOWN_NAMES = 10;
+
 function ShowdownNamesCard({ names, onSave }: { names: string[]; onSave: (names: string[]) => void }) {
-  const [draft, setDraft] = useState(names.join(', '));
-  const [saved, setSaved] = useState(false);
-  const submit = (e: FormEvent) => {
+  const [draft, setDraft] = useState('');
+  const [error, setError] = useState('');
+  const full = names.length >= MAX_SHOWDOWN_NAMES;
+
+  const add = (e: FormEvent) => {
     e.preventDefault();
-    onSave(
-      draft
-        .split(',')
-        .map((n) => n.trim())
-        .filter(Boolean),
-    );
-    setSaved(true);
+    // Allow pasting several names at once, separated by commas.
+    const incoming = draft
+      .split(',')
+      .map((n) => n.trim().slice(0, 40))
+      .filter(Boolean);
+    const next = [...names];
+    for (const name of incoming) {
+      if (!next.some((n) => toID(n) === toID(name))) next.push(name);
+    }
+    if (next.length > MAX_SHOWDOWN_NAMES) {
+      setError(`Puedes guardar como máximo ${MAX_SHOWDOWN_NAMES} nombres.`);
+      return;
+    }
+    if (next.length === names.length) {
+      setError(incoming.length ? 'Ese nombre ya está guardado.' : '');
+      return;
+    }
+    onSave(next);
+    setDraft('');
+    setError('');
   };
+
   return (
     <Card title="Nombres de Showdown">
-      <form className="stack-form" onSubmit={submit}>
-        <p className="muted small">Sirven para saber qué jugador eres en cada repetición. Si tienes varias cuentas, sepáralas con comas.</p>
-        <input
-          id="profile-showdown-names"
-          value={draft}
-          onChange={(e) => {
-            setDraft(e.target.value);
-            setSaved(false);
-          }}
-          placeholder="p. ej. room3roo"
-        />
+      <form className="stack-form" onSubmit={add}>
+        <p className="muted small">Sirven para saber qué jugador eres en cada repetición. Añade todas tus cuentas.</p>
+        {names.length > 0 ? (
+          <ul className="showdown-names">
+            {names.map((n) => (
+              <li key={n} className="chip">
+                {n}
+                <button type="button" className="ghost" aria-label={`Quitar ${n}`} onClick={() => onSave(names.filter((x) => x !== n))}>
+                  ×
+                </button>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p className="muted small">Aún no has añadido ningún nombre.</p>
+        )}
         <div className="actions">
-          <button className="primary" type="submit">
-            Guardar
+          <input
+            id="profile-showdown-names"
+            value={draft}
+            onChange={(e) => {
+              setDraft(e.target.value);
+              setError('');
+            }}
+            placeholder={full ? 'Has llegado al máximo' : 'p. ej. room3roo'}
+            maxLength={200}
+            disabled={full}
+          />
+          <button className="primary" type="submit" disabled={full || !draft.trim()}>
+            Añadir
           </button>
-          {saved && <span className="muted small">Guardado.</span>}
         </div>
+        {error && <p className="error small">{error}</p>}
       </form>
     </Card>
   );

@@ -49,6 +49,14 @@ describe('parseReplay', () => {
     expect(g.myMoves.Garchomp.Flamethrower).toBe(1);
   });
 
+  it('lee los KOs, movimientos del rival y sets revelados', () => {
+    expect(g.kos?.[0]).toEqual({ turn: 2, mine: true, mon: 'Rillaboom', by: 'Golisopod' });
+    expect(g.kos?.filter((k) => !k.mine).map((k) => k.by)).toEqual(['Sneasler', 'Volcarona', 'Garchomp']);
+    expect(g.oppMoves?.Golisopod['Leech Life']).toBe(1);
+    expect(g.oppSets?.[0]).toEqual({ species: 'Golisopod', item: 'Golisopite', ability: 'EmergencyExit', moves: ['IronHead', 'LeechLife', 'SwordsDance', 'Protect'] });
+    expect(g.duration).toBe(131);
+  });
+
   it('da un error claro si tu nombre no está', () => {
     expect(() => parseReplay(replay, ['otro'])).toThrow(/No encuentro tu nombre/);
   });

@@ -1,4 +1,5 @@
 import type { Account } from '@/state/useAccount';
+import { Logo } from './Logo';
 import { href, type Route } from './router';
 
 const SAVE_LABEL = { saved: 'Guardado', saving: 'Guardando…', error: 'No se pudo guardar' } as const;
@@ -22,7 +23,7 @@ export function AppHeader({ account, route, loadingCount }: AppHeaderProps) {
   return (
     <header className="appbar">
       <a className="brand" href={href({ page: 'teams' })}>
-        <span className="brand-mark" aria-hidden="true" />
+        <Logo />
         VGC Tools
       </a>
       {status === 'ready' && user && (
